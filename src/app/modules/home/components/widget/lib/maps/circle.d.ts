@@ -1,7 +1,7 @@
 import L from 'leaflet';
-import { WidgetCircleSettings } from '@home/components/widget/lib/maps/map-models';
-import LeafletMap from '@home/components/widget/lib/maps/leaflet-map';
-import { FormattedData } from '@shared/models/widget.models';
+import { WidgetCircleSettings } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/maps/map-models';
+import LeafletMap from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/maps/leaflet-map';
+import { FormattedData } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 export declare class Circle {
     private map;
     private data;

@@ -1,11 +1,11 @@
 import { AfterViewInit, ElementRef, OnInit, ViewContainerRef } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { WidgetContext } from '@home/models/widget-component.models';
-import { UtilsService } from '@core/services/utils.service';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { Overlay } from '@angular/cdk/overlay';
-import { LoadNodesCallback, NavTreeEditCallbacks, NodeSearchCallback, NodeSelectedCallback, NodesInsertedCallback } from '@shared/components/nav-tree.component';
+import { LoadNodesCallback, NavTreeEditCallbacks, NodeSearchCallback, NodeSelectedCallback, NodesInsertedCallback } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/nav-tree.component';
 import * as i0 from "@angular/core";
 export declare class EntitiesHierarchyWidgetComponent extends PageComponent implements OnInit, AfterViewInit {
     protected store: Store<AppState>;

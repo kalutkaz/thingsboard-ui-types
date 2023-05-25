@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
-import { MenuService } from '@core/services/menu.service';
-import { MenuSection } from '@core/services/menu.models';
+import { MenuService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.service';
+import { MenuSection } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.models';
 import * as i0 from "@angular/core";
 export declare class SideMenuComponent implements OnInit {
     private menuService;

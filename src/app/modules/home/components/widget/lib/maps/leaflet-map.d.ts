@@ -9,9 +9,9 @@ import { Observable } from 'rxjs';
 import { Polyline } from './polyline';
 import { Polygon } from './polygon';
 import { Circle } from './circle';
-import { WidgetContext } from '@home/models/widget-component.models';
+import { WidgetContext } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import { TranslateService } from '@ngx-translate/core';
-import { FormattedData, ReplaceInfo } from '@shared/models/widget.models';
+import { FormattedData, ReplaceInfo } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import ITooltipsterInstance = JQueryTooltipster.ITooltipsterInstance;
 export default abstract class LeafletMap {
     ctx: WidgetContext;

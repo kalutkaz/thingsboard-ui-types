@@ -3,10 +3,10 @@ import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@ang
 import { MatFormFieldAppearance } from '@angular/material/form-field';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
 import { MatAutocompleteTrigger } from '@angular/material/autocomplete';
-import { TimezoneInfo } from '@shared/models/time/time.models';
+import { TimezoneInfo } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import * as i0 from "@angular/core";
 export declare class TimezoneSelectComponent implements ControlValueAccessor, OnInit, AfterViewInit {
     private store;

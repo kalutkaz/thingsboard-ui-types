@@ -1,8 +1,8 @@
 import { ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
-import { RafService } from '@core/services/raf.service';
+import { RafService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/raf.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import * as i0 from "@angular/core";
 export declare class ProtobufContentComponent implements OnInit, ControlValueAccessor, OnDestroy {
     elementRef: ElementRef;

@@ -1,10 +1,10 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { PageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
-import { EntitySubtype } from '@app/shared/models/entity-type.models';
-import { EntityView, EntityViewInfo, EntityViewSearchQuery } from '@app/shared/models/entity-view.models';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { EntitySubtype } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { EntityView, EntityViewInfo, EntityViewSearchQuery } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-view.models';
 import * as i0 from "@angular/core";
 export declare class EntityViewService {
     private http;

@@ -3,9 +3,9 @@ import { Subject, Subscription } from 'rxjs';
 import { BreadCrumb } from './breadcrumb';
 import { ActivatedRoute, ActivatedRouteSnapshot, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { BroadcastService } from '@core/services/broadcast.service';
-import { ActiveComponentService } from '@core/services/active-component.service';
-import { UtilsService } from '@core/services/utils.service';
+import { BroadcastService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/broadcast.service';
+import { ActiveComponentService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/active-component.service';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import * as i0 from "@angular/core";
 export declare class BreadcrumbComponent implements OnInit, OnDestroy {
     private router;

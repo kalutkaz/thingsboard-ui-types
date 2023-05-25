@@ -1,13 +1,13 @@
-import { Dashboard, DashboardLayoutId } from '@app/shared/models/dashboard.models';
-import { AliasesInfo } from '@shared/models/alias.models';
-import { Widget, WidgetPosition, WidgetSize } from '@shared/models/widget.models';
-import { DashboardUtilsService } from '@core/services/dashboard-utils.service';
-import { UtilsService } from '@core/services/utils.service';
+import { Dashboard, DashboardLayoutId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { AliasesInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/alias.models';
+import { Widget, WidgetPosition, WidgetSize } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { DashboardUtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/dashboard-utils.service';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { Observable } from 'rxjs';
-import { FcRuleNode } from '@shared/models/rule-node.models';
-import { RuleChainService } from '@core/http/rule-chain.service';
-import { RuleChainImport } from '@shared/models/rule-chain.models';
-import { FiltersInfo } from '@shared/models/query/query.models';
+import { FcRuleNode } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
+import { RuleChainService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/rule-chain.service';
+import { RuleChainImport } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
+import { FiltersInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import * as i0 from "@angular/core";
 export interface WidgetItem {
     widget: Widget;

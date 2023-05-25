@@ -1,10 +1,10 @@
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { NotificationRequest, NotificationRequestInfo } from '@shared/models/notification.models';
-import { NotificationService } from '@core/http/notification.service';
+import { EntityTableConfig } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { NotificationRequest, NotificationRequestInfo } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
+import { NotificationService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/notification.service';
 import { TranslateService } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DatePipe } from '@angular/common';
-import { PageLink } from '@shared/models/page/page-link';
+import { PageLink } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
 import * as i0 from "@angular/core";
 export declare class SentTableConfigResolver implements Resolve<EntityTableConfig<NotificationRequest, PageLink, NotificationRequestInfo>> {

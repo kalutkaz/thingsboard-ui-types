@@ -1,10 +1,10 @@
 import { ChangeDetectorRef, NgZone, OnDestroy, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
-import { TbPopoverComponent } from '@shared/components/popover.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { TbPopoverComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { Notification, NotificationRequest } from '@shared/models/notification.models';
-import { NotificationWebsocketService } from '@core/ws/notification-websocket.service';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { Notification, NotificationRequest } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
+import { NotificationWebsocketService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/ws/notification-websocket.service';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import * as i0 from "@angular/core";

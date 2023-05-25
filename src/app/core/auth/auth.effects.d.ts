@@ -1,8 +1,8 @@
 import { Actions } from '@ngrx/effects';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { UserSettingsService } from '@core/http/user-settings.service';
-import { AuthActions } from '@core/auth/auth.actions';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { UserSettingsService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/user-settings.service';
+import { AuthActions } from '../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.actions';
 import * as i0 from "@angular/core";
 export declare class AuthEffects {
     private actions$;

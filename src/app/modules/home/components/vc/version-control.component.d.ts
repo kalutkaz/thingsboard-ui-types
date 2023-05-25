@@ -1,12 +1,12 @@
 import { EventEmitter, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { HasConfirmForm } from '@core/guards/confirm-on-exit.guard';
-import { RepositorySettingsComponent } from '@home/components/vc/repository-settings.component';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { HasConfirmForm } from '../../../../../../../thingsboard/ui-ngx/src/app/core/guards/confirm-on-exit.guard';
+import { RepositorySettingsComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/vc/repository-settings.component';
 import { UntypedFormGroup } from '@angular/forms';
-import { EntityId } from '@shared/models/id/entity-id';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { Observable } from 'rxjs';
-import { TbPopoverComponent } from '@shared/components/popover.component';
+import { TbPopoverComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
 import * as i0 from "@angular/core";
 export declare class VersionControlComponent implements OnInit, HasConfirmForm {
     private store;

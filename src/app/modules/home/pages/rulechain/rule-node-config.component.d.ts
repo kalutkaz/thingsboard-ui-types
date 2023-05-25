@@ -1,11 +1,11 @@
 import { AfterViewInit, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { RuleNodeConfiguration, RuleNodeDefinition } from '@shared/models/rule-node.models';
+import { RuleNodeConfiguration, RuleNodeDefinition } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
 import { Subscription } from 'rxjs';
-import { RuleChainService } from '@core/http/rule-chain.service';
+import { RuleChainService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/rule-chain.service';
 import { TranslateService } from '@ngx-translate/core';
-import { JsonObjectEditComponent } from '@shared/components/json-object-edit.component';
-import { RuleChainType } from '@shared/models/rule-chain.models';
+import { JsonObjectEditComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/json-object-edit.component';
+import { RuleChainType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
 import * as i0 from "@angular/core";
 export declare class RuleNodeConfigComponent implements ControlValueAccessor, OnInit, OnDestroy, AfterViewInit {
     private translate;

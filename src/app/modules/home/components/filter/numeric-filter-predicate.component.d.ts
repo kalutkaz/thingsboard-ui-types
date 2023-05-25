@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { EntityKeyValueType, NumericFilterPredicate, NumericOperation } from '@shared/models/query/query.models';
+import { EntityKeyValueType, NumericFilterPredicate, NumericOperation } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import * as i0 from "@angular/core";
 export declare class NumericFilterPredicateComponent implements ControlValueAccessor, Validator, OnInit {
     private fb;

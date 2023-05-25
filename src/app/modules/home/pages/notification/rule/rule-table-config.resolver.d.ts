@@ -1,6 +1,6 @@
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { NotificationRule } from '@shared/models/notification.models';
-import { NotificationService } from '@core/http/notification.service';
+import { EntityTableConfig } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { NotificationRule } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
+import { NotificationService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/notification.service';
 import { TranslateService } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
@@ -17,6 +17,7 @@ export declare class RuleTableConfigResolver implements Resolve<EntityTableConfi
     private configureCellActions;
     private editRule;
     private onTargetAction;
+    private toggleEnableMode;
     static ɵfac: i0.ɵɵFactoryDeclaration<RuleTableConfigResolver, never>;
     static ɵprov: i0.ɵɵInjectableDeclaration<RuleTableConfigResolver>;
 }

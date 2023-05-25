@@ -1,15 +1,15 @@
-import { NotificationId } from '@shared/models/id/notification-id';
-import { NotificationRequestId } from '@shared/models/id/notification-request-id';
-import { UserId } from '@shared/models/id/user-id';
-import { BaseData } from '@shared/models/base-data';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { NotificationTargetId } from '@shared/models/id/notification-target-id';
-import { NotificationTemplateId } from '@shared/models/id/notification-template-id';
-import { EntityId } from '@shared/models/id/entity-id';
-import { NotificationRuleId } from '@shared/models/id/notification-rule-id';
-import { AlarmSearchStatus, AlarmSeverity, AlarmStatus } from '@shared/models/alarm.models';
-import { EntityType } from '@shared/models/entity-type.models';
-import { ApiFeature, ApiUsageStateValue } from '@shared/models/api-usage.models';
+import { NotificationId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/notification-id';
+import { NotificationRequestId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/notification-request-id';
+import { UserId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/user-id';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { NotificationTargetId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/notification-target-id';
+import { NotificationTemplateId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/notification-template-id';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { NotificationRuleId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/notification-rule-id';
+import { AlarmSearchStatus, AlarmSeverity, AlarmStatus } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
+import { EntityType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { ApiFeature, ApiUsageStateValue } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/api-usage.models';
 export interface Notification {
     readonly id: NotificationId;
     readonly requestId: NotificationRequestId;
@@ -90,6 +90,7 @@ export interface SlackConversation {
 }
 export interface NotificationRule extends Omit<BaseData<NotificationRuleId>, 'label'> {
     tenantId: TenantId;
+    enabled: boolean;
     templateId: NotificationTemplateId;
     triggerType: TriggerType;
     triggerConfig: NotificationRuleTriggerConfig;

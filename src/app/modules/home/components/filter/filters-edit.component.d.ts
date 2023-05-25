@@ -1,10 +1,10 @@
 import { OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
 import { TooltipPosition } from '@angular/material/tooltip';
-import { IAliasController } from '@core/api/widget-api.models';
+import { IAliasController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import { CdkOverlayOrigin, Overlay } from '@angular/cdk/overlay';
 import { TranslateService } from '@ngx-translate/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
-import { FilterInfo } from '@shared/models/query/query.models';
+import { FilterInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { MatDialog } from '@angular/material/dialog';
 import * as i0 from "@angular/core";
 export declare class FiltersEditComponent implements OnInit, OnDestroy {
@@ -13,6 +13,7 @@ export declare class FiltersEditComponent implements OnInit, OnDestroy {
     private breakpointObserver;
     private viewContainerRef;
     private dialog;
+    filtersEditClass: string;
     aliasControllerValue: IAliasController;
     set aliasController(aliasController: IAliasController);
     get aliasController(): IAliasController;

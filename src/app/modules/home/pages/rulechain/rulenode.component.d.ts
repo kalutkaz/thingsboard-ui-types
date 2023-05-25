@@ -1,7 +1,7 @@
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { OnInit } from '@angular/core';
 import { FcNodeComponent } from 'ngx-flowchart';
-import { FcRuleNode, RuleNodeType } from '@shared/models/rule-node.models';
+import { FcRuleNode, RuleNodeType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";

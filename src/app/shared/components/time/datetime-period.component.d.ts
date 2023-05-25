@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
-import { FixedWindow } from '@shared/models/time/time.models';
+import { FixedWindow } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import * as i0 from "@angular/core";
 export declare class DatetimePeriodComponent implements OnInit, ControlValueAccessor {
     disabled: boolean;

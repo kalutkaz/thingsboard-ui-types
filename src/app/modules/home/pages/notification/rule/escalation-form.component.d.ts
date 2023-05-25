@@ -1,7 +1,7 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, FormBuilder, FormControl, FormGroup, Validator } from '@angular/forms';
-import { NonConfirmedNotificationEscalation, NotificationType } from '@shared/models/notification.models';
-import { EntityType } from '@shared/models/entity-type.models';
+import { NonConfirmedNotificationEscalation, NotificationType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
+import { EntityType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { MatDialog } from '@angular/material/dialog';
 import { MatButton } from '@angular/material/button';
 import * as i0 from "@angular/core";

@@ -1,21 +1,21 @@
-import { BaseData } from '@shared/models/base-data';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { WidgetTypeId } from '@shared/models/id/widget-type-id';
-import { AggregationType, ComparisonDuration, Timewindow } from '@shared/models/time/time.models';
-import { EntityType } from '@shared/models/entity-type.models';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { WidgetTypeId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/widget-type-id';
+import { AggregationType, ComparisonDuration, Timewindow } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
+import { EntityType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { DataKeyType } from './telemetry/telemetry.models';
-import { EntityId } from '@shared/models/id/entity-id';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import * as moment_ from 'moment';
-import { AlarmFilter, AlarmFilterConfig, EntityDataPageLink, EntityFilter, KeyFilter } from '@shared/models/query/query.models';
-import { PopoverPlacement } from '@shared/components/popover.models';
-import { PageComponent } from '@shared/components/page.component';
+import { AlarmFilter, AlarmFilterConfig, EntityDataPageLink, EntityFilter, KeyFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { PopoverPlacement } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.models';
+import { PageComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { AfterViewInit, EventEmitter, OnInit, Type } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { Dashboard } from '@shared/models/dashboard.models';
-import { IAliasController } from '@core/api/widget-api.models';
+import { Dashboard } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { IAliasController } from '../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import * as i0 from "@angular/core";
 export declare enum widgetType {
     timeseries = "timeseries",

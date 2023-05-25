@@ -1,8 +1,8 @@
 import { ElementRef, InjectionToken, OnDestroy, OnInit, TemplateRef, ViewContainerRef } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { AlarmFilterConfig } from '@shared/models/query/query.models';
+import { AlarmFilterConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { Overlay, OverlayRef } from '@angular/cdk/overlay';
-import { AlarmSearchStatus, AlarmSeverity } from '@shared/models/alarm.models';
+import { AlarmSearchStatus, AlarmSeverity } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";

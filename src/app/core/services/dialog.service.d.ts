@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { TranslateService } from '@ngx-translate/core';
-import { AuthService } from '@core/auth/auth.service';
+import { AuthService } from '../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
 import * as i0 from "@angular/core";
 export declare class DialogService {
     private translate;

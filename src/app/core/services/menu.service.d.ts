@@ -1,6 +1,6 @@
 import { Store } from '@ngrx/store';
 import { AppState } from '../core.state';
-import { HomeSection, MenuSection } from '@core/services/menu.models';
+import { HomeSection, MenuSection } from '../../../../../thingsboard/ui-ngx/src/app/core/services/menu.models';
 import { Observable, Subject } from 'rxjs';
 import { Router } from '@angular/router';
 import * as i0 from "@angular/core";

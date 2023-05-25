@@ -1,11 +1,10 @@
 import { ChangeDetectorRef, ElementRef, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { MillisecondsToTimeStringPipe } from '@shared/pipe/milliseconds-to-time-string.pipe';
-import { Timewindow } from '@shared/models/time/time.models';
+import { MillisecondsToTimeStringPipe } from '../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/milliseconds-to-time-string.pipe';
+import { Timewindow } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import { DatePipe } from '@angular/common';
-import { BreakpointObserver } from '@angular/cdk/layout';
-import { TimeService } from '@core/services/time.service';
+import { TimeService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/time.service';
 import { TooltipPosition } from '@angular/material/tooltip';
 import { Overlay } from '@angular/cdk/overlay';
 import * as i0 from "@angular/core";
@@ -18,7 +17,6 @@ export declare class TimewindowComponent implements OnInit, OnDestroy, ControlVa
     private cd;
     private nativeElement;
     viewContainerRef: ViewContainerRef;
-    breakpointObserver: BreakpointObserver;
     historyOnlyValue: boolean;
     set historyOnly(val: boolean);
     get historyOnly(): boolean;
@@ -35,13 +33,13 @@ export declare class TimewindowComponent implements OnInit, OnDestroy, ControlVa
     timezoneValue: boolean;
     set timezone(val: boolean);
     get timezone(): boolean;
-    isToolbarValue: boolean;
-    set isToolbar(val: boolean);
-    get isToolbar(): boolean;
     asButtonValue: boolean;
     set asButton(val: boolean);
     get asButton(): boolean;
     strokedButton: boolean;
+    flatButton: boolean;
+    displayTimewindowValue: boolean;
+    hideLabel: boolean;
     isEditValue: boolean;
     set isEdit(val: boolean);
     get isEdit(): boolean;
@@ -51,7 +49,7 @@ export declare class TimewindowComponent implements OnInit, OnDestroy, ControlVa
     innerValue: Timewindow;
     timewindowDisabled: boolean;
     private propagateChange;
-    constructor(overlay: Overlay, translate: TranslateService, timeService: TimeService, millisecondsToTimeStringPipe: MillisecondsToTimeStringPipe, datePipe: DatePipe, cd: ChangeDetectorRef, nativeElement: ElementRef, viewContainerRef: ViewContainerRef, breakpointObserver: BreakpointObserver);
+    constructor(overlay: Overlay, translate: TranslateService, timeService: TimeService, millisecondsToTimeStringPipe: MillisecondsToTimeStringPipe, datePipe: DatePipe, cd: ChangeDetectorRef, nativeElement: ElementRef, viewContainerRef: ViewContainerRef);
     ngOnInit(): void;
     ngOnDestroy(): void;
     toggleTimewindow($event: Event): void;
@@ -61,9 +59,9 @@ export declare class TimewindowComponent implements OnInit, OnDestroy, ControlVa
     setDisabledState(isDisabled: boolean): void;
     writeValue(obj: Timewindow): void;
     notifyChanged(): void;
+    displayValue(): string;
     updateDisplayValue(): void;
-    hideLabel(): boolean;
     private isTimewindowDisabled;
     static ɵfac: i0.ɵɵFactoryDeclaration<TimewindowComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<TimewindowComponent, "tb-timewindow", never, { "historyOnly": "historyOnly"; "forAllTimeEnabled": "forAllTimeEnabled"; "alwaysDisplayTypePrefix": "alwaysDisplayTypePrefix"; "quickIntervalOnly": "quickIntervalOnly"; "aggregation": "aggregation"; "timezone": "timezone"; "isToolbar": "isToolbar"; "asButton": "asButton"; "strokedButton": "strokedButton"; "isEdit": "isEdit"; "direction": "direction"; "tooltipPosition": "tooltipPosition"; "disabled": "disabled"; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<TimewindowComponent, "tb-timewindow", never, { "historyOnly": "historyOnly"; "forAllTimeEnabled": "forAllTimeEnabled"; "alwaysDisplayTypePrefix": "alwaysDisplayTypePrefix"; "quickIntervalOnly": "quickIntervalOnly"; "aggregation": "aggregation"; "timezone": "timezone"; "asButton": "asButton"; "strokedButton": "strokedButton"; "flatButton": "flatButton"; "displayTimewindowValue": "displayTimewindowValue"; "hideLabel": "hideLabel"; "isEdit": "isEdit"; "direction": "direction"; "tooltipPosition": "tooltipPosition"; "disabled": "disabled"; }, {}, never, never, false, never>;
 }

@@ -1,8 +1,8 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import * as i0 from "@angular/core";
 export interface RpcButtonStyle {
     isRaised: boolean;

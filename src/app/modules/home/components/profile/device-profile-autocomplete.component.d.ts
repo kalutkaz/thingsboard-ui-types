@@ -2,13 +2,13 @@ import { ElementRef, EventEmitter, NgZone, OnChanges, OnInit, SimpleChanges } fr
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { TruncatePipe } from '@shared//pipe/truncate.pipe';
+import { TruncatePipe } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/truncate.pipe';
 import { MatDialog } from '@angular/material/dialog';
-import { DeviceProfileId } from '@shared/models/id/device-profile-id';
-import { DeviceProfile, DeviceProfileInfo, DeviceTransportType } from '@shared/models/device.models';
-import { DeviceProfileService } from '@core/http/device-profile.service';
+import { DeviceProfileId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/device-profile-id';
+import { DeviceProfile, DeviceProfileInfo, DeviceTransportType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { DeviceProfileService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/device-profile.service';
 import { MatAutocomplete } from '@angular/material/autocomplete';
 import { SubscriptSizing } from '@angular/material/form-field';
 import * as i0 from "@angular/core";

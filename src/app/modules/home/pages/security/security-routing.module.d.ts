@@ -1,11 +1,11 @@
 import { Resolve } from '@angular/router';
-import { User } from '@shared/models/user.model';
+import { User } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { UserService } from '@core/http/user.service';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { UserService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/user.service';
 import { Observable } from 'rxjs';
-import { TwoFactorAuthProviderType } from '@shared/models/two-factor-auth.models';
-import { TwoFactorAuthenticationService } from '@core/http/two-factor-authentication.service';
+import { TwoFactorAuthProviderType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/two-factor-auth.models';
+import { TwoFactorAuthenticationService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/two-factor-authentication.service';
 import * as i0 from "@angular/core";
 import * as i1 from "@angular/router";
 export declare class UserProfileResolver implements Resolve<User> {

@@ -1,7 +1,7 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { DynamicValueSourceType, FilterPredicateValue } from '@shared/models/query/query.models';
-import { AlarmConditionType } from '@shared/models/device.models';
+import { DynamicValueSourceType, FilterPredicateValue } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { AlarmConditionType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import * as i0 from "@angular/core";
 export declare class AlarmDurationPredicateValueComponent implements ControlValueAccessor, OnInit {
     private fb;

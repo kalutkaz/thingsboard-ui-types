@@ -1,8 +1,8 @@
 import { ChangeDetectorRef, EventEmitter, OnInit } from '@angular/core';
-import { WidgetsBundle } from '@shared/models/widgets-bundle.model';
-import { IAliasController } from '@core/api/widget-api.models';
-import { WidgetService } from '@core/http/widget.service';
-import { WidgetInfo, widgetType } from '@shared/models/widget.models';
+import { WidgetsBundle } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widgets-bundle.model';
+import { IAliasController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { WidgetService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
+import { WidgetInfo, widgetType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import * as i0 from "@angular/core";

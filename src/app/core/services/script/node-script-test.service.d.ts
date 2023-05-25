@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
-import { RuleChainService } from '@core/http/rule-chain.service';
+import { RuleChainService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/rule-chain.service';
 import { MatDialog } from '@angular/material/dialog';
-import { ScriptLanguage } from '@shared/models/rule-node.models';
+import { ScriptLanguage } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
 import * as i0 from "@angular/core";
 export declare class NodeScriptTestService {
     private ruleChainService;

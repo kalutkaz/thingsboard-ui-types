@@ -1,7 +1,7 @@
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { EntityTabsComponent } from '../../components/entity/entity-tabs.component';
-import { User } from '@app/shared/models/user.model';
+import { User } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
 import * as i0 from "@angular/core";
 export declare class UserTabsComponent extends EntityTabsComponent<User> {
     protected store: Store<AppState>;

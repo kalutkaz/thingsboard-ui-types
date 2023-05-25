@@ -1,9 +1,9 @@
 import { ChangeDetectorRef, NgZone, OnDestroy, Renderer2, ViewContainerRef } from '@angular/core';
-import { NotificationWebsocketService } from '@core/ws/notification-websocket.service';
+import { NotificationWebsocketService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/ws/notification-websocket.service';
 import { MatButton } from '@angular/material/button';
-import { TbPopoverService } from '@shared/components/popover.service';
+import { TbPopoverService } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import * as i0 from "@angular/core";
 export declare class NotificationBellComponent implements OnDestroy {
     private notificationWsService;

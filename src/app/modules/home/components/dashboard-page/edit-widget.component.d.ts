@@ -1,12 +1,12 @@
 import { OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { MatDialog } from '@angular/material/dialog';
-import { Dashboard, WidgetLayout } from '@shared/models/dashboard.models';
-import { IAliasController } from '@core/api/widget-api.models';
-import { Widget } from '@shared/models/widget.models';
-import { WidgetComponentService } from '@home/components/widget/widget-component.service';
+import { Dashboard, WidgetLayout } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { IAliasController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { Widget } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { WidgetComponentService } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/widget-component.service';
 import { WidgetConfigComponentData } from '../../models/widget-component.models';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import * as i0 from "@angular/core";

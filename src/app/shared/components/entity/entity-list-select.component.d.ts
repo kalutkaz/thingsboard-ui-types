@@ -1,11 +1,11 @@
 import { AfterViewInit, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { AliasEntityType, EntityType } from '@shared/models/entity-type.models';
-import { EntityService } from '@core/http/entity.service';
-import { EntityId } from '@shared/models/id/entity-id';
+import { AliasEntityType, EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { EntityService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
+import { EntityId } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import * as i0 from "@angular/core";
 interface EntityListSelectModel {
     entityType: EntityType | AliasEntityType;

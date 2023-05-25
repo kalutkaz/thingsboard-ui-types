@@ -1,8 +1,8 @@
-import { DashboardState } from '@shared/models/dashboard.models';
+import { DashboardState } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 import { CollectionViewer, DataSource } from '@angular/cdk/collections';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
-import { PageLink } from '@shared/models/page/page-link';
+import { PageData } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { PageLink } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 export interface DashboardStateInfo extends DashboardState {
     id: string;
 }

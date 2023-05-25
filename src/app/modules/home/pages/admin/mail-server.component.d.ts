@@ -1,13 +1,13 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { PageComponent } from '@shared/components/page.component';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Router } from '@angular/router';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { AdminSettings, MailServerSettings } from '@shared/models/settings.models';
-import { AdminService } from '@core/http/admin.service';
+import { AdminSettings, MailServerSettings } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models';
+import { AdminService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/admin.service';
 import { TranslateService } from '@ngx-translate/core';
-import { HasConfirmForm } from '@core/guards/confirm-on-exit.guard';
+import { HasConfirmForm } from '../../../../../../../thingsboard/ui-ngx/src/app/core/guards/confirm-on-exit.guard';
 import * as i0 from "@angular/core";
 export declare class MailServerComponent extends PageComponent implements OnInit, OnDestroy, HasConfirmForm {
     protected store: Store<AppState>;

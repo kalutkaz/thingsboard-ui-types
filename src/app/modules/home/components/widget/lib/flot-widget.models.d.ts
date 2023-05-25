@@ -1,5 +1,5 @@
 /// <reference types="flot" />
-/// <reference types="src/typings/jquery.flot.typings" />
+/// <reference types="../../../../../../../../thingsboard/ui-ngx/src/typings/jquery.flot.typings" />
 import { DataKey, Datasource, DatasourceData, FormattedData } from '@shared/models/widget.models';
 import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
 import { ComparisonDuration } from '@shared/models/time/time.models';

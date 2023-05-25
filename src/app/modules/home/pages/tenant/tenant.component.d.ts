@@ -1,11 +1,11 @@
 import { ChangeDetectorRef } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { Tenant, TenantInfo } from '@app/shared/models/tenant.model';
+import { Tenant, TenantInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/tenant.model';
 import { TranslateService } from '@ngx-translate/core';
 import { ContactBasedComponent } from '../../components/entity/contact-based.component';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import * as i0 from "@angular/core";
 export declare class TenantComponent extends ContactBasedComponent<TenantInfo> {
     protected store: Store<AppState>;

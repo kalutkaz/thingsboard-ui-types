@@ -1,11 +1,11 @@
 import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DialogComponent } from '@app/shared/components/dialog.component';
-import { DashboardId } from '@shared/models/id/dashboard-id';
-import { DashboardService } from '@core/http/dashboard.service';
+import { DialogComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
+import { DashboardId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/dashboard-id';
+import { DashboardService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/dashboard.service';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { BehaviorSubject } from 'rxjs';
 import * as i0 from "@angular/core";

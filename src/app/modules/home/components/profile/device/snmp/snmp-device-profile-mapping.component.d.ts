@@ -1,7 +1,7 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { SnmpMapping } from '@shared/models/device.models';
-import { DataType } from '@shared/models/constants';
+import { SnmpMapping } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { DataType } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/constants';
 import * as i0 from "@angular/core";
 export declare class SnmpDeviceProfileMappingComponent implements OnInit, OnDestroy, ControlValueAccessor, Validator {
     private fb;

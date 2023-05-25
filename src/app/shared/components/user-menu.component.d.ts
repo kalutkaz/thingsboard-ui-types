@@ -1,9 +1,9 @@
 import { OnDestroy, OnInit } from '@angular/core';
-import { User } from '@shared/models/user.model';
-import { Authority } from '@shared/models/authority.enum';
+import { User } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
+import { Authority } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/authority.enum';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { AuthService } from '@core/auth/auth.service';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { AuthService } from '../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
 import { Router } from '@angular/router';
 import * as i0 from "@angular/core";
 export declare class UserMenuComponent implements OnInit, OnDestroy {

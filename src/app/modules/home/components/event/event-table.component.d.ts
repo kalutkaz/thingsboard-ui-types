@@ -2,12 +2,12 @@ import { AfterViewInit, ChangeDetectorRef, OnInit, ViewContainerRef } from '@ang
 import { TranslateService } from '@ngx-translate/core';
 import { DatePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntitiesTableComponent } from '@home/components/entity/entities-table.component';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntitiesTableComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/entity/entities-table.component';
 import { EventTableConfig } from './event-table-config';
-import { EventService } from '@core/http/event.service';
-import { DialogService } from '@core/services/dialog.service';
-import { DebugEventType, EventType } from '@shared/models/event.models';
+import { EventService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/event.service';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { DebugEventType, EventType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/event.models';
 import { Overlay } from '@angular/cdk/overlay';
 import * as i0 from "@angular/core";
 export declare class EventTableComponent implements OnInit, AfterViewInit {

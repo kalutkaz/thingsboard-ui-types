@@ -2,13 +2,13 @@ import { AfterViewInit, ComponentFactoryResolver, Injector } from '@angular/core
 import { ErrorStateMatcher } from '@angular/material/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormControl, FormGroupDirective, NgForm } from '@angular/forms';
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DialogComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Router } from '@angular/router';
-import { AssetProfile } from '@shared/models/asset.models';
-import { AssetProfileComponent } from '@home/components/profile/asset-profile.component';
-import { AssetProfileService } from '@core/http/asset-profile.service';
+import { AssetProfile } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/asset.models';
+import { AssetProfileComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/profile/asset-profile.component';
+import { AssetProfileService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/asset-profile.service';
 import * as i0 from "@angular/core";
 export interface AssetProfileDialogData {
     assetProfile: AssetProfile;

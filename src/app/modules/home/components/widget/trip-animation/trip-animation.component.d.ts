@@ -1,9 +1,9 @@
 import { AfterViewInit, ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
-import { WidgetUnitedTripAnimationSettings } from '@home/components/widget/lib/maps/map-models';
+import { WidgetUnitedTripAnimationSettings } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/maps/map-models';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { WidgetContext } from '@app/modules/home/models/widget-component.models';
-import { FormattedData, WidgetConfig } from '@shared/models/widget.models';
-import { MapWidgetInterface } from '@home/components/widget/lib/maps/map-widget.interface';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { FormattedData, WidgetConfig } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { MapWidgetInterface } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/maps/map-widget.interface';
 import * as i0 from "@angular/core";
 export declare class TripAnimationComponent implements OnInit, AfterViewInit, OnDestroy {
     private cd;

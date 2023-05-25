@@ -1,16 +1,16 @@
 import { OnInit } from '@angular/core';
-import { AuditLogService } from '@core/http/audit-log.service';
+import { AuditLogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/audit-log.service';
 import { TranslateService } from '@ngx-translate/core';
 import { DatePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
-import { AuditLogMode } from '@shared/models/audit-log.models';
-import { EntityId } from '@shared/models/id/entity-id';
-import { UserId } from '@shared/models/id/user-id';
-import { CustomerId } from '@shared/models/id/customer-id';
-import { AuditLogTableConfig } from '@home/components/audit-log/audit-log-table-config';
-import { EntitiesTableComponent } from '@home/components/entity/entities-table.component';
+import { AuditLogMode } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/audit-log.models';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { UserId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/user-id';
+import { CustomerId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/customer-id';
+import { AuditLogTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/audit-log/audit-log-table-config';
+import { EntitiesTableComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/entity/entities-table.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { ActivatedRoute } from '@angular/router';
 import * as i0 from "@angular/core";
 export declare class AuditLogTableComponent implements OnInit {

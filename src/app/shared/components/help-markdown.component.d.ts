@@ -1,6 +1,6 @@
 import { EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { HelpService } from '@core/services/help.service';
+import { HelpService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/help.service';
 import * as i0 from "@angular/core";
 export declare class HelpMarkdownComponent implements OnDestroy, OnInit, OnChanges {
     private help;

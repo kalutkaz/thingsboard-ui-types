@@ -1,6 +1,6 @@
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { NotificationTemplate } from '@shared/models/notification.models';
-import { NotificationService } from '@core/http/notification.service';
+import { EntityTableConfig } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { NotificationTemplate } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
+import { NotificationService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/notification.service';
 import { MatDialog } from '@angular/material/dialog';
 import { TranslateService } from '@ngx-translate/core';
 import { ActivatedRouteSnapshot, Resolve } from '@angular/router';

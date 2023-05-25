@@ -1,9 +1,9 @@
-import { BaseData, ExportableEntity } from '@shared/models/base-data';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { CustomerId } from '@shared/models/id/customer-id';
-import { EntityViewId } from '@shared/models/id/entity-view-id';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntitySearchQuery } from '@shared/models/relation.models';
+import { BaseData, ExportableEntity } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { CustomerId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/customer-id';
+import { EntityViewId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-view-id';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntitySearchQuery } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
 export interface AttributesEntityView {
     cs: Array<string>;
     ss: Array<string>;

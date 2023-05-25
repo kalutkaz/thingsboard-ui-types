@@ -1,9 +1,9 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { AdminSettings, AutoCommitSettings, FeaturesInfo, JwtSettings, MailServerSettings, RepositorySettings, RepositorySettingsInfo, SecuritySettings, TestSmsRequest, UpdateMessage } from '@shared/models/settings.models';
-import { EntitiesVersionControlService } from '@core/http/entities-version-control.service';
-import { LoginResponse } from '@shared/models/login.models';
+import { AdminSettings, AutoCommitSettings, FeaturesInfo, JwtSettings, MailServerSettings, RepositorySettings, RepositorySettingsInfo, SecuritySettings, TestSmsRequest, UpdateMessage } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models';
+import { EntitiesVersionControlService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/entities-version-control.service';
+import { LoginResponse } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/login.models';
 import * as i0 from "@angular/core";
 export declare class AdminService {
     private http;

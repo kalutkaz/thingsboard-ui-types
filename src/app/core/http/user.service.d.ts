@@ -1,9 +1,9 @@
 import { RequestConfig } from './http-utils';
-import { User, UserEmailInfo } from '@shared/models/user.model';
+import { User, UserEmailInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { PageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
 import * as i0 from "@angular/core";
 export declare class UserService {
     private http;

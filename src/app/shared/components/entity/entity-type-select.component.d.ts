@@ -1,10 +1,10 @@
 import { AfterViewInit, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { AliasEntityType, EntityType } from '@app/shared/models/entity-type.models';
-import { EntityService } from '@core/http/entity.service';
+import { AliasEntityType, EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { EntityService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import * as i0 from "@angular/core";
 export declare class EntityTypeSelectComponent implements ControlValueAccessor, OnInit, AfterViewInit, OnChanges {
     private store;

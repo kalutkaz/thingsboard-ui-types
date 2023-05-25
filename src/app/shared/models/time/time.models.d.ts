@@ -1,4 +1,4 @@
-import { TimeService } from '@core/services/time.service';
+import { TimeService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/time.service';
 import * as moment_ from 'moment';
 export declare const SECOND = 1000;
 export declare const MINUTE: number;

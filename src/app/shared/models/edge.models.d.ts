@@ -1,11 +1,11 @@
-import { BaseData } from '@shared/models/base-data';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { CustomerId } from '@shared/models/id/customer-id';
-import { EdgeId } from '@shared/models/id/edge-id';
-import { EntitySearchQuery } from '@shared/models/relation.models';
-import { RuleChainId } from '@shared/models/id/rule-chain-id';
-import { BaseEventBody } from '@shared/models/event.models';
-import { EventId } from '@shared/models/id/event-id';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { CustomerId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/customer-id';
+import { EdgeId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/edge-id';
+import { EntitySearchQuery } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
+import { RuleChainId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/rule-chain-id';
+import { BaseEventBody } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/event.models';
+import { EventId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/event-id';
 export interface Edge extends BaseData<EdgeId> {
     tenantId?: TenantId;
     customerId?: CustomerId;

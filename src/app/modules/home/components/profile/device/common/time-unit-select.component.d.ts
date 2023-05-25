@@ -1,6 +1,6 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { FullTimeUnit, TimeUnit, TimeUnitMilli } from '@shared/models/time/time.models';
+import { FullTimeUnit, TimeUnit, TimeUnitMilli } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import * as i0 from "@angular/core";
 export declare class TimeUnitSelectComponent implements OnInit, OnDestroy, ControlValueAccessor, Validator {
     private fb;

@@ -1,21 +1,21 @@
-import { BaseData, ExportableEntity } from '@shared/models/base-data';
+import { BaseData, ExportableEntity } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
 import { DeviceId } from './id/device-id';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { CustomerId } from '@shared/models/id/customer-id';
-import { DeviceCredentialsId } from '@shared/models/id/device-credentials-id';
-import { EntitySearchQuery } from '@shared/models/relation.models';
-import { DeviceProfileId } from '@shared/models/id/device-profile-id';
-import { RuleChainId } from '@shared/models/id/rule-chain-id';
-import { EntityInfoData } from '@shared/models/entity.models';
-import { FilterPredicateValue, KeyFilter } from '@shared/models/query/query.models';
-import { TimeUnit } from '@shared/models/time/time.models';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { CustomerId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/customer-id';
+import { DeviceCredentialsId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/device-credentials-id';
+import { EntitySearchQuery } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
+import { DeviceProfileId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/device-profile-id';
+import { RuleChainId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/rule-chain-id';
+import { EntityInfoData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity.models';
+import { FilterPredicateValue, KeyFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { TimeUnit } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import { AbstractControl, ValidationErrors } from '@angular/forms';
-import { OtaPackageId } from '@shared/models/id/ota-package-id';
-import { DashboardId } from '@shared/models/id/dashboard-id';
-import { DataType } from '@shared/models/constants';
-import { PowerMode } from '@home/components/profile/device/lwm2m/lwm2m-profile-config.models';
-import { PageLink } from '@shared/models/page/page-link';
-import { EdgeId } from '@shared/models/id/edge-id';
+import { OtaPackageId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/ota-package-id';
+import { DashboardId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/dashboard-id';
+import { DataType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/constants';
+import { PowerMode } from '../../../../../thingsboard/ui-ngx/src/app/modules/home/components/profile/device/lwm2m/lwm2m-profile-config.models';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { EdgeId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/edge-id';
 export declare enum DeviceProfileType {
     DEFAULT = "DEFAULT",
     SNMP = "SNMP"

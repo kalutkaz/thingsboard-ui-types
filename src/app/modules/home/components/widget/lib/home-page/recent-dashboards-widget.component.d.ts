@@ -1,18 +1,18 @@
 import { AfterViewInit, ChangeDetectorRef, OnDestroy, OnInit, QueryList } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { Authority } from '@shared/models/authority.enum';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { Authority } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/authority.enum';
 import { Observable } from 'rxjs';
-import { WidgetContext } from '@home/models/widget-component.models';
-import { AbstractUserDashboardInfo, LastVisitedDashboardInfo, UserDashboardsInfo } from '@shared/models/user-settings.models';
-import { UserSettingsService } from '@core/http/user-settings.service';
+import { WidgetContext } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { AbstractUserDashboardInfo, LastVisitedDashboardInfo, UserDashboardsInfo } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user-settings.models';
+import { UserSettingsService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/user-settings.service';
 import { CollectionViewer, DataSource } from '@angular/cdk/collections';
-import { PageData } from '@shared/models/page/page-data';
-import { PageLink } from '@shared/models/page/page-link';
+import { PageData } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { PageLink } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { MatSort } from '@angular/material/sort';
-import { DashboardInfo } from '@shared/models/dashboard.models';
-import { DashboardAutocompleteComponent } from '@shared/components/dashboard-autocomplete.component';
+import { DashboardInfo } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { DashboardAutocompleteComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dashboard-autocomplete.component';
 import * as i0 from "@angular/core";
 export declare class RecentDashboardsWidgetComponent extends PageComponent implements OnInit, AfterViewInit, OnDestroy {
     protected store: Store<AppState>;

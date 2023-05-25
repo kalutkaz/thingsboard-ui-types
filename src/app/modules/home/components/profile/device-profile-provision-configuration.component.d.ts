@@ -1,8 +1,8 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { DeviceProvisionConfiguration, DeviceProvisionType } from '@shared/models/device.models';
+import { DeviceProvisionConfiguration, DeviceProvisionType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export declare class DeviceProfileProvisionConfigurationComponent implements ControlValueAccessor, OnInit, Validator {

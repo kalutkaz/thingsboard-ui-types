@@ -2,8 +2,8 @@ import { Type } from '@angular/core';
 import { Observable } from 'rxjs';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { TranslateService } from '@ngx-translate/core';
-import { AuthService } from '@core/auth/auth.service';
-import { DynamicComponentFactoryService } from '@core/services/dynamic-component-factory.service';
+import { AuthService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
+import { DynamicComponentFactoryService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/dynamic-component-factory.service';
 import { CustomDialogComponent } from './custom-dialog.component';
 import * as i0 from "@angular/core";
 export declare class CustomDialogService {

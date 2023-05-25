@@ -1,12 +1,12 @@
 import { ChangeDetectorRef } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { EntityComponent } from '../../components/entity/entity.component';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { Dashboard } from '@shared/models/dashboard.models';
-import { DashboardService } from '@core/http/dashboard.service';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
+import { Dashboard } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { DashboardService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/dashboard.service';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import * as i0 from "@angular/core";
 export declare class DashboardFormComponent extends EntityComponent<Dashboard> {
     protected store: Store<AppState>;

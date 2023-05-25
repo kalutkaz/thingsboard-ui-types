@@ -3,12 +3,12 @@ import { MatFormFieldAppearance } from '@angular/material/form-field';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { AliasEntityType, EntityType } from '@shared/models/entity-type.models';
-import { BaseData } from '@shared/models/base-data';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntityService } from '@core/http/entity.service';
+import { AliasEntityType, EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { BaseData } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { EntityId } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntityService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import * as i0 from "@angular/core";
 export declare class EntityAutocompleteComponent implements ControlValueAccessor, OnInit, AfterViewInit {
     private store;

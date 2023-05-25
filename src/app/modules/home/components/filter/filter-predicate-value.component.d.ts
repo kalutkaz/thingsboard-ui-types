@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { DynamicValueSourceType, EntityKeyValueType, FilterPredicateValue } from '@shared/models/query/query.models';
+import { DynamicValueSourceType, EntityKeyValueType, FilterPredicateValue } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import * as i0 from "@angular/core";
 export declare class FilterPredicateValueComponent implements ControlValueAccessor, Validator, OnInit {
     private fb;

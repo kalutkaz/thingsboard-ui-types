@@ -1,12 +1,12 @@
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { PageComponent } from '@shared/components/page.component';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { AdminService } from '@core/http/admin.service';
-import { HasConfirmForm } from '@core/guards/confirm-on-exit.guard';
+import { AdminService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/admin.service';
+import { HasConfirmForm } from '../../../../../../../thingsboard/ui-ngx/src/app/core/guards/confirm-on-exit.guard';
 import { MatDialog } from '@angular/material/dialog';
-import { NotificationService } from '@core/http/notification.service';
+import { NotificationService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/notification.service';
 import * as i0 from "@angular/core";
 export declare class SmsProviderComponent extends PageComponent implements HasConfirmForm {
     protected store: Store<AppState>;

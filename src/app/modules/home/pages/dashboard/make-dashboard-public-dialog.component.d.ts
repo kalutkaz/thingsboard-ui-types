@@ -1,12 +1,12 @@
 import { OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder } from '@angular/forms';
-import { DashboardService } from '@core/http/dashboard.service';
-import { DashboardInfo } from '@app/shared/models/dashboard.models';
+import { DashboardService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/dashboard.service';
+import { DashboardInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 import { TranslateService } from '@ngx-translate/core';
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DialogComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Router } from '@angular/router';
 import * as i0 from "@angular/core";
 export interface MakeDashboardPublicDialogData {

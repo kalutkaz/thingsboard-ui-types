@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { IModulesMap } from '@modules/common/modules-map.models';
+import { IModulesMap } from '../../../../../thingsboard/ui-ngx/src/app/modules/common/modules-map.models';
 export declare const Constants: {
     serverErrorCode: {
         general: number;

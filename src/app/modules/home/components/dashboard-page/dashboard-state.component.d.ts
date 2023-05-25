@@ -1,12 +1,12 @@
 import { ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { Dashboard } from '@shared/models/dashboard.models';
-import { IAliasController } from '@core/api/widget-api.models';
-import { WidgetContext } from '@home/models/widget-component.models';
-import { IDashboardComponent } from '@home/models/dashboard-component.models';
-import { EntityId } from '@shared/models/id/entity-id';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { Dashboard } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { IAliasController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { WidgetContext } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { IDashboardComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/dashboard-component.models';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import * as i0 from "@angular/core";
 export declare class DashboardStateComponent extends PageComponent implements OnInit, OnDestroy {
     protected store: Store<AppState>;

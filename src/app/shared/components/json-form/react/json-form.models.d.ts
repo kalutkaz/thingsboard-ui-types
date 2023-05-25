@@ -1,5 +1,5 @@
 import tinycolor from 'tinycolor2';
-import { GroupInfo } from '@shared/models/widget.models';
+import { GroupInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { MouseEvent } from 'react';
 export interface SchemaValidationResult {
     valid: boolean;

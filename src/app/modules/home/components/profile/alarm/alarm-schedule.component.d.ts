@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { AlarmSchedule, AlarmScheduleType } from '@shared/models/device.models';
+import { AlarmSchedule, AlarmScheduleType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import { MatCheckboxChange } from '@angular/material/checkbox';
 import * as i0 from "@angular/core";
 export declare class AlarmScheduleComponent implements ControlValueAccessor, Validator, OnInit {

@@ -1,10 +1,10 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { PageData } from '@shared/models/page/page-data';
-import { EntityId } from '@shared/models/id/entity-id';
-import { Alarm, AlarmInfo, AlarmQuery, AlarmQueryV2, AlarmSearchStatus, AlarmSeverity, AlarmStatus } from '@shared/models/alarm.models';
-import { UtilsService } from '@core/services/utils.service';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { Alarm, AlarmInfo, AlarmQuery, AlarmQueryV2, AlarmSearchStatus, AlarmSeverity, AlarmStatus } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import * as i0 from "@angular/core";
 export declare class AlarmService {
     private http;

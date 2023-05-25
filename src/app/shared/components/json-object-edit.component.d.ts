@@ -1,8 +1,8 @@
 import { ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormControl, Validator } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { RafService } from '@core/services/raf.service';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { RafService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/raf.service';
 import * as i0 from "@angular/core";
 export declare class JsonObjectEditComponent implements OnInit, ControlValueAccessor, Validator, OnDestroy {
     elementRef: ElementRef;

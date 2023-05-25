@@ -1,12 +1,12 @@
 import { ActivatedRouteSnapshot, CanActivate, Resolve, Router, RouterStateSnapshot, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
-import { BreadCrumbLabelFunction } from '@shared/components/breadcrumb';
-import { RuleChainMetaData, RuleChain } from '@shared/models/rule-chain.models';
-import { RuleChainService } from '@core/http/rule-chain.service';
-import { RuleChainPageComponent } from '@home/pages/rulechain/rulechain-page.component';
-import { RuleNodeComponentDescriptor } from '@shared/models/rule-node.models';
-import { ItemBufferService } from '@core/public-api';
-import { IModulesMap } from '@modules/common/modules-map.models';
+import { BreadCrumbLabelFunction } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/breadcrumb';
+import { RuleChainMetaData, RuleChain } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
+import { RuleChainService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/rule-chain.service';
+import { RuleChainPageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/pages/rulechain/rulechain-page.component';
+import { RuleNodeComponentDescriptor } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
+import { ItemBufferService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/public-api';
+import { IModulesMap } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/common/modules-map.models';
 import * as i0 from "@angular/core";
 import * as i1 from "@angular/router";
 export declare class RuleChainResolver implements Resolve<RuleChain> {

@@ -1,7 +1,7 @@
 import { Compiler, ComponentFactory, Injector, Type } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { IModulesMap } from '@modules/common/modules-map.models';
+import { IModulesMap } from '../../../../../thingsboard/ui-ngx/src/app/modules/common/modules-map.models';
 import * as i0 from "@angular/core";
 export interface ModulesWithFactories {
     modules: Type<any>[];

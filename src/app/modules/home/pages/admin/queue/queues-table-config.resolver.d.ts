@@ -1,16 +1,16 @@
 import { ActivatedRouteSnapshot, Resolve, Router } from '@angular/router';
-import { EntityTableColumn, EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { QueueInfo, ServiceType } from '@shared/models/queue.models';
+import { EntityTableColumn, EntityTableConfig } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { QueueInfo, ServiceType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/queue.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { BroadcastService } from '@core/services/broadcast.service';
-import { CustomerService } from '@core/http/customer.service';
-import { DialogService } from '@core/services/dialog.service';
-import { HomeDialogsService } from '@home/dialogs/home-dialogs.service';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { BroadcastService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/broadcast.service';
+import { CustomerService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/customer.service';
+import { DialogService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { HomeDialogsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/dialogs/home-dialogs.service';
 import { Observable } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
-import { QueueService } from '@core/http/queue.service';
-import { EntityAction } from '@home/models/entity/entity-component.models';
+import { QueueService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/queue.service';
+import { EntityAction } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entity-component.models';
 import * as i0 from "@angular/core";
 export declare class QueuesTableConfigResolver implements Resolve<EntityTableConfig<QueueInfo>> {
     private store;

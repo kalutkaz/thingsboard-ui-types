@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { DisplayColumn } from '@home/components/widget/lib/table-widget.models';
+import { DisplayColumn } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/table-widget.models';
 import * as i0 from "@angular/core";
 export declare const DISPLAY_COLUMNS_PANEL_DATA: InjectionToken<any>;
 export interface DisplayColumnsPanelData {

@@ -1,6 +1,6 @@
 import { ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { Hotkey } from 'angular2-hotkeys';
-import { TbCheatSheetComponent } from '@shared/components/cheatsheet.component';
+import { TbCheatSheetComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/cheatsheet.component';
 import * as i0 from "@angular/core";
 export declare class TbHotkeysDirective implements OnInit, OnDestroy {
     private elementRef;

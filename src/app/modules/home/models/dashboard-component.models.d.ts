@@ -1,13 +1,13 @@
 import { GridsterComponent, GridsterConfig, GridsterItem, GridsterItemComponentInterface } from 'angular-gridster2';
-import { Widget, WidgetPosition } from '@app/shared/models/widget.models';
-import { WidgetLayout, WidgetLayouts } from '@app/shared/models/dashboard.models';
+import { Widget, WidgetPosition } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { WidgetLayout, WidgetLayouts } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 import { IDashboardWidget, WidgetAction, WidgetContext, WidgetHeaderAction } from './widget-component.models';
-import { Timewindow } from '@shared/models/time/time.models';
+import { Timewindow } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import { Observable } from 'rxjs';
 import { IterableDiffer, KeyValueDiffer } from '@angular/core';
-import { IAliasController, IStateController } from '@app/core/api/widget-api.models';
-import { UtilsService } from '@core/services/utils.service';
-import { TbPopoverComponent } from '@shared/components/popover.component';
+import { IAliasController, IStateController } from '../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { UtilsService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { TbPopoverComponent } from '../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
 export interface WidgetsData {
     widgets: Array<Widget>;
     widgetLayouts?: WidgetLayouts;

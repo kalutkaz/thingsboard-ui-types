@@ -1,12 +1,12 @@
 import { ChangeDetectorRef, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormControl, Validator } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { UtilsService } from '@core/services/utils.service';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { TranslateService } from '@ngx-translate/core';
-import { RafService } from '@core/services/raf.service';
-import { TbEditorCompleter } from '@shared/models/ace/completion.models';
-import { ScriptLanguage } from "@shared/models/rule-node.models";
+import { RafService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/raf.service';
+import { TbEditorCompleter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/ace/completion.models';
+import { ScriptLanguage } from "../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models";
 import * as i0 from "@angular/core";
 export declare class JsFuncComponent implements OnInit, OnDestroy, ControlValueAccessor, Validator {
     elementRef: ElementRef;

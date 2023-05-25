@@ -1,15 +1,15 @@
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { DebugEventType, Event, EventType } from '@shared/models/event.models';
-import { TimePageLink } from '@shared/models/page/page-link';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { DebugEventType, Event, EventType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/event.models';
+import { TimePageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { TranslateService } from '@ngx-translate/core';
 import { DatePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EventService } from '@app/core/http/event.service';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EventService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/event.service';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
-import { DialogService } from '@core/services/dialog.service';
-import { ContentType } from '@shared/models/constants';
+import { PageData } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { ContentType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/constants';
 import { Overlay } from '@angular/cdk/overlay';
 import { ChangeDetectorRef, ViewContainerRef } from '@angular/core';
 export declare class EventTableConfig extends EntityTableConfig<Event, TimePageLink> {

@@ -2,20 +2,20 @@ import { ChangeDetectorRef, ElementRef, OnChanges, OnInit, Renderer2, SimpleChan
 import { ControlValueAccessor, FormGroupDirective, NgForm, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
 import { MatAutocomplete } from '@angular/material/autocomplete';
 import { MatChipGrid, MatChipInputEvent, MatChipRow } from '@angular/material/chips';
-import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
-import { DataKey, DatasourceType, JsonSettingsSchema, Widget, widgetType } from '@shared/models/widget.models';
-import { IAliasController } from '@core/api/widget-api.models';
+import { DataKeyType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
+import { DataKey, DatasourceType, JsonSettingsSchema, Widget, widgetType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { IAliasController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import { DataKeysCallbacks } from './data-keys.component.models';
-import { UtilsService } from '@core/services/utils.service';
+import { UtilsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { ErrorStateMatcher } from '@angular/material/core';
-import { TruncatePipe } from '@shared/pipe/truncate.pipe';
-import { DialogService } from '@core/services/dialog.service';
+import { TruncatePipe } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/truncate.pipe';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { MatDialog } from '@angular/material/dialog';
-import { Dashboard } from '@shared/models/dashboard.models';
+import { Dashboard } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 import { DndDropEvent } from 'ngx-drag-drop/lib/dnd-dropzone.directive';
 import * as i0 from "@angular/core";
 export declare class DataKeysComponent implements ControlValueAccessor, OnInit, OnChanges, ErrorStateMatcher {

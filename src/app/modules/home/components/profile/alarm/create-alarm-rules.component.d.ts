@@ -1,9 +1,9 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
-import { DeviceProfileAlarmRule } from '@shared/models/device.models';
+import { DeviceProfileAlarmRule } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import { MatDialog } from '@angular/material/dialog';
-import { AlarmSeverity } from '@shared/models/alarm.models';
-import { EntityId } from '@shared/models/id/entity-id';
+import { AlarmSeverity } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
+import { EntityId } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import * as i0 from "@angular/core";
 export declare class CreateAlarmRulesComponent implements ControlValueAccessor, OnInit, Validator, OnDestroy {
     private dialog;

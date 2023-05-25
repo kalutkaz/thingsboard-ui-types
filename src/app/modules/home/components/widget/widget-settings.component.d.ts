@@ -2,12 +2,12 @@ import { AfterViewInit, ComponentFactoryResolver, OnChanges, OnDestroy, OnInit, 
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
-import { JsonFormComponent } from '@shared/components/json-form/json-form.component';
-import { JsonFormComponentData } from '@shared/components/json-form/json-form-component.models';
-import { Widget } from '@shared/models/widget.models';
-import { Dashboard } from '@shared/models/dashboard.models';
-import { WidgetService } from '@core/http/widget.service';
-import { IAliasController } from '@core/api/widget-api.models';
+import { JsonFormComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/json-form/json-form.component';
+import { JsonFormComponentData } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/json-form/json-form-component.models';
+import { Widget } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { Dashboard } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { WidgetService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
+import { IAliasController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import * as i0 from "@angular/core";
 export declare class WidgetSettingsComponent implements ControlValueAccessor, OnInit, OnDestroy, AfterViewInit, OnChanges {
     private translate;

@@ -2,7 +2,7 @@ import L from 'leaflet';
 import { MarkerIconInfo, MarkerIconReadyFunction, WidgetMarkersSettings } from './map-models';
 import tinycolor from 'tinycolor2';
 import LeafletMap from './leaflet-map';
-import { FormattedData } from '@shared/models/widget.models';
+import { FormattedData } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 export declare class Marker {
     private map;
     private location;

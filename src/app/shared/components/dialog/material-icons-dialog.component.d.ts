@@ -1,10 +1,10 @@
 import { AfterViewInit, OnInit, QueryList } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Router } from '@angular/router';
-import { DialogComponent } from '@shared/components/dialog.component';
-import { UtilsService } from '@core/services/utils.service';
+import { DialogComponent } from '../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
+import { UtilsService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { UntypedFormControl } from '@angular/forms';
 import { Observable } from 'rxjs';
 import * as i0 from "@angular/core";

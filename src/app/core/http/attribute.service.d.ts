@@ -1,9 +1,9 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { EntityId } from '@shared/models/id/entity-id';
-import { AttributeData, AttributeScope, DataSortOrder, TimeseriesData } from '@shared/models/telemetry/telemetry.models';
-import { AggregationType } from '@shared/models/time/time.models';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { AttributeData, AttributeScope, DataSortOrder, TimeseriesData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
+import { AggregationType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import * as i0 from "@angular/core";
 export declare class AttributeService {
     private http;

@@ -1,9 +1,9 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
-import { DeviceProfileAlarm } from '@shared/models/device.models';
-import { EntityId } from '@shared/models/id/entity-id';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { DeviceProfileAlarm } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { EntityId } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import * as i0 from "@angular/core";
 export declare class DeviceProfileAlarmsComponent implements ControlValueAccessor, OnInit, Validator, OnDestroy {
     private store;

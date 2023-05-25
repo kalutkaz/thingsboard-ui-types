@@ -1,9 +1,9 @@
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntityType } from '@shared/models/entity-type.models';
-import { ExportableEntity } from '@shared/models/base-data';
-import { EntityRelation } from '@shared/models/relation.models';
-import { Device, DeviceCredentials } from '@shared/models/device.models';
-import { RuleChain, RuleChainMetaData } from '@shared/models/rule-chain.models';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntityType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { ExportableEntity } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { EntityRelation } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
+import { Device, DeviceCredentials } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { RuleChain, RuleChainMetaData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
 export declare const exportableEntityTypes: Array<EntityType>;
 export interface VersionCreateConfig {
     saveRelations: boolean;

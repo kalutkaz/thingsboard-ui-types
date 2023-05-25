@@ -1,8 +1,8 @@
 import { OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { PageComponent } from '@shared/components/page.component';
-import { Dashboard } from '@shared/models/dashboard.models';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { Dashboard } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 import * as i0 from "@angular/core";
 export declare class ApiUsageComponent extends PageComponent implements OnInit {
     protected store: Store<AppState>;

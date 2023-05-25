@@ -1,8 +1,8 @@
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { EntityTableHeaderComponent } from '../../components/entity/entity-table-header.component';
-import { DeviceInfo, DeviceInfoFilter } from '@app/shared/models/device.models';
-import { EntityType } from '@shared/models/entity-type.models';
+import { DeviceInfo, DeviceInfoFilter } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import * as i0 from "@angular/core";
 export declare class DeviceTableHeaderComponent extends EntityTableHeaderComponent<DeviceInfo> {
     protected store: Store<AppState>;

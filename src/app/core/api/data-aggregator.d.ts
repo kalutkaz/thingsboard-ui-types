@@ -1,6 +1,6 @@
-import { AggKey, IndexedSubscriptionData } from '@app/shared/models/telemetry/telemetry.models';
-import { SubscriptionTimewindow } from '@shared/models/time/time.models';
-import { UtilsService } from '@core/services/utils.service';
+import { AggKey, IndexedSubscriptionData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
+import { SubscriptionTimewindow } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 export declare type onAggregatedData = (data: IndexedSubscriptionData, detectChanges: boolean) => void;
 export declare class DataAggregator {
     private onDataCb;

@@ -1,12 +1,12 @@
 import { ActivatedRouteSnapshot, Resolve, Routes } from '@angular/router';
-import { BreadCrumbLabelFunction } from '@shared/components/breadcrumb';
+import { BreadCrumbLabelFunction } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/breadcrumb';
 import { Observable } from 'rxjs';
-import { WidgetsBundle } from '@shared/models/widgets-bundle.model';
-import { WidgetService } from '@core/http/widget.service';
-import { WidgetEditorComponent } from '@home/pages/widget/widget-editor.component';
-import { WidgetInfo } from '@home/models/widget-component.models';
-import { WidgetTypeDetails } from '@app/shared/models/widget.models';
-import { WidgetsData } from '@home/models/dashboard-component.models';
+import { WidgetsBundle } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widgets-bundle.model';
+import { WidgetService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
+import { WidgetEditorComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/pages/widget/widget-editor.component';
+import { WidgetInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { WidgetTypeDetails } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { WidgetsData } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/dashboard-component.models';
 import * as i0 from "@angular/core";
 import * as i1 from "@angular/router";
 export interface WidgetEditorData {

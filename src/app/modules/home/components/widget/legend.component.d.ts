@@ -1,5 +1,5 @@
 import { EventEmitter, OnInit } from '@angular/core';
-import { LegendConfig, LegendData, LegendKey } from '@shared/models/widget.models';
+import { LegendConfig, LegendData, LegendKey } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import * as i0 from "@angular/core";
 export declare class LegendComponent implements OnInit {
     legendConfig: LegendConfig;

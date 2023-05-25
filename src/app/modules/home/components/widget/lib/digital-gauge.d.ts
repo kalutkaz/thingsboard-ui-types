@@ -1,7 +1,7 @@
-import { WidgetContext } from '@home/models/widget-component.models';
-import { attributesGaugeType, AttributeSourceProperty, ColorLevelSetting, FixedLevelColors } from '@home/components/widget/lib/digital-gauge.models';
-import { Datasource, DatasourceData } from '@shared/models/widget.models';
-import { IWidgetSubscription } from '@core/api/widget-api.models';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { attributesGaugeType, AttributeSourceProperty, ColorLevelSetting, FixedLevelColors } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/digital-gauge.models';
+import { Datasource, DatasourceData } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { IWidgetSubscription } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import { Observable } from 'rxjs';
 export declare class TbCanvasDigitalGauge {
     protected ctx: WidgetContext;

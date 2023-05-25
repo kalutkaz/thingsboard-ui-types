@@ -1,6 +1,6 @@
 import { InjectionToken } from '@angular/core';
-import { AliasInfo, IAliasController } from '@core/api/widget-api.models';
-import { EntityInfo } from '@shared/models/entity.models';
+import { AliasInfo, IAliasController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { EntityInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity.models';
 import * as i0 from "@angular/core";
 export declare const ALIASES_ENTITY_SELECT_PANEL_DATA: InjectionToken<any>;
 export interface AliasesEntitySelectPanelData {

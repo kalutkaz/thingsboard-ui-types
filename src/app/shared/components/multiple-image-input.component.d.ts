@@ -1,15 +1,15 @@
 import { AfterViewInit, ChangeDetectorRef, OnDestroy } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { ControlValueAccessor } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { DropDirective, FlowDirective } from '@flowjs/ngx-flow';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
-import { UtilsService } from '@core/services/utils.service';
-import { DialogService } from '@core/services/dialog.service';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { DialogService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { TranslateService } from '@ngx-translate/core';
-import { FileSizePipe } from '@shared/pipe/file-size.pipe';
+import { FileSizePipe } from '../../../../../thingsboard/ui-ngx/src/app/shared/pipe/file-size.pipe';
 import { DndDropEvent } from 'ngx-drag-drop';
 import * as i0 from "@angular/core";
 export declare class MultipleImageInputComponent extends PageComponent implements AfterViewInit, OnDestroy, ControlValueAccessor {

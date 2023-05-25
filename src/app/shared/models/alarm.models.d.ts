@@ -1,13 +1,13 @@
-import { BaseData } from '@shared/models/base-data';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { AlarmId } from '@shared/models/id/alarm-id';
-import { EntityId } from '@shared/models/id/entity-id';
-import { TimePageLink } from '@shared/models/page/page-link';
-import { CustomerId } from '@shared/models/id/customer-id';
-import { TableCellButtonActionDescriptor } from '@home/components/widget/lib/table-widget.models';
-import { AlarmCommentId } from '@shared/models/id/alarm-comment-id';
-import { UserId } from '@shared/models/id/user-id';
-import { AlarmFilter } from '@shared/models/query/query.models';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { AlarmId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/alarm-id';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { TimePageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { CustomerId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/customer-id';
+import { TableCellButtonActionDescriptor } from '../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/table-widget.models';
+import { AlarmCommentId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/alarm-comment-id';
+import { UserId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/user-id';
+import { AlarmFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 export declare enum AlarmsMode {
     ALL = 0,
     ENTITY = 1

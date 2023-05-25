@@ -1,11 +1,11 @@
 import { OnInit, ViewContainerRef } from '@angular/core';
-import { UtilsService } from '@core/services/utils.service';
+import { UtilsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { Overlay } from '@angular/cdk/overlay';
 import { TranslateService } from '@ngx-translate/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { UserId } from '@shared/models/id/user-id';
-import { UserService } from '@core/http/user.service';
-import { User, UserEmailInfo } from '@shared/models/user.model';
+import { UserId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/user-id';
+import { UserService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/user.service';
+import { User, UserEmailInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
 import * as i0 from "@angular/core";
 export declare class AlarmAssigneeSelectComponent implements OnInit, ControlValueAccessor {
     private utilsService;

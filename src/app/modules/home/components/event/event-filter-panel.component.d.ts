@@ -1,7 +1,7 @@
 import { InjectionToken } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { OverlayRef } from '@angular/cdk/overlay';
-import { FilterEventBody } from '@shared/models/event.models';
+import { FilterEventBody } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/event.models';
 import * as i0 from "@angular/core";
 export declare const EVENT_FILTER_PANEL_DATA: InjectionToken<any>;
 export interface EventFilterPanelData {

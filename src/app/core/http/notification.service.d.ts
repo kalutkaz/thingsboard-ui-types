@@ -1,10 +1,10 @@
 import { HttpClient } from '@angular/common/http';
-import { RequestConfig } from '@core/http/http-utils';
+import { RequestConfig } from '../../../../../thingsboard/ui-ngx/src/app/core/http/http-utils';
 import { Observable } from 'rxjs';
-import { PageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
-import { Notification, NotificationDeliveryMethod, NotificationRequest, NotificationRequestInfo, NotificationRequestPreview, NotificationRule, NotificationSettings, NotificationTarget, NotificationTemplate, NotificationType, SlackChanelType, SlackConversation } from '@shared/models/notification.models';
-import { User } from '@shared/models/user.model';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { Notification, NotificationDeliveryMethod, NotificationRequest, NotificationRequestInfo, NotificationRequestPreview, NotificationRule, NotificationSettings, NotificationTarget, NotificationTemplate, NotificationType, SlackChanelType, SlackConversation } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
+import { User } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
 import * as i0 from "@angular/core";
 export declare class NotificationService {
     private http;

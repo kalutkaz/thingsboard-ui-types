@@ -1,17 +1,17 @@
-import { NotificationTemplate, NotificationType } from '@shared/models/notification.models';
+import { NotificationTemplate, NotificationType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
 import { OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Router } from '@angular/router';
 import { MatDialogRef } from '@angular/material/dialog';
 import { FormBuilder } from '@angular/forms';
-import { NotificationService } from '@core/http/notification.service';
+import { NotificationService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/notification.service';
 import { Observable } from 'rxjs';
 import { StepperOrientation, StepperSelectionEvent } from '@angular/cdk/stepper';
 import { MatStepper } from '@angular/material/stepper';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { TranslateService } from '@ngx-translate/core';
-import { TemplateConfiguration } from '@home/pages/notification/template/template-configuration';
+import { TemplateConfiguration } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/pages/notification/template/template-configuration';
 import * as i0 from "@angular/core";
 export interface TemplateNotificationDialogData {
     template?: NotificationTemplate;

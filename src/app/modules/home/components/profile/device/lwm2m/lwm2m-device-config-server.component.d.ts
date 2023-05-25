@@ -1,8 +1,8 @@
 import { EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
 import { BingingMode, ServerSecurityConfig } from './lwm2m-profile-config.models';
-import { DeviceProfileService } from '@core/http/device-profile.service';
-import { Lwm2mSecurityType } from '@shared/models/lwm2m-security-config.models';
+import { DeviceProfileService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/device-profile.service';
+import { Lwm2mSecurityType } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/lwm2m-security-config.models';
 import * as i0 from "@angular/core";
 export declare class Lwm2mDeviceConfigServerComponent implements OnInit, ControlValueAccessor, Validator, OnDestroy {
     fb: UntypedFormBuilder;

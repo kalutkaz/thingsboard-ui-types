@@ -1,4 +1,4 @@
-import { WidgetMobileActionType } from '@shared/models/widget.models';
+import { WidgetMobileActionType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 export declare function getDefaultProcessImageFunction(type: WidgetMobileActionType): string;
 export declare function getDefaultProcessLaunchResultFunction(type: WidgetMobileActionType): string;
 export declare function getDefaultProcessQrCodeFunction(): string;

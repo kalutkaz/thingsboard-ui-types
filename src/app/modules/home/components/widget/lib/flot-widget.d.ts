@@ -1,4 +1,4 @@
-import { WidgetContext } from '@home/models/widget-component.models';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import { ChartType } from './flot-widget.models';
 export declare class TbFlot {
     private ctx;

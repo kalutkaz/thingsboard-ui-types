@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { RequestConfig } from '@core/http/http-utils';
+import { RequestConfig } from '../../../../../thingsboard/ui-ngx/src/app/core/http/http-utils';
 import { Observable } from 'rxjs';
-import { AccountTwoFaSettings, TwoFactorAuthAccountConfig, TwoFactorAuthProviderType, TwoFactorAuthSettings } from '@shared/models/two-factor-auth.models';
+import { AccountTwoFaSettings, TwoFactorAuthAccountConfig, TwoFactorAuthProviderType, TwoFactorAuthSettings } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/two-factor-auth.models';
 import * as i0 from "@angular/core";
 export declare class TwoFactorAuthenticationService {
     private http;

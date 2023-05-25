@@ -1,12 +1,12 @@
 import { AfterViewInit, ElementRef, InjectionToken, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { User, UserEmailInfo } from '@shared/models/user.model';
+import { User, UserEmailInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
 import { TranslateService } from '@ngx-translate/core';
-import { UserService } from '@core/http/user.service';
+import { UserService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/user.service';
 import { OverlayRef } from '@angular/cdk/overlay';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
-import { UtilsService } from '@core/services/utils.service';
+import { UtilsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import * as i0 from "@angular/core";
 export declare const ALARM_ASSIGNEE_SELECT_PANEL_DATA: InjectionToken<any>;
 export interface AlarmAssigneeSelectPanelData {

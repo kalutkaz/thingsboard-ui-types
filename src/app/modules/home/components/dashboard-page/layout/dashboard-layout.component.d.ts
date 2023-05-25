@@ -1,17 +1,17 @@
 import { OnDestroy, OnInit } from '@angular/core';
-import { ILayoutController } from '@home/components/dashboard-page/layout/layout.models';
-import { DashboardContext, DashboardPageLayoutContext } from '@home/components/dashboard-page/dashboard-page.models';
-import { PageComponent } from '@shared/components/page.component';
+import { ILayoutController } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/layout/layout.models';
+import { DashboardContext, DashboardPageLayoutContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/dashboard-page.models';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { Widget } from '@shared/models/widget.models';
-import { DashboardCallbacks, DashboardContextMenuItem, IDashboardComponent, WidgetContextMenuItem } from '@home/models/dashboard-component.models';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { Widget } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { DashboardCallbacks, DashboardContextMenuItem, IDashboardComponent, WidgetContextMenuItem } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/dashboard-component.models';
 import { Hotkey } from 'angular2-hotkeys';
 import { TranslateService } from '@ngx-translate/core';
-import { ItemBufferService } from '@app/core/services/item-buffer.service';
+import { ItemBufferService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/item-buffer.service';
 import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
-import { TbCheatSheetComponent } from '@shared/components/cheatsheet.component';
-import { TbPopoverComponent } from '@shared/components/popover.component';
+import { TbCheatSheetComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/cheatsheet.component';
+import { TbPopoverComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
 import * as i0 from "@angular/core";
 export declare class DashboardLayoutComponent extends PageComponent implements ILayoutController, DashboardCallbacks, OnInit, OnDestroy {
     protected store: Store<AppState>;

@@ -1,4 +1,4 @@
-/// <reference types="src/typings/rawloader.typings" />
+/// <reference types="../../../../../thingsboard/ui-ngx/src/typings/rawloader.typings" />
 import { NgZone } from '@angular/core';
 import { ExceptionData } from '@app/shared/models/error.models';
 import { TranslateService } from '@ngx-translate/core';

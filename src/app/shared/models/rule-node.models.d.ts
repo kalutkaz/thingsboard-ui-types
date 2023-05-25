@@ -1,15 +1,15 @@
-import { BaseData } from '@shared/models/base-data';
-import { RuleChainId } from '@shared/models/id/rule-chain-id';
-import { RuleNodeId } from '@shared/models/id/rule-node-id';
-import { ComponentDescriptor } from '@shared/models/component-descriptor.models';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { RuleChainId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/rule-chain-id';
+import { RuleNodeId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/rule-node-id';
+import { ComponentDescriptor } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/component-descriptor.models';
 import { FcEdge, FcNode } from 'ngx-flowchart';
 import { Observable } from 'rxjs';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { AfterViewInit, EventEmitter, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormGroup } from '@angular/forms';
-import { RuleChainType } from '@shared/models/rule-chain.models';
+import { RuleChainType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
 import * as i0 from "@angular/core";
 export interface RuleNodeConfiguration {
     [key: string]: any;
@@ -20,6 +20,7 @@ export interface RuleNode extends BaseData<RuleNodeId> {
     name: string;
     debugMode: boolean;
     singletonMode: boolean;
+    configurationVersion?: number;
     configuration: RuleNodeConfiguration;
     additionalInfo?: any;
 }

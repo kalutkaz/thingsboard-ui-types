@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
-import { BooleanOperation, EntityKeyValueType, KeyFilterPredicateUserInfo, NumericOperation, StringOperation } from '@shared/models/query/query.models';
+import { BooleanOperation, EntityKeyValueType, KeyFilterPredicateUserInfo, NumericOperation, StringOperation } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { MatDialog } from '@angular/material/dialog';
 import * as i0 from "@angular/core";
 export declare class FilterUserInfoComponent implements ControlValueAccessor, OnInit {

@@ -2,7 +2,7 @@ import { AfterViewInit, ChangeDetectorRef, ComponentFactory, ComponentFactoryRes
 import { Direction, Directionality } from '@angular/cdk/bidi';
 import { CdkConnectedOverlay, CdkOverlayOrigin, ConnectedOverlayPositionChange, ConnectionPositionPair } from '@angular/cdk/overlay';
 import { Subject } from 'rxjs';
-import { PopoverPlacement } from '@shared/components/popover.models';
+import { PopoverPlacement } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.models';
 import { AnimationBuilder } from '@angular/animations';
 import * as i0 from "@angular/core";
 export type TbPopoverTrigger = 'click' | 'focus' | 'hover' | null;

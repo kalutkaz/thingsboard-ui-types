@@ -1,6 +1,6 @@
 import { AnimationTriggerMetadata } from '@angular/animations';
 import { ConnectedOverlayPositionChange, ConnectionPositionPair } from '@angular/cdk/overlay';
-import { TbPopoverComponent } from '@shared/components/popover.component';
+import { TbPopoverComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
 export declare const popoverMotion: AnimationTriggerMetadata;
 export declare const PopoverPlacements: readonly ["top", "topLeft", "topRight", "right", "rightTop", "rightBottom", "bottom", "bottomLeft", "bottomRight", "left", "leftTop", "leftBottom"];
 type PopoverPlacementTuple = typeof PopoverPlacements;

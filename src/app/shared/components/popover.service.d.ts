@@ -1,6 +1,6 @@
 import { ComponentFactory, ComponentFactoryResolver, ComponentRef, Injector, Renderer2, Type, ViewContainerRef } from '@angular/core';
-import { PopoverPlacement } from '@shared/components/popover.models';
-import { TbPopoverComponent } from '@shared/components/popover.component';
+import { PopoverPlacement } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.models';
+import { TbPopoverComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
 import { ComponentType } from '@angular/cdk/portal';
 import * as i0 from "@angular/core";
 export declare class TbPopoverService {

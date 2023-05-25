@@ -1,6 +1,6 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
-import { DeviceCredentials, DeviceCredentialsType, DeviceTransportType } from '@shared/models/device.models';
+import { DeviceCredentials, DeviceCredentialsType, DeviceTransportType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import * as i0 from "@angular/core";
 export declare class DeviceCredentialsComponent implements ControlValueAccessor, OnInit, Validator, OnDestroy {
     fb: UntypedFormBuilder;

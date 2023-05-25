@@ -1,21 +1,21 @@
-import { AlarmAction, AlarmAssignmentAction, ComponentLifecycleEvent, DeviceEvent, NotificationRule, TriggerType } from '@shared/models/notification.models';
+import { AlarmAction, AlarmAssignmentAction, ComponentLifecycleEvent, DeviceEvent, NotificationRule, TriggerType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
 import { OnDestroy } from '@angular/core';
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DialogComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Router } from '@angular/router';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { NotificationService } from '@core/http/notification.service';
-import { EntityType } from '@shared/models/entity-type.models';
+import { NotificationService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/notification.service';
+import { EntityType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { Observable } from 'rxjs';
 import { StepperOrientation, StepperSelectionEvent } from '@angular/cdk/stepper';
 import { MatStepper } from '@angular/material/stepper';
 import { BreakpointObserver } from '@angular/cdk/layout';
-import { AlarmSearchStatus, AlarmSeverity } from '@shared/models/alarm.models';
+import { AlarmSearchStatus, AlarmSeverity } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
 import { TranslateService } from '@ngx-translate/core';
 import { MatButton } from '@angular/material/button';
-import { ApiFeature, ApiUsageStateValue } from '@shared/models/api-usage.models';
+import { ApiFeature, ApiUsageStateValue } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/api-usage.models';
 import * as i0 from "@angular/core";
 export interface RuleNotificationDialogData {
     rule?: NotificationRule;

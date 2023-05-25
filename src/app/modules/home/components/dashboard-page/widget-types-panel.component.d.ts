@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { widgetType } from '@shared/models/widget.models';
+import { widgetType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import * as i0 from "@angular/core";
 export declare const DISPLAY_WIDGET_TYPES_PANEL_DATA: InjectionToken<any>;
 export interface WidgetTypes {

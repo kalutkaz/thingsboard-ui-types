@@ -1,17 +1,17 @@
 import { AfterViewInit, ChangeDetectorRef, ComponentFactoryResolver, ComponentRef, EventEmitter, Injector, OnDestroy, QueryList } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { BaseData, HasId } from '@shared/models/base-data';
-import { EntityType, EntityTypeResource, EntityTypeTranslation } from '@shared/models/entity-type.models';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { BaseData, HasId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { EntityType, EntityTypeResource, EntityTypeTranslation } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { UntypedFormGroup } from '@angular/forms';
 import { EntityComponent } from './entity.component';
-import { TbAnchorComponent } from '@shared/components/tb-anchor.component';
-import { EntityAction } from '@home/models/entity/entity-component.models';
+import { TbAnchorComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/tb-anchor.component';
+import { EntityAction } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entity-component.models';
 import { Observable, Subscription } from 'rxjs';
 import { MatTab, MatTabGroup } from '@angular/material/tabs';
-import { EntityTabsComponent } from '@home/components/entity/entity-tabs.component';
+import { EntityTabsComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/entity/entity-tabs.component';
 import * as i0 from "@angular/core";
 export declare class EntityDetailsPanelComponent extends PageComponent implements AfterViewInit, OnDestroy {
     protected store: Store<AppState>;

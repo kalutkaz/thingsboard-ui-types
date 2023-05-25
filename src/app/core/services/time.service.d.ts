@@ -1,4 +1,4 @@
-import { AggregationType, Timewindow } from '@shared/models/time/time.models';
+import { AggregationType, Timewindow } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import { HttpClient } from '@angular/common/http';
 import * as i0 from "@angular/core";
 export interface TimeInterval {

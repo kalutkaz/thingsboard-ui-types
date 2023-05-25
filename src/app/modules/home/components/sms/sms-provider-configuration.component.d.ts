@@ -1,8 +1,8 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
-import { SmsProviderConfiguration, SmsProviderType } from '@shared/models/settings.models';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { SmsProviderConfiguration, SmsProviderType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models';
 import * as i0 from "@angular/core";
 export declare class SmsProviderConfigurationComponent implements ControlValueAccessor, OnInit {
     private store;

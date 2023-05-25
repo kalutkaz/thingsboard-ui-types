@@ -1,11 +1,11 @@
 import { ErrorStateMatcher } from '@angular/material/core';
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DialogComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Router } from '@angular/router';
 import { MatDialogRef } from '@angular/material/dialog';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, FormGroupDirective, NgForm } from '@angular/forms';
-import { AttributesNameValueMap } from '@home/components/profile/device/lwm2m/lwm2m-profile-config.models';
+import { AttributesNameValueMap } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/profile/device/lwm2m/lwm2m-profile-config.models';
 import * as i0 from "@angular/core";
 export interface Lwm2mAttributesDialogData {
     readonly: boolean;

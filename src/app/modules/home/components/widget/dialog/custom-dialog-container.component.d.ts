@@ -1,10 +1,10 @@
 import { MatDialogRef } from '@angular/material/dialog';
 import { ComponentFactory, OnDestroy, ViewContainerRef } from '@angular/core';
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DialogComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Router } from '@angular/router';
-import { CustomDialogComponent } from '@home/components/widget/dialog/custom-dialog.component';
+import { CustomDialogComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/dialog/custom-dialog.component';
 import * as i0 from "@angular/core";
 export interface CustomDialogContainerData {
     controller: (instance: CustomDialogComponent) => void;

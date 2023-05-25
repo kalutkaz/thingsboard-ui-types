@@ -1,8 +1,8 @@
-import { CmdUpdate, CmdUpdateMsg, CmdUpdateType, WebsocketCmd } from '@shared/models/telemetry/telemetry.models';
+import { CmdUpdate, CmdUpdateMsg, CmdUpdateType, WebsocketCmd } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
 import { NgZone } from '@angular/core';
-import { Notification } from '@shared/models/notification.models';
-import { CmdWrapper, WsSubscriber } from '@shared/models/websocket/websocket.models';
-import { NotificationWebsocketService } from '@core/ws/notification-websocket.service';
+import { Notification } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
+import { CmdWrapper, WsSubscriber } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/websocket/websocket.models';
+import { NotificationWebsocketService } from '../../../../../../thingsboard/ui-ngx/src/app/core/ws/notification-websocket.service';
 export declare class NotificationCountUpdate extends CmdUpdate {
     totalUnreadCount: number;
     constructor(msg: NotificationCountUpdateMsg);

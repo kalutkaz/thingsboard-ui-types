@@ -1,11 +1,11 @@
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Injector, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { IDynamicWidgetComponent, WidgetContext } from '@home/models/widget-component.models';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { IDynamicWidgetComponent, WidgetContext } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import { HttpErrorResponse } from '@angular/common/http';
-import { RafService } from '@core/services/raf.service';
-import { NotificationHorizontalPosition, NotificationType, NotificationVerticalPosition } from '@core/notification/notification.models';
+import { RafService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/raf.service';
+import { NotificationHorizontalPosition, NotificationType, NotificationVerticalPosition } from '../../../../../../../thingsboard/ui-ngx/src/app/core/notification/notification.models';
 import { UntypedFormBuilder, Validators } from '@angular/forms';
 import * as i0 from "@angular/core";
 export declare class DynamicWidgetComponent extends PageComponent implements IDynamicWidgetComponent, OnInit, OnDestroy {

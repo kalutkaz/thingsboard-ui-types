@@ -1,9 +1,9 @@
-import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
-import { DatasourceType } from '@shared/models/widget.models';
-import { AlarmDataPageLink, EntityFilter, KeyFilter } from '@shared/models/query/query.models';
-import { SubscriptionTimewindow } from '@shared/models/time/time.models';
-import { AlarmDataListener } from '@core/api/alarm-data.service';
-import { TelemetryWebsocketService } from '@core/ws/telemetry-websocket.service';
+import { DataKeyType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
+import { DatasourceType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { AlarmDataPageLink, EntityFilter, KeyFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { SubscriptionTimewindow } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
+import { AlarmDataListener } from '../../../../../thingsboard/ui-ngx/src/app/core/api/alarm-data.service';
+import { TelemetryWebsocketService } from '../../../../../thingsboard/ui-ngx/src/app/core/ws/telemetry-websocket.service';
 export interface AlarmSubscriptionDataKey {
     name: string;
     type: DataKeyType;

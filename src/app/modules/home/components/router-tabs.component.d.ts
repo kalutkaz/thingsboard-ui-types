@@ -1,12 +1,12 @@
 import { ComponentRef, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MenuService } from '@core/services/menu.service';
-import { MenuSection } from '@core/services/menu.models';
-import { ActiveComponentService } from '@core/services/active-component.service';
-import { TbAnchorComponent } from '@shared/components/tb-anchor.component';
+import { MenuService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.service';
+import { MenuSection } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.models';
+import { ActiveComponentService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/active-component.service';
+import { TbAnchorComponent } from '../../../../../../thingsboard/ui-ngx/src/app/shared/components/tb-anchor.component';
 import * as i0 from "@angular/core";
 export declare class RouterTabsComponent extends PageComponent implements OnInit {
     protected store: Store<AppState>;

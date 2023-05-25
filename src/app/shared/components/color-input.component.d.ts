@@ -1,10 +1,10 @@
 import { OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { DialogService } from '@core/services/dialog.service';
+import { DialogService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import * as i0 from "@angular/core";
 export declare class ColorInputComponent extends PageComponent implements OnInit, ControlValueAccessor {
     protected store: Store<AppState>;

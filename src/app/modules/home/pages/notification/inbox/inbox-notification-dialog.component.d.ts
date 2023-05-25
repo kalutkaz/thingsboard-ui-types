@@ -1,9 +1,9 @@
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DialogComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Router } from '@angular/router';
 import { MatDialogRef } from '@angular/material/dialog';
-import { Notification } from '@shared/models/notification.models';
+import { Notification } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
 import * as i0 from "@angular/core";
 export interface InboxNotificationDialogData {
     notification: Notification;

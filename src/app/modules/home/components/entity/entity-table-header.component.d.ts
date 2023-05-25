@@ -1,10 +1,10 @@
-import { BaseData, HasId } from '@shared/models/base-data';
-import { PageComponent } from '@shared/components/page.component';
+import { BaseData, HasId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { PageLink } from '@shared/models/page/page-link';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { PageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import * as i0 from "@angular/core";
 export declare abstract class EntityTableHeaderComponent<T extends BaseData<HasId>, P extends PageLink = PageLink, L extends BaseData<HasId> = T, C extends EntityTableConfig<T, P, L> = EntityTableConfig<T, P, L>> extends PageComponent implements OnInit {
     protected store: Store<AppState>;

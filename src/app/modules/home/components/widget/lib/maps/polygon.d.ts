@@ -1,7 +1,7 @@
 import L, { LatLngExpression } from 'leaflet';
 import { WidgetPolygonSettings } from './map-models';
-import { FormattedData } from '@shared/models/widget.models';
-import LeafletMap from '@home/components/widget/lib/maps/leaflet-map';
+import { FormattedData } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import LeafletMap from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/maps/leaflet-map';
 export declare class Polygon {
     private map;
     private data;

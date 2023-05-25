@@ -1,5 +1,5 @@
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityId } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 export declare class NotificationTargetId implements EntityId {
     entityType: EntityType;
     id: string;

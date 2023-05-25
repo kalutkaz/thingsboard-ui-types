@@ -1,6 +1,6 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { ComplexOperation, EntityKeyValueType, KeyFilterPredicateInfo } from '@shared/models/query/query.models';
+import { ComplexOperation, EntityKeyValueType, KeyFilterPredicateInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { MatDialog } from '@angular/material/dialog';
 import { ComponentType } from '@angular/cdk/portal';
 import * as i0 from "@angular/core";

@@ -1,13 +1,13 @@
 import { ChangeDetectorRef, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { UntypedFormBuilder, UntypedFormGroup, FormGroupDirective } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { AdminService } from '@core/http/admin.service';
-import { RepositorySettings, RepositoryAuthMethod } from '@shared/models/settings.models';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { AdminService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/admin.service';
+import { RepositorySettings, RepositoryAuthMethod } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models';
 import { TranslateService } from '@ngx-translate/core';
-import { DialogService } from '@core/services/dialog.service';
-import { TbPopoverComponent } from '@shared/components/popover.component';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { TbPopoverComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
 import * as i0 from "@angular/core";
 export declare class RepositorySettingsComponent extends PageComponent implements OnInit {
     protected store: Store<AppState>;

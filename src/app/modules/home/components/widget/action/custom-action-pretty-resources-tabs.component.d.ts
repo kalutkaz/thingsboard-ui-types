@@ -1,11 +1,11 @@
 import { ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { CustomActionDescriptor } from '@shared/models/widget.models';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { CustomActionDescriptor } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { Ace } from 'ace-builds';
-import { CancelAnimationFrame, RafService } from '@core/services/raf.service';
+import { CancelAnimationFrame, RafService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/raf.service';
 import { ResizeObserver } from '@juggle/resize-observer';
 import * as i0 from "@angular/core";
 export declare class CustomActionPrettyResourcesTabsComponent extends PageComponent implements OnInit, OnChanges, OnDestroy {

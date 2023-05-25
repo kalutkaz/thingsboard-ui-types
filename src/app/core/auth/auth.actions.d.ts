@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
-import { User } from '@shared/models/user.model';
-import { AuthPayload } from '@core/auth/auth.models';
+import { User } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
+import { AuthPayload } from '../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.models';
 export declare enum AuthActionTypes {
     AUTHENTICATED = "[Auth] Authenticated",
     UNAUTHENTICATED = "[Auth] Unauthenticated",

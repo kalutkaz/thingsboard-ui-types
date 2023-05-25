@@ -1,5 +1,5 @@
 import { ValidatorFn } from '@angular/forms';
-import { VersionCreateConfig } from '@shared/models/vc.models';
+import { VersionCreateConfig } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/vc.models';
 export declare const smtpPortPattern: RegExp;
 export interface AdminSettings<T> {
     key: string;

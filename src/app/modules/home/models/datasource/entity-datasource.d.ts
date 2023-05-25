@@ -1,9 +1,9 @@
-import { PageLink } from '@shared/models/page/page-link';
+import { PageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
-import { BaseData, HasId } from '@shared/models/base-data';
+import { PageData } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { BaseData, HasId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
 import { CollectionViewer, DataSource, SelectionModel } from '@angular/cdk/collections';
-import { EntityBooleanFunction } from '@home/models/entity/entities-table-config.models';
+import { EntityBooleanFunction } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 export type EntitiesFetchFunction<T extends BaseData<HasId>, P extends PageLink> = (pageLink: P) => Observable<PageData<T>>;
 export declare class EntitiesDataSource<T extends BaseData<HasId>, P extends PageLink = PageLink> implements DataSource<T> {
     private fetchFunction;

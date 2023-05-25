@@ -1,9 +1,9 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { ScriptLanguage } from '@shared/models/rule-node.models';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { ScriptLanguage } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
 import * as i0 from "@angular/core";
 export declare class TbScriptLangComponent extends PageComponent implements ControlValueAccessor, OnInit {
     protected store: Store<AppState>;

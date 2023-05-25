@@ -1,6 +1,6 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { LegendConfig, LegendDirection, LegendPosition } from '@shared/models/widget.models';
+import { LegendConfig, LegendDirection, LegendPosition } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import * as i0 from "@angular/core";
 export declare class LegendConfigComponent implements OnInit, OnDestroy, ControlValueAccessor {
     private fb;

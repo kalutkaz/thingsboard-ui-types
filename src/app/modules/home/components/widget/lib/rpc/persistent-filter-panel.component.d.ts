@@ -1,7 +1,7 @@
 import { InjectionToken } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { OverlayRef } from '@angular/cdk/overlay';
-import { RpcStatus } from '@shared/models/rpc.models';
+import { RpcStatus } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rpc.models';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export declare const PERSISTENT_FILTER_PANEL_DATA: InjectionToken<any>;

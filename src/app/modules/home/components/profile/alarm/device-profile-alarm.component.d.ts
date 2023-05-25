@@ -1,10 +1,10 @@
 import { EventEmitter, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
-import { DeviceProfileAlarm } from '@shared/models/device.models';
+import { DeviceProfileAlarm } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import { MatDialog } from '@angular/material/dialog';
 import { MatChipInputEvent } from '@angular/material/chips';
-import { EntityId } from '@shared/models/id/entity-id';
-import { UtilsService } from '@core/services/utils.service';
+import { EntityId } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import * as i0 from "@angular/core";
 export declare class DeviceProfileAlarmComponent implements ControlValueAccessor, OnInit, Validator {
     private dialog;

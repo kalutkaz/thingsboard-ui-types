@@ -1,9 +1,9 @@
 import { OnDestroy } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
-import { QueueInfo } from '@shared/models/queue.models';
-import { UtilsService } from '@core/services/utils.service';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { QueueInfo } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/queue.models';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import * as i0 from "@angular/core";
 export declare class TenantProfileQueuesComponent implements ControlValueAccessor, Validator, OnDestroy {
     private store;

@@ -1,7 +1,7 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator, ValidatorFn } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { Country, CountryData } from '@shared/models/country.models';
+import { Country, CountryData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/country.models';
 import { FloatLabelType, MatFormFieldAppearance } from '@angular/material/form-field';
 import * as i0 from "@angular/core";
 export declare class PhoneInputComponent implements OnInit, ControlValueAccessor, Validator {

@@ -1,12 +1,12 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { CircleSettings, ShowTooltipAction } from '@home/components/widget/lib/maps/map-models';
-import { WidgetService } from '@core/http/widget.service';
-import { Widget } from '@shared/models/widget.models';
+import { CircleSettings, ShowTooltipAction } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/maps/map-models';
+import { WidgetService } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
+import { Widget } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import * as i0 from "@angular/core";
 export declare class CircleSettingsComponent extends PageComponent implements OnInit, ControlValueAccessor, Validator {
     protected store: Store<AppState>;

@@ -1,6 +1,6 @@
 import { ElementRef, OnChanges, OnDestroy, Renderer2, SimpleChanges, ViewContainerRef } from '@angular/core';
-import { TbPopoverService } from '@shared/components/popover.service';
-import { PopoverPlacement } from '@shared/components/popover.models';
+import { TbPopoverService } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.service';
+import { PopoverPlacement } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.models';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import * as i0 from "@angular/core";
 export declare class HelpPopupComponent implements OnChanges, OnDestroy {

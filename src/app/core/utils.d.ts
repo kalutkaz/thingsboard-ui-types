@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
-import { Datasource, DatasourceData, FormattedData, ReplaceInfo } from '@app/shared/models/widget.models';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntityType } from '@shared/models/entity-type.models';
+import { Datasource, DatasourceData, FormattedData, ReplaceInfo } from '../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { EntityId } from '../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntityType } from '../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { HttpErrorResponse } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
 export declare function onParentScrollOrWindowResize(el: Node): Observable<Event>;

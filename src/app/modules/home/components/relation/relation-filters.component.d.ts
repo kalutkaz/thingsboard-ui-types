@@ -1,10 +1,10 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { AliasEntityType, EntityType } from '@shared/models/entity-type.models';
-import { RelationEntityTypeFilter } from '@shared/models/relation.models';
-import { PageComponent } from '@shared/components/page.component';
+import { AliasEntityType, EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { RelationEntityTypeFilter } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import * as i0 from "@angular/core";
 export declare class RelationFiltersComponent extends PageComponent implements ControlValueAccessor, OnInit, OnDestroy {
     protected store: Store<AppState>;

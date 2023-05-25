@@ -1,13 +1,13 @@
 import { OnInit, Renderer2, ViewContainerRef } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
-import { EntityTypeVersionLoadConfig } from '@shared/models/vc.models';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { EntityTypeVersionLoadConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/vc.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { MatCheckbox } from '@angular/material/checkbox';
-import { TbPopoverService } from '@shared/components/popover.service';
+import { TbPopoverService } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.service';
 import * as i0 from "@angular/core";
 export declare class EntityTypesVersionLoadComponent extends PageComponent implements OnInit, ControlValueAccessor, Validator {
     protected store: Store<AppState>;

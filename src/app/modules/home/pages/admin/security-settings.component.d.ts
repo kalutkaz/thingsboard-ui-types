@@ -1,12 +1,12 @@
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { PageComponent } from '@shared/components/page.component';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Router } from '@angular/router';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { AdminService } from '@core/http/admin.service';
-import { HasConfirmForm } from '@core/guards/confirm-on-exit.guard';
-import { AuthService } from '@core/auth/auth.service';
-import { DialogService } from '@core/services/dialog.service';
+import { AdminService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/admin.service';
+import { HasConfirmForm } from '../../../../../../../thingsboard/ui-ngx/src/app/core/guards/confirm-on-exit.guard';
+import { AuthService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export declare class SecuritySettingsComponent extends PageComponent implements HasConfirmForm {

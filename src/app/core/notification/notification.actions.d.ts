@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { HideNotification, NotificationMessage } from '@app/core/notification/notification.models';
+import { HideNotification, NotificationMessage } from '../../../../../thingsboard/ui-ngx/src/app/core/notification/notification.models';
 export declare enum NotificationActionTypes {
     SHOW_NOTIFICATION = "[Notification] Show",
     HIDE_NOTIFICATION = "[Notification] Hide"

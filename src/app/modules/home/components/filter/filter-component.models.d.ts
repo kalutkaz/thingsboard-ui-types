@@ -1,4 +1,4 @@
-import { ComplexFilterPredicateInfo, EntityKeyValueType } from '@shared/models/query/query.models';
+import { ComplexFilterPredicateInfo, EntityKeyValueType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 export interface ComplexFilterPredicateDialogData {
     complexPredicate: ComplexFilterPredicateInfo;
     key: string;

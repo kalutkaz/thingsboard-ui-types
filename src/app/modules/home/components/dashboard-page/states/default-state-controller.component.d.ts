@@ -1,14 +1,14 @@
 import { NgZone, OnDestroy, OnInit } from '@angular/core';
-import { StateObject, StateParams } from '@core/api/widget-api.models';
+import { StateObject, StateParams } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DashboardState } from '@shared/models/dashboard.models';
+import { DashboardState } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 import { StateControllerComponent } from './state-controller.component';
-import { StatesControllerService } from '@home/components/dashboard-page/states/states-controller.service';
-import { EntityId } from '@app/shared/models/id/entity-id';
-import { UtilsService } from '@core/services/utils.service';
-import { DashboardUtilsService } from '@core/services/dashboard-utils.service';
-import { EntityService } from '@core/http/entity.service';
-import { MobileService } from '@core/services/mobile.service';
+import { StatesControllerService } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/states/states-controller.service';
+import { EntityId } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { DashboardUtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/dashboard-utils.service';
+import { EntityService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
+import { MobileService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/mobile.service';
 import * as i0 from "@angular/core";
 export declare class DefaultStateControllerComponent extends StateControllerComponent implements OnInit, OnDestroy {
     protected router: Router;

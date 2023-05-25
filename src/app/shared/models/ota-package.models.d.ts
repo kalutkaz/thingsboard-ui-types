@@ -1,7 +1,7 @@
-import { BaseData } from '@shared/models/base-data';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { OtaPackageId } from '@shared/models/id/ota-package-id';
-import { DeviceProfileId } from '@shared/models/id/device-profile-id';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { OtaPackageId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/ota-package-id';
+import { DeviceProfileId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/device-profile-id';
 export declare enum ChecksumAlgorithm {
     MD5 = "MD5",
     SHA256 = "SHA256",

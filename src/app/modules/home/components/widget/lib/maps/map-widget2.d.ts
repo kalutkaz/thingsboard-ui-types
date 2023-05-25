@@ -1,9 +1,9 @@
 import { MapProviders, UnitedMapSettings, WidgetUnitedMapSettings } from './map-models';
 import LeafletMap from './leaflet-map';
 import { MapWidgetInterface, MapWidgetStaticInterface } from './map-widget.interface';
-import { WidgetContext } from '@app/modules/home/models/widget-component.models';
-import { Datasource, DatasourceData, FormattedData, JsonSettingsSchema } from '@shared/models/widget.models';
-import { EntityDataPageLink } from '@shared/models/query/query.models';
+import { WidgetContext } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { Datasource, DatasourceData, FormattedData, JsonSettingsSchema } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { EntityDataPageLink } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { Observable } from 'rxjs';
 export declare class MapWidgetController implements MapWidgetInterface {
     mapProvider: MapProviders;

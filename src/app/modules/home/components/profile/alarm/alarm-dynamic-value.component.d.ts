@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { DynamicValueSourceType } from '@shared/models/query/query.models';
+import { DynamicValueSourceType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import * as i0 from "@angular/core";
 export declare class AlarmDynamicValue implements ControlValueAccessor, OnInit {
     private fb;

@@ -1,15 +1,15 @@
 import { ErrorStateMatcher } from '@angular/material/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, FormGroupDirective, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DialogComponent } from '@app/shared/components/dialog.component';
-import { UtilsService } from '@core/services/utils.service';
+import { DialogComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { TranslateService } from '@ngx-translate/core';
-import { DashboardLayoutId, DashboardStateLayouts } from '@app/shared/models/dashboard.models';
-import { DashboardUtilsService } from '@core/services/dashboard-utils.service';
-import { LayoutFixedSize, LayoutPercentageSize, LayoutWidthType } from '@home/components/dashboard-page/layout/layout.models';
+import { DashboardLayoutId, DashboardStateLayouts } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { DashboardUtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/dashboard-utils.service';
+import { LayoutFixedSize, LayoutPercentageSize, LayoutWidthType } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/layout/layout.models';
 import { MatTooltip } from '@angular/material/tooltip';
 import * as i0 from "@angular/core";
 export interface ManageDashboardLayoutsDialogData {

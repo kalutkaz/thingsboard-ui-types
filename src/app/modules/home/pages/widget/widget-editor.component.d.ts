@@ -1,19 +1,19 @@
 /// <reference types="node" />
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { ElementRef, OnDestroy, OnInit } from '@angular/core';
-import { WidgetsBundle } from '@shared/models/widgets-bundle.model';
+import { WidgetsBundle } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widgets-bundle.model';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { WidgetService } from '@core/http/widget.service';
-import { WidgetInfo } from '@home/models/widget-component.models';
-import { widgetType, WidgetTypeDetails } from '@shared/models/widget.models';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
+import { WidgetInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { widgetType, WidgetTypeDetails } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { ActivatedRoute, Router } from '@angular/router';
-import { HasDirtyFlag } from '@core/guards/confirm-on-exit.guard';
-import { AuthUser } from '@shared/models/user.model';
+import { HasDirtyFlag } from '../../../../../../../thingsboard/ui-ngx/src/app/core/guards/confirm-on-exit.guard';
+import { AuthUser } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
 import { Hotkey } from 'angular2-hotkeys';
 import { TranslateService } from '@ngx-translate/core';
 import { Ace } from 'ace-builds';
-import { CancelAnimationFrame, RafService } from '@core/services/raf.service';
+import { CancelAnimationFrame, RafService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/raf.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ResizeObserver } from '@juggle/resize-observer';
 import Timeout = NodeJS.Timeout;
@@ -43,7 +43,7 @@ export declare class WidgetEditorComponent extends PageComponent implements OnIn
     iframe: JQuery<HTMLIFrameElement>;
     widgetTypes: typeof widgetType;
     allWidgetTypes: string[];
-    widgetTypesDataMap: Map<widgetType, import("@shared/models/widget.models").WidgetTypeData>;
+    widgetTypesDataMap: Map<widgetType, import("../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models").WidgetTypeData>;
     authUser: AuthUser;
     isReadOnly: boolean;
     widgetsBundle: WidgetsBundle;

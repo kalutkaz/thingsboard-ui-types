@@ -1,8 +1,8 @@
 import { ChangeDetectorRef, OnDestroy } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
 import { Lwm2mProfileConfigModels, ObjectLwM2M } from './lwm2m-profile-config.models';
-import { DeviceProfileService } from '@core/http/device-profile.service';
-import { DialogService } from '@core/services/dialog.service';
+import { DeviceProfileService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/device-profile.service';
+import { DialogService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export declare class Lwm2mDeviceProfileTransportConfigurationComponent implements ControlValueAccessor, Validator, OnDestroy {

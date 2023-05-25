@@ -1,5 +1,5 @@
-import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
-import { DataKey, JsonSettingsSchema } from '@shared/models/widget.models';
+import { DataKeyType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
+import { DataKey, JsonSettingsSchema } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { Observable } from 'rxjs';
 export interface DataKeysCallbacks {
     generateDataKey: (chip: any, type: DataKeyType, datakeySettingsSchema: JsonSettingsSchema) => DataKey;

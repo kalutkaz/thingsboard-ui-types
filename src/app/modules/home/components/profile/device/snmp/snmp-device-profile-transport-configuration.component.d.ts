@@ -1,6 +1,6 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { SnmpDeviceProfileTransportConfiguration } from '@shared/models/device.models';
+import { SnmpDeviceProfileTransportConfiguration } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import * as i0 from "@angular/core";
 export interface OidMappingConfiguration {
     isAttribute: boolean;

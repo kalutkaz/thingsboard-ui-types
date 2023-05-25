@@ -1,10 +1,10 @@
 import { OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
-import { WidgetContext } from '@home/models/widget-component.models';
-import { UtilsService } from '@core/services/utils.service';
+import { PageComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { WidgetContext } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { UtilsService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { DateIntervalEntry, DateRangeNavigatorModel, DateRangeNavigatorSettings } from '@home/components/widget/lib/date-range-navigator/date-range-navigator.models';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { DateIntervalEntry, DateRangeNavigatorModel, DateRangeNavigatorSettings } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/date-range-navigator/date-range-navigator.models';
 import { KeyValue } from '@angular/common';
 import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { MatSelect } from '@angular/material/select';

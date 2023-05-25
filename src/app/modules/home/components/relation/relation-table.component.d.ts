@@ -1,16 +1,16 @@
 import { AfterViewInit, ChangeDetectorRef, ElementRef, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
-import { PageLink } from '@shared/models/page/page-link';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { PageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogService } from '@core/services/dialog.service';
-import { EntityRelationService } from '@core/http/entity-relation.service';
-import { EntityRelation, EntityRelationInfo, EntitySearchDirection } from '@shared/models/relation.models';
-import { EntityId } from '@shared/models/id/entity-id';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { EntityRelationService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity-relation.service';
+import { EntityRelation, EntityRelationInfo, EntitySearchDirection } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { RelationsDatasource } from '../../models/datasource/relation-datasource';
 import * as i0 from "@angular/core";
 export declare class RelationTableComponent extends PageComponent implements AfterViewInit, OnInit {
