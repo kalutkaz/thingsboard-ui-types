@@ -12,7 +12,6 @@ import { AuthUser } from '@shared/models/user.model';
 import { Widget, WidgetInfo, WidgetPosition, widgetType } from '@shared/models/widget.models';
 import { DialogService } from '@core/services/dialog.service';
 import { EntityService } from '@core/http/entity.service';
-import { FooterFabButtons } from '@shared/components/footer-fab-buttons.component';
 import { DashboardUtilsService } from '@core/services/dashboard-utils.service';
 import { DashboardService } from '@core/http/dashboard.service';
 import { DashboardContextMenuItem, IDashboardComponent, WidgetContextMenuItem } from '../../models/dashboard-component.models';
@@ -52,7 +51,7 @@ export declare class DashboardPageComponent extends PageComponent implements IDa
     private mobileService;
     private fb;
     private dialog;
-    private translate;
+    translate: TranslateService;
     private popoverService;
     private renderer;
     private ngZone;
@@ -123,7 +122,6 @@ export declare class DashboardPageComponent extends PageComponent implements IDa
     private dashboardResize$;
     dashboardCtx: DashboardContext;
     layouts: DashboardPageLayouts;
-    addWidgetFabButtons: FooterFabButtons;
     updateBreadcrumbs: EventEmitter<any>;
     private rxSubscriptions;
     get toolbarOpened(): boolean;
@@ -175,7 +173,7 @@ export declare class DashboardPageComponent extends PageComponent implements IDa
     manageDashboardLayouts($event: Event): void;
     private updateDashboardLayouts;
     private updateStates;
-    private importWidget;
+    importWidget($event: Event): void;
     currentDashboardIdChanged(dashboardId: string): void;
     toggleDashboardEditMode(): void;
     saveDashboard(): void;

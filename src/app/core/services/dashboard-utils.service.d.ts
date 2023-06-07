@@ -1,7 +1,7 @@
 import { UtilsService } from '@core/services/utils.service';
 import { TimeService } from '@core/services/time.service';
 import { Dashboard, DashboardLayout, DashboardLayoutId, DashboardLayoutsInfo, DashboardState, DashboardStateLayouts, GridSettings } from '@shared/models/dashboard.models';
-import { Widget, WidgetConfig, widgetType } from '@app/shared/models/widget.models';
+import { Widget, WidgetConfig, widgetType, WidgetTypeDescriptor } from '@app/shared/models/widget.models';
 import { EntityAliasFilter } from '@app/shared/models/alias.models';
 import { EntityId } from '@app/shared/models/id/entity-id';
 import * as i0 from "@angular/core";
@@ -18,6 +18,9 @@ export declare class DashboardUtilsService {
     createDefaultLayouts(): DashboardStateLayouts;
     createDefaultState(name: string, root: boolean): DashboardState;
     createSingleEntityFilter(entityId: EntityId): EntityAliasFilter;
+    widgetConfigFromWidgetType(widgetTypeDescriptor: WidgetTypeDescriptor): WidgetConfig;
+    private convertDatasourcesFromWidgetType;
+    private convertDatasourceFromWidgetType;
     private validateAndUpdateState;
     private validateAndUpdateLayout;
     setLayouts(dashboard: Dashboard, targetState: string, newLayouts: DashboardStateLayouts): void;

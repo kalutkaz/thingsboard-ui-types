@@ -61,6 +61,8 @@ export interface WidgetTypeDescriptor {
     settingsDirective?: string;
     dataKeySettingsDirective?: string;
     latestDataKeySettingsDirective?: string;
+    hasBasicMode?: boolean;
+    basicModeDirective?: string;
     defaultConfig: string;
     sizeX: number;
     sizeY: number;
@@ -129,7 +131,7 @@ export interface LegendConfig {
     showTotal: boolean;
     showLatest: boolean;
 }
-export declare function defaultLegendConfig(wType: widgetType): LegendConfig;
+export declare const defaultLegendConfig: (wType: widgetType) => LegendConfig;
 export declare enum ComparisonResultType {
     PREVIOUS_VALUE = "PREVIOUS_VALUE",
     DELTA_ABSOLUTE = "DELTA_ABSOLUTE",
@@ -164,6 +166,7 @@ export interface DataKey extends KeyInfo {
 }
 export declare enum DatasourceType {
     function = "function",
+    device = "device",
     entity = "entity",
     entityCount = "entityCount",
     alarmCount = "alarmCount"
@@ -178,6 +181,7 @@ export interface Datasource {
     entityType?: EntityType;
     entityId?: string;
     entityName?: string;
+    deviceId?: string;
     entityAliasId?: string;
     filterId?: string;
     unresolvedStateEntity?: boolean;
@@ -197,8 +201,8 @@ export interface Datasource {
     latestDataKeyStartIndex?: number;
     [key: string]: any;
 }
-export declare function datasourcesHasAggregation(datasources?: Array<Datasource>): boolean;
-export declare function datasourcesHasOnlyComparisonAggregation(datasources?: Array<Datasource>): boolean;
+export declare const datasourcesHasAggregation: (datasources?: Array<Datasource>) => boolean;
+export declare const datasourcesHasOnlyComparisonAggregation: (datasources?: Array<Datasource>) => boolean;
 export interface FormattedData {
     $datasource: Datasource;
     entityName: string;
@@ -352,7 +356,12 @@ export interface WidgetComparisonSettings {
 export interface WidgetSettings {
     [key: string]: any;
 }
+export declare enum WidgetConfigMode {
+    basic = "basic",
+    advanced = "advanced"
+}
 export interface WidgetConfig {
+    configMode?: WidgetConfigMode;
     title?: string;
     titleIcon?: string;
     showTitle?: boolean;
@@ -364,8 +373,6 @@ export interface WidgetConfig {
     enableFullscreen?: boolean;
     useDashboardTimewindow?: boolean;
     displayTimewindow?: boolean;
-    showLegend?: boolean;
-    legendConfig?: LegendConfig;
     timewindow?: Timewindow;
     desktopHide?: boolean;
     mobileHide?: boolean;

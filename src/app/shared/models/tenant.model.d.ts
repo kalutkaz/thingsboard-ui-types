@@ -33,6 +33,7 @@ export interface DefaultTenantProfileConfiguration {
     maxRuleNodeExecutionsPerMessage: number;
     maxEmails: number;
     maxSms: number;
+    smsEnabled: boolean;
     maxCreatedAlarms: number;
     tenantServerRestLimitsConfiguration: string;
     customerServerRestLimitsConfiguration: string;

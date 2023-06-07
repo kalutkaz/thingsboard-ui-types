@@ -1,7 +1,7 @@
 import { NotificationId } from '@shared/models/id/notification-id';
 import { NotificationRequestId } from '@shared/models/id/notification-request-id';
 import { UserId } from '@shared/models/id/user-id';
-import { BaseData } from '@shared/models/base-data';
+import { BaseData, ExportableEntity } from '@shared/models/base-data';
 import { TenantId } from '@shared/models/id/tenant-id';
 import { NotificationTargetId } from '@shared/models/id/notification-target-id';
 import { NotificationTemplateId } from '@shared/models/id/notification-template-id';
@@ -88,8 +88,9 @@ export interface SlackConversation {
     email: string;
     type: string;
 }
-export interface NotificationRule extends Omit<BaseData<NotificationRuleId>, 'label'> {
+export interface NotificationRule extends Omit<BaseData<NotificationRuleId>, 'label'>, ExportableEntity<NotificationRuleId> {
     tenantId: TenantId;
+    enabled: boolean;
     templateId: NotificationTemplateId;
     triggerType: TriggerType;
     triggerConfig: NotificationRuleTriggerConfig;
@@ -180,7 +181,7 @@ export interface NonConfirmedNotificationEscalation {
     delayInSec: number;
     targets: Array<string>;
 }
-export interface NotificationTarget extends Omit<BaseData<NotificationTargetId>, 'label'> {
+export interface NotificationTarget extends Omit<BaseData<NotificationTargetId>, 'label'>, ExportableEntity<NotificationTargetId> {
     tenantId: TenantId;
     configuration: NotificationTargetConfig;
 }
@@ -213,7 +214,7 @@ export declare enum NotificationTargetType {
     SLACK = "SLACK"
 }
 export declare const NotificationTargetTypeTranslationMap: Map<NotificationTargetType, string>;
-export interface NotificationTemplate extends Omit<BaseData<NotificationTemplateId>, 'label'> {
+export interface NotificationTemplate extends Omit<BaseData<NotificationTemplateId>, 'label'>, ExportableEntity<NotificationTemplateId> {
     tenantId: TenantId;
     notificationType: NotificationType;
     configuration: NotificationTemplateConfig;

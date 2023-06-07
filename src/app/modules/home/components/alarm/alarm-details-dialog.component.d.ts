@@ -12,6 +12,7 @@ import { DatePipe } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { AlarmCommentComponent } from '@home/components/alarm/alarm-comment.component';
 import { MillisecondsToTimeStringPipe } from '@shared/pipe/milliseconds-to-time-string.pipe';
+import { UtilsService } from '@core/services/utils.service';
 import * as i0 from "@angular/core";
 export interface AlarmDetailsDialogData {
     alarmId?: string;
@@ -29,6 +30,7 @@ export declare class AlarmDetailsDialogComponent extends DialogComponent<AlarmDe
     private translate;
     data: AlarmDetailsDialogData;
     private alarmService;
+    private utils;
     dialogRef: MatDialogRef<AlarmDetailsDialogComponent, boolean>;
     fb: UntypedFormBuilder;
     alarmId: string;
@@ -43,7 +45,7 @@ export declare class AlarmDetailsDialogComponent extends DialogComponent<AlarmDe
     alarmStatuses: typeof AlarmStatus;
     alarmUpdated: boolean;
     alarmCommentComponent: AlarmCommentComponent;
-    constructor(store: Store<AppState>, router: Router, datePipe: DatePipe, millisecondsToTimeStringPipe: MillisecondsToTimeStringPipe, translate: TranslateService, data: AlarmDetailsDialogData, alarmService: AlarmService, dialogRef: MatDialogRef<AlarmDetailsDialogComponent, boolean>, fb: UntypedFormBuilder);
+    constructor(store: Store<AppState>, router: Router, datePipe: DatePipe, millisecondsToTimeStringPipe: MillisecondsToTimeStringPipe, translate: TranslateService, data: AlarmDetailsDialogData, alarmService: AlarmService, utils: UtilsService, dialogRef: MatDialogRef<AlarmDetailsDialogComponent, boolean>, fb: UntypedFormBuilder);
     loadAlarm(): void;
     loadAlarmFields(alarm: AlarmInfo): void;
     ngOnInit(): void;

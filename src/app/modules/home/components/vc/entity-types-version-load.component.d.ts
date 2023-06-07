@@ -21,6 +21,7 @@ export declare class EntityTypesVersionLoadComponent extends PageComponent imple
     private propagateChange;
     entityTypesVersionLoadFormGroup: UntypedFormGroup;
     entityTypes: typeof EntityType;
+    entityTypesWithoutRelatedData: Set<EntityType>;
     loading: boolean;
     constructor(store: Store<AppState>, translate: TranslateService, popoverService: TbPopoverService, renderer: Renderer2, viewContainerRef: ViewContainerRef, fb: UntypedFormBuilder);
     ngOnInit(): void;
@@ -46,7 +47,7 @@ export declare class EntityTypesVersionLoadComponent extends PageComponent imple
     removeAll(): void;
     entityTypeText(entityTypeControl: AbstractControl): string;
     allowedEntityTypes(entityTypeControl?: AbstractControl): Array<EntityType>;
-    onRemoveOtherEntities(removeOtherEntitiesCheckbox: MatCheckbox, entityTypeControl: AbstractControl, $event: Event): void;
+    onRemoveOtherEntities(removeOtherEntitiesCheckbox: MatCheckbox, entityTypeControl: AbstractControl): void;
     private updateModel;
     static ɵfac: i0.ɵɵFactoryDeclaration<EntityTypesVersionLoadComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<EntityTypesVersionLoadComponent, "tb-entity-types-version-load", never, { "disabled": "disabled"; }, {}, never, never, false, never>;

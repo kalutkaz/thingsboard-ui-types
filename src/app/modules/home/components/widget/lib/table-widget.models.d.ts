@@ -9,6 +9,7 @@ type ColumnVisibilityOptions = 'visible' | 'hidden' | 'hidden-mobile';
 type ColumnSelectionOptions = 'enabled' | 'disabled';
 export interface TableWidgetSettings {
     enableSearch: boolean;
+    enableSelectColumnDisplay: boolean;
     enableStickyAction: boolean;
     enableStickyHeader: boolean;
     displayPagination: boolean;

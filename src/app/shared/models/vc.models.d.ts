@@ -5,6 +5,7 @@ import { EntityRelation } from '@shared/models/relation.models';
 import { Device, DeviceCredentials } from '@shared/models/device.models';
 import { RuleChain, RuleChainMetaData } from '@shared/models/rule-chain.models';
 export declare const exportableEntityTypes: Array<EntityType>;
+export declare const entityTypesWithoutRelatedData: Set<EntityType>;
 export interface VersionCreateConfig {
     saveRelations: boolean;
     saveAttributes: boolean;

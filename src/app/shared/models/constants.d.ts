@@ -132,6 +132,7 @@ export declare const HelpLinks: {
         templateNotifications: string;
         recipientNotifications: string;
         ruleNotifications: string;
+        jwtSecuritySettings: string;
     };
 };
 export interface ValueTypeData {
