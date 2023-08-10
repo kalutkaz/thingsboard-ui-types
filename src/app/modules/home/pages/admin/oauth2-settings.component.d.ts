@@ -1,14 +1,14 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { AbstractControl, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { DomainSchema, MapperConfigType, OAuth2Info, PlatformType } from '@shared/models/oauth2.models';
+import { DomainSchema, MapperConfigType, OAuth2Info, PlatformType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/oauth2.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { PageComponent } from '@shared/components/page.component';
-import { HasConfirmForm } from '@core/guards/confirm-on-exit.guard';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { HasConfirmForm } from '../../../../../../../thingsboard/ui-ngx/src/app/core/guards/confirm-on-exit.guard';
 import { MatChipInputEvent } from '@angular/material/chips';
-import { DialogService } from '@core/services/dialog.service';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { TranslateService } from '@ngx-translate/core';
-import { OAuth2Service } from '@core/http/oauth2.service';
+import { OAuth2Service } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/oauth2.service';
 import { ActivatedRoute } from '@angular/router';
 import * as i0 from "@angular/core";
 export declare class OAuth2SettingsComponent extends PageComponent implements OnInit, HasConfirmForm, OnDestroy {
@@ -78,6 +78,7 @@ export declare class OAuth2SettingsComponent extends PageComponent implements On
     redirectURI(control: AbstractControl, schema?: DomainSchema): string;
     redirectURIMixed(control: AbstractControl): string;
     trackByParams(index: number): number;
+    trackByItem(i: any, item: any): any;
     static ɵfac: i0.ɵɵFactoryDeclaration<OAuth2SettingsComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<OAuth2SettingsComponent, "tb-oauth2-settings", never, {}, {}, never, never, false, never>;
 }

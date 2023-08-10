@@ -1,15 +1,16 @@
-import { BaseData } from '@shared/models/base-data';
-import { RuleChainId } from '@shared/models/id/rule-chain-id';
-import { RuleNodeId } from '@shared/models/id/rule-node-id';
-import { ComponentDescriptor } from '@shared/models/component-descriptor.models';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { RuleChainId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/rule-chain-id';
+import { RuleNodeId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/rule-node-id';
+import { ComponentDescriptor } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/component-descriptor.models';
 import { FcEdge, FcNode } from 'ngx-flowchart';
 import { Observable } from 'rxjs';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { AfterViewInit, EventEmitter, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormGroup } from '@angular/forms';
-import { RuleChainType } from '@shared/models/rule-chain.models';
+import { RuleChainType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
+import { DebugRuleNodeEventBody } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/event.models';
 import * as i0 from "@angular/core";
 export interface RuleNodeConfiguration {
     [key: string]: any;
@@ -20,6 +21,7 @@ export interface RuleNode extends BaseData<RuleNodeId> {
     name: string;
     debugMode: boolean;
     singletonMode: boolean;
+    configurationVersion?: number;
     configuration: RuleNodeConfiguration;
     additionalInfo?: any;
 }
@@ -49,16 +51,21 @@ export interface RuleNodeConfigurationDescriptor {
 export interface IRuleNodeConfigurationComponent {
     ruleNodeId: string;
     ruleChainId: string;
+    hasScript: boolean;
+    testScriptLabel?: string;
+    changeScript?: EventEmitter<void>;
     ruleChainType: RuleChainType;
     configuration: RuleNodeConfiguration;
     configurationChanged: Observable<RuleNodeConfiguration>;
     validate(): any;
+    testScript?(debugEventBody?: DebugRuleNodeEventBody): any;
     [key: string]: any;
 }
 export declare abstract class RuleNodeConfigurationComponent extends PageComponent implements IRuleNodeConfigurationComponent, OnInit, AfterViewInit {
     protected store: Store<AppState>;
     ruleNodeId: string;
     ruleChainId: string;
+    hasScript: boolean;
     ruleChainType: RuleChainType;
     configurationValue: RuleNodeConfiguration;
     private configurationSet;
@@ -106,6 +113,7 @@ export interface RuleNodeTypeDescriptor {
 export declare const ruleNodeTypeDescriptors: Map<RuleNodeType, RuleNodeTypeDescriptor>;
 export interface RuleNodeComponentDescriptor extends ComponentDescriptor {
     type: RuleNodeType;
+    configurationVersion: number;
     configurationDescriptor?: RuleNodeConfigurationDescriptor;
 }
 export interface FcRuleNodeType extends FcNode {

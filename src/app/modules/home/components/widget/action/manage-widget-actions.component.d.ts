@@ -1,17 +1,17 @@
 import { AfterViewInit, ChangeDetectorRef, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogService } from '@core/services/dialog.service';
-import { PageLink } from '@shared/models/page/page-link';
+import { DialogService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { PageLink } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { WidgetActionCallbacks, WidgetActionDescriptorInfo, WidgetActionsData, WidgetActionsDatasource } from '@home/components/widget/action/manage-widget-actions.component.models';
-import { UtilsService } from '@core/services/utils.service';
-import { widgetType } from '@shared/models/widget.models';
+import { WidgetActionCallbacks, WidgetActionDescriptorInfo, WidgetActionsData, WidgetActionsDatasource } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/action/manage-widget-actions.component.models';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { WidgetActionDescriptor, WidgetActionSource, widgetType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { CdkDragDrop } from '@angular/cdk/drag-drop';
 import * as i0 from "@angular/core";
 export declare class ManageWidgetActionsComponent extends PageComponent implements OnInit, AfterViewInit, OnDestroy, ControlValueAccessor {
@@ -25,6 +25,9 @@ export declare class ManageWidgetActionsComponent extends PageComponent implemen
     disabled: boolean;
     widgetType: widgetType;
     callbacks: WidgetActionCallbacks;
+    actionSources: {
+        [actionSourceId: string]: WidgetActionSource;
+    };
     innerValue: WidgetActionsData;
     displayedColumns: string[];
     pageLink: PageLink;
@@ -35,6 +38,7 @@ export declare class ManageWidgetActionsComponent extends PageComponent implemen
     dirtyValue: boolean;
     dragDisabled: boolean;
     private widgetResize$;
+    private destroyed;
     searchInputField: ElementRef;
     paginator: MatPaginator;
     sort: MatSort;
@@ -57,8 +61,10 @@ export declare class ManageWidgetActionsComponent extends PageComponent implemen
     registerOnChange(fn: any): void;
     registerOnTouched(fn: any): void;
     setDisabledState(isDisabled: boolean): void;
-    writeValue(obj: WidgetActionsData): void;
+    writeValue(actions?: {
+        [actionSourceId: string]: Array<WidgetActionDescriptor>;
+    }): void;
     private onActionsUpdated;
     static ɵfac: i0.ɵɵFactoryDeclaration<ManageWidgetActionsComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<ManageWidgetActionsComponent, "tb-manage-widget-actions", never, { "disabled": "disabled"; "widgetType": "widgetType"; "callbacks": "callbacks"; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ManageWidgetActionsComponent, "tb-manage-widget-actions", never, { "disabled": "disabled"; "widgetType": "widgetType"; "callbacks": "callbacks"; "actionSources": "actionSources"; }, {}, never, never, false, never>;
 }

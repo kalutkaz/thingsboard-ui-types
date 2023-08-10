@@ -1,11 +1,11 @@
 import { ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { EntityComponent } from '@home/components/entity/entity.component';
-import { ChecksumAlgorithm, OtaPackage, OtaUpdateType } from '@shared/models/ota-package.models';
+import { EntityComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/entity/entity.component';
+import { ChecksumAlgorithm, OtaPackage, OtaUpdateType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/ota-package.models';
 import * as i0 from "@angular/core";
 export declare class OtaUpdateComponent extends EntityComponent<OtaPackage> implements OnInit, OnDestroy {
     protected store: Store<AppState>;

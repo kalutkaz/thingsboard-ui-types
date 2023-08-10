@@ -1,9 +1,9 @@
 import { ChangeDetectorRef, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { AdminService } from '@core/http/admin.service';
-import { UpdateMessage } from '@shared/models/settings.models';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { AdminService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/admin.service';
+import { UpdateMessage } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models';
 import * as i0 from "@angular/core";
 export declare class VersionInfoComponent extends PageComponent implements OnInit {
     protected store: Store<AppState>;

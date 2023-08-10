@@ -1,9 +1,9 @@
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DialogComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { AlarmInfo } from '@shared/models/alarm.models';
+import { AlarmInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
 import * as i0 from "@angular/core";
 export interface AlarmCommentDialogData {
     alarmId?: string;

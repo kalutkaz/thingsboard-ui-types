@@ -1,12 +1,13 @@
 import { ComponentRef, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { ActivatedRoute, Router } from '@angular/router';
-import { MenuService } from '@core/services/menu.service';
-import { MenuSection } from '@core/services/menu.models';
-import { ActiveComponentService } from '@core/services/active-component.service';
-import { TbAnchorComponent } from '@shared/components/tb-anchor.component';
+import { MenuService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.service';
+import { Observable } from 'rxjs';
+import { MenuSection } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.models';
+import { ActiveComponentService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/active-component.service';
+import { TbAnchorComponent } from '../../../../../../thingsboard/ui-ngx/src/app/shared/components/tb-anchor.component';
 import * as i0 from "@angular/core";
 export declare class RouterTabsComponent extends PageComponent implements OnInit {
     protected store: Store<AppState>;
@@ -17,11 +18,14 @@ export declare class RouterTabsComponent extends PageComponent implements OnInit
     tabsHeaderComponentAnchor: TbAnchorComponent;
     tabsHeaderComponentRef: ComponentRef<any>;
     hideCurrentTabs: boolean;
-    tabs$: import("rxjs").Observable<MenuSection[]>;
+    replaceUrl: boolean;
+    tabs$: Observable<Array<MenuSection>>;
     constructor(store: Store<AppState>, activatedRoute: ActivatedRoute, router: Router, menuService: MenuService, activeComponentService: ActiveComponentService);
     ngOnInit(): void;
     activeComponentChanged(activeComponent: any): void;
+    private getSectionPath;
     private buildTabs;
+    private buildTabsForRoutes;
     private findRootSection;
     private buildTabsHeaderComponent;
     static ɵfac: i0.ɵɵFactoryDeclaration<RouterTabsComponent, never>;

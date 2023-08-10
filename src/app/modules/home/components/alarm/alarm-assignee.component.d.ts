@@ -1,6 +1,6 @@
 import { EventEmitter, ViewContainerRef } from '@angular/core';
-import { UtilsService } from '@core/services/utils.service';
-import { AlarmAssignee, AlarmInfo } from '@shared/models/alarm.models';
+import { UtilsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { AlarmAssignee, AlarmInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
 import { Overlay } from '@angular/cdk/overlay';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";

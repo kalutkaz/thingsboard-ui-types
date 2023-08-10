@@ -1,9 +1,9 @@
-import { BaseData } from '@shared/models/base-data';
-import { EntityId } from '@shared/models/id/entity-id';
-import { NavTreeNode } from '@shared/components/nav-tree.component';
-import { Datasource } from '@shared/models/widget.models';
-import { EntityRelationsQuery } from '@shared/models/relation.models';
-import { WidgetContext } from '@home/models/widget-component.models';
+import { BaseData } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { EntityId } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { NavTreeNode } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/nav-tree.component';
+import { Datasource } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { EntityRelationsQuery } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 export interface EntitiesHierarchyWidgetSettings {
     nodeRelationQueryFunction: string;
     nodeHasChildrenFunction: string;

@@ -1,9 +1,9 @@
 import { InjectionToken, OnInit } from '@angular/core';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, FormGroupDirective, NgForm } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { OverlayRef } from '@angular/cdk/overlay';
 import * as i0 from "@angular/core";
 export declare const EDIT_ATTRIBUTE_VALUE_PANEL_DATA: InjectionToken<any>;

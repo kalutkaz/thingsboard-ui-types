@@ -2,9 +2,9 @@ import { OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
-import { WidgetsBundle } from '@shared/models/widgets-bundle.model';
-import { WidgetService } from '@core/http/widget.service';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetsBundle } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widgets-bundle.model';
+import { WidgetService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
 import * as i0 from "@angular/core";
 export declare class WidgetsBundleSelectComponent implements ControlValueAccessor, OnInit, OnChanges {
     private store;

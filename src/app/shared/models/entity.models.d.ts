@@ -1,8 +1,8 @@
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { AttributeData } from './telemetry/telemetry.models';
-import { EntityId } from '@shared/models/id/entity-id';
-import { DeviceCredentialMQTTBasic } from '@shared/models/device.models';
-import { Lwm2mSecurityConfigModels } from '@shared/models/lwm2m-security-config.models';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { DeviceCredentialMQTTBasic } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { Lwm2mSecurityConfigModels } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/lwm2m-security-config.models';
 export interface EntityInfo {
     name?: string;
     label?: string;

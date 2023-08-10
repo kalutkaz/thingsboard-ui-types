@@ -1,8 +1,8 @@
 import { OnInit } from '@angular/core';
-import { AuthService } from '@core/auth/auth.service';
+import { AuthService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { PageComponent } from '@shared/components/page.component';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { UntypedFormBuilder } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";

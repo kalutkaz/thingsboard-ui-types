@@ -2,9 +2,9 @@ import { AfterViewInit, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { MessageType } from '@shared/models/rule-node.models';
+import { MessageType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
 import * as i0 from "@angular/core";
 export declare class MessageTypeAutocompleteComponent implements ControlValueAccessor, OnInit, AfterViewInit, OnDestroy {
     private store;

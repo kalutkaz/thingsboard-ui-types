@@ -1,5 +1,5 @@
 import { ControlValueAccessor } from '@angular/forms';
-import { EntityAliasFilter } from '@shared/models/alias.models';
+import { EntityAliasFilter } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alias.models';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export declare class EntityFilterViewComponent implements ControlValueAccessor {

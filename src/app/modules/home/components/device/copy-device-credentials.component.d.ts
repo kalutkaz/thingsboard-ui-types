@@ -1,10 +1,10 @@
 import { ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
-import { EntityId } from '@shared/models/id/entity-id';
-import { DeviceService } from '@core/http/device.service';
-import { DeviceCredentials } from '@shared/models/device.models';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { DeviceService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/device.service';
+import { DeviceCredentials } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import { Subject } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export declare class CopyDeviceCredentialsComponent implements OnInit, OnDestroy {

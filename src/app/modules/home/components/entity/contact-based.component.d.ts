@@ -1,11 +1,11 @@
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormGroup, ValidatorFn } from '@angular/forms';
-import { ContactBased } from '@shared/models/contact-based.model';
+import { ContactBased } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/contact-based.model';
 import { AfterViewInit, ChangeDetectorRef } from '@angular/core';
-import { HasId } from '@shared/models/base-data';
+import { HasId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
 import { EntityComponent } from './entity.component';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import * as i0 from "@angular/core";
 export declare abstract class ContactBasedComponent<T extends ContactBased<HasId>> extends EntityComponent<T> implements AfterViewInit {
     protected store: Store<AppState>;

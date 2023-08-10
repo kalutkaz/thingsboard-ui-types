@@ -1,13 +1,13 @@
 import { AfterViewInit, ElementRef, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
+import { PageData } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityInfo } from '@shared/models/entity.models';
-import { EntityFilter } from '@shared/models/query/query.models';
-import { EntityService } from '@core/http/entity.service';
+import { EntityInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity.models';
+import { EntityFilter } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { EntityService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import * as i0 from "@angular/core";
 export declare class AliasesEntityAutocompleteComponent implements ControlValueAccessor, OnInit, AfterViewInit {
     private store;

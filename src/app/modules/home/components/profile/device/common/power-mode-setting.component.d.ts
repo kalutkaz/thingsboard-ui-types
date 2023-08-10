@@ -1,6 +1,6 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { UntypedFormGroup } from '@angular/forms';
-import { PowerMode } from '@home/components/profile/device/lwm2m/lwm2m-profile-config.models';
+import { PowerMode } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/profile/device/lwm2m/lwm2m-profile-config.models';
 import * as i0 from "@angular/core";
 export declare class PowerModeSettingComponent implements OnInit, OnDestroy {
     powerMods: PowerMode[];

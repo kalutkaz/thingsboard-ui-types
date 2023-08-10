@@ -1,5 +1,5 @@
 import { EntityId } from './entity-id';
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 export declare class RuleChainId implements EntityId {
     entityType: EntityType;
     id: string;

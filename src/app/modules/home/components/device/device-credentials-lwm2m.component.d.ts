@@ -1,6 +1,6 @@
 import { OnDestroy } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { Lwm2mSecurityType } from '@shared/models/lwm2m-security-config.models';
+import { Lwm2mSecurityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/lwm2m-security-config.models';
 import * as i0 from "@angular/core";
 export declare class DeviceCredentialsLwm2mComponent implements ControlValueAccessor, Validator, OnDestroy {
     private fb;

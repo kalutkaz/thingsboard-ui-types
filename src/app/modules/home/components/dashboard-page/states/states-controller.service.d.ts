@@ -1,5 +1,5 @@
 import { ComponentFactory, ComponentFactoryResolver, Type } from '@angular/core';
-import { IStateControllerComponent } from '@home/components/dashboard-page/states/state-controller.models';
+import { IStateControllerComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/states/state-controller.models';
 import * as i0 from "@angular/core";
 export interface StateControllerData {
     factory: ComponentFactory<IStateControllerComponent>;

@@ -1,13 +1,13 @@
 import { OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
-import { WidgetContext } from '@home/models/widget-component.models';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { UtilsService } from '@core/services/utils.service';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { TranslateService } from '@ngx-translate/core';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { AttributeService } from '@core/http/attribute.service';
-import { AttributeScope } from '@shared/models/telemetry/telemetry.models';
+import { AttributeService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/attribute.service';
+import { AttributeScope } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
 import * as i0 from "@angular/core";
 declare enum JsonInputWidgetMode {
     ATTRIBUTE = "ATTRIBUTE",

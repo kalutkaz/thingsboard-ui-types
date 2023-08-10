@@ -1,5 +1,5 @@
 import { ValidatorFn } from '@angular/forms';
-import { Lwm2mSecurityType } from '@shared/models/lwm2m-security-config.models';
+import { Lwm2mSecurityType } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/lwm2m-security-config.models';
 export declare const PAGE_SIZE_LIMIT = 50;
 export declare const INSTANCES = "instances";
 export declare const RESOURCES = "resources";

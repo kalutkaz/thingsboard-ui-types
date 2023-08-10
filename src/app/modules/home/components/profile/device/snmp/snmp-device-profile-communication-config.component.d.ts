@@ -1,6 +1,6 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, Validator } from '@angular/forms';
-import { SnmpCommunicationConfig, SnmpSpecType } from '@shared/models/device.models';
+import { SnmpCommunicationConfig, SnmpSpecType } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import * as i0 from "@angular/core";
 export declare class SnmpDeviceProfileCommunicationConfigComponent implements OnInit, OnDestroy, ControlValueAccessor, Validator {
     private fb;

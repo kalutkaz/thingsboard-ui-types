@@ -1,5 +1,5 @@
 import { TenantId } from './id/tenant-id';
-import { BaseData, HasId } from '@shared/models/base-data';
+import { BaseData, HasId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
 export declare enum EntityType {
     TENANT = "TENANT",
     TENANT_PROFILE = "TENANT_PROFILE",

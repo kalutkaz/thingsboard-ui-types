@@ -1,14 +1,14 @@
 import { OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormGroup } from '@angular/forms';
-import { UserComponent } from '@modules/home/pages/user/user.component';
-import { Authority } from '@shared/models/authority.enum';
-import { ActivationMethod, User } from '@shared/models/user.model';
-import { UserService } from '@core/http/user.service';
+import { UserComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/pages/user/user.component';
+import { Authority } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/authority.enum';
+import { ActivationMethod, User } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
+import { UserService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/user.service';
 import { Observable } from 'rxjs';
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DialogComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Router } from '@angular/router';
 import * as i0 from "@angular/core";
 export interface AddUserDialogData {

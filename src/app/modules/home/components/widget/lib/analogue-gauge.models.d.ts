@@ -1,6 +1,6 @@
 import * as CanvasGauges from 'canvas-gauges';
-import { FontSettings } from '@home/components/widget/lib/settings.models';
-import { WidgetContext } from '@home/models/widget-component.models';
+import { FontSettings } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/settings.models';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import Highlight = CanvasGauges.Highlight;
 import BaseGauge = CanvasGauges.BaseGauge;
 import GenericOptions = CanvasGauges.GenericOptions;

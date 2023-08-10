@@ -1,6 +1,6 @@
 import { ElementRef, OnChanges, OnDestroy, Renderer2, SimpleChanges, ViewContainerRef } from '@angular/core';
-import { TbPopoverService } from '@shared/components/popover.service';
-import { PopoverPlacement } from '@shared/components/popover.models';
+import { TbPopoverService } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.service';
+import { PopoverPlacement } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.models';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import * as i0 from "@angular/core";
 export declare class HelpPopupComponent implements OnChanges, OnDestroy {
@@ -21,6 +21,7 @@ export declare class HelpPopupComponent implements OnChanges, OnDestroy {
     };
     popoverVisible: boolean;
     popoverReady: boolean;
+    hintMode: boolean;
     triggerSafeHtml: SafeHtml;
     textMode: boolean;
     constructor(viewContainerRef: ViewContainerRef, element: ElementRef<HTMLElement>, sanitizer: DomSanitizer, renderer: Renderer2, popoverService: TbPopoverService);
@@ -28,5 +29,5 @@ export declare class HelpPopupComponent implements OnChanges, OnDestroy {
     toggleHelp(): void;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<HelpPopupComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<HelpPopupComponent, "[tb-help-popup], [tb-help-popup-content]", never, { "helpId": "tb-help-popup"; "helpContent": "tb-help-popup-content"; "triggerText": "trigger-text"; "triggerStyle": "trigger-style"; "helpPopupPlacement": "tb-help-popup-placement"; "helpPopupStyle": "tb-help-popup-style"; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<HelpPopupComponent, "[tb-help-popup], [tb-help-popup-content]", never, { "helpId": "tb-help-popup"; "helpContent": "tb-help-popup-content"; "triggerText": "trigger-text"; "triggerStyle": "trigger-style"; "helpPopupPlacement": "tb-help-popup-placement"; "helpPopupStyle": "tb-help-popup-style"; "hintMode": "hintMode"; }, {}, never, never, false, never>;
 }

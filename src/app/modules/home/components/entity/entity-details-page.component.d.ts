@@ -1,15 +1,15 @@
 import { ChangeDetectorRef, ComponentFactoryResolver, Injector, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { BaseData, HasId } from '@shared/models/base-data';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { BaseData, HasId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UntypedFormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { BroadcastService } from '@core/services/broadcast.service';
-import { EntityDetailsPanelComponent } from '@home/components/entity/entity-details-panel.component';
-import { DialogService } from '@core/services/dialog.service';
-import { IEntityDetailsPageComponent } from '@home/models/entity/entity-details-page-component.models';
+import { BroadcastService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/broadcast.service';
+import { EntityDetailsPanelComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/entity/entity-details-panel.component';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { IEntityDetailsPageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entity-details-page-component.models';
 import * as i0 from "@angular/core";
 export declare class EntityDetailsPageComponent extends EntityDetailsPanelComponent implements IEntityDetailsPageComponent, OnInit, OnDestroy {
     private route;

@@ -1,4 +1,4 @@
-import { TimeService } from '@core/services/time.service';
+import { TimeService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/time.service';
 import * as moment_ from 'moment';
 export declare const SECOND = 1000;
 export declare const MINUTE: number;
@@ -118,7 +118,7 @@ export declare const QuickTimeIntervalTranslationMap: Map<QuickTimeInterval, str
 export declare const forAllTimeInterval: () => Timewindow;
 export declare const historyInterval: (timewindowMs: number) => Timewindow;
 export declare const defaultTimewindow: (timeService: TimeService) => Timewindow;
-export declare const initModelFromDefaultTimewindow: (value: Timewindow, quickIntervalOnly: boolean, timeService: TimeService) => Timewindow;
+export declare const initModelFromDefaultTimewindow: (value: Timewindow, quickIntervalOnly: boolean, historyOnly: boolean, timeService: TimeService) => Timewindow;
 export declare const toHistoryTimewindow: (timewindow: Timewindow, startTimeMs: number, endTimeMs: number, interval: number, timeService: TimeService) => Timewindow;
 export declare const timewindowTypeChanged: (newTimewindow: Timewindow, oldTimewindow: Timewindow) => boolean;
 export declare const getTimezone: (tz: string) => moment_.Moment;

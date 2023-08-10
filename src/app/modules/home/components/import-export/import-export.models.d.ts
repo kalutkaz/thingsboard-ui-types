@@ -1,6 +1,6 @@
-import { Widget, WidgetTypeDetails } from '@app/shared/models/widget.models';
-import { DashboardLayoutId } from '@shared/models/dashboard.models';
-import { WidgetsBundle } from '@shared/models/widgets-bundle.model';
+import { Widget, WidgetTypeDetails } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { DashboardLayoutId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { WidgetsBundle } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widgets-bundle.model';
 export interface ImportWidgetResult {
     widget: Widget;
     layoutId: DashboardLayoutId;

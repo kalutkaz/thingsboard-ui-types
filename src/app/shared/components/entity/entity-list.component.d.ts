@@ -2,12 +2,12 @@ import { AfterViewInit, ElementRef, OnChanges, OnInit, SimpleChanges } from '@an
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityType } from '@shared/models/entity-type.models';
-import { BaseData } from '@shared/models/base-data';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntityService } from '@core/http/entity.service';
+import { EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { BaseData } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { EntityId } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntityService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import { MatAutocomplete } from '@angular/material/autocomplete';
 import { MatChipGrid } from '@angular/material/chips';
 import { SubscriptSizing } from '@angular/material/form-field';

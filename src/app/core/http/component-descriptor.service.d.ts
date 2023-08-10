@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { ComponentDescriptor, ComponentType } from '@shared/models/component-descriptor.models';
-import { RequestConfig } from '@core/http/http-utils';
+import { ComponentDescriptor, ComponentType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/component-descriptor.models';
+import { RequestConfig } from '../../../../../thingsboard/ui-ngx/src/app/core/http/http-utils';
 import { Observable } from 'rxjs';
-import { RuleChainType } from '@shared/models/rule-chain.models';
+import { RuleChainType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
 import * as i0 from "@angular/core";
 export declare class ComponentDescriptorService {
     private http;

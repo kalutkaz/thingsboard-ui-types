@@ -1,8 +1,9 @@
-import { WidgetContext } from '@home/models/widget-component.models';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import { ChartType } from './flot-widget.models';
 export declare class TbFlot {
     private ctx;
     private readonly chartType;
+    private $flotElement?;
     private readonly utils;
     private settings;
     private comparisonEnabled;
@@ -42,6 +43,8 @@ export declare class TbFlot {
     private mouseupHandler;
     private mouseleaveHandler;
     private flotClickHandler;
+    private enableSelection;
+    private selectionMode;
     private readonly showTooltip;
     private readonly animatedPie;
     private pieDataAnimationDuration;
@@ -51,7 +54,7 @@ export declare class TbFlot {
     private pieAnimationStartTime;
     private pieAnimationLastTime;
     private pieAnimationCaf;
-    constructor(ctx: WidgetContext, chartType: ChartType);
+    constructor(ctx: WidgetContext, chartType: ChartType, $flotElement?: JQuery<any>);
     private init;
     update(): void;
     latestDataUpdate(): void;

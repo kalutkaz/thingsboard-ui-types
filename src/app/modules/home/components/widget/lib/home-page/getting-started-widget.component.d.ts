@@ -1,14 +1,14 @@
 import { ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { UserSettingsService } from '@core/http/user-settings.service';
-import { WidgetContext } from '@home/models/widget-component.models';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { UserSettingsService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/user-settings.service';
+import { WidgetContext } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import { MatDialog } from '@angular/material/dialog';
-import { GettingStarted } from '@shared/models/user-settings.models';
+import { GettingStarted } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user-settings.models';
 import { CdkStep, StepperSelectionEvent } from '@angular/cdk/stepper';
 import { MatStepper } from '@angular/material/stepper';
-import { Authority } from '@shared/models/authority.enum';
+import { Authority } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/authority.enum';
 import * as i0 from "@angular/core";
 export declare class GettingStartedWidgetComponent extends PageComponent implements OnInit, OnDestroy {
     protected store: Store<AppState>;

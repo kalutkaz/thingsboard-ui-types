@@ -1,9 +1,9 @@
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { EntityTableHeaderComponent } from '../../components/entity/entity-table-header.component';
-import { AlarmInfo } from '@shared/models/alarm.models';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { EntityTableHeaderComponent } from '../entity/entity-table-header.component';
+import { AlarmInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
 import { AlarmTableConfig } from './alarm-table-config';
-import { AlarmFilterConfig } from '@shared/models/query/query.models';
+import { AlarmFilterConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import * as i0 from "@angular/core";
 export declare class AlarmTableHeaderComponent extends EntityTableHeaderComponent<AlarmInfo> {
     protected store: Store<AppState>;

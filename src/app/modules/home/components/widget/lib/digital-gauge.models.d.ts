@@ -1,6 +1,6 @@
-import { GaugeType } from '@home/components/widget/lib/canvas-digital-gauge';
-import { AnimationRule } from '@home/components/widget/lib/analogue-gauge.models';
-import { FontSettings } from '@home/components/widget/lib/settings.models';
+import { GaugeType } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/canvas-digital-gauge';
+import { AnimationRule } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/analogue-gauge.models';
+import { FontSettings } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/settings.models';
 export interface AttributeSourceProperty {
     valueSource: string;
     entityAlias?: string;

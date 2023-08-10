@@ -1,12 +1,12 @@
 import { ElementRef, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { LinkLabel } from '@shared/models/rule-node.models';
+import { LinkLabel } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
 import { Observable } from 'rxjs';
-import { TruncatePipe } from '@shared/pipe/truncate.pipe';
+import { TruncatePipe } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/truncate.pipe';
 import { MatAutocomplete, MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { MatChipInputEvent, MatChipGrid } from '@angular/material/chips';
 import { TranslateService } from '@ngx-translate/core';
-import { RuleChainService } from '@core/http/rule-chain.service';
+import { RuleChainService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/rule-chain.service';
 import * as i0 from "@angular/core";
 export declare class LinkLabelsComponent implements ControlValueAccessor, OnInit, OnChanges {
     private fb;

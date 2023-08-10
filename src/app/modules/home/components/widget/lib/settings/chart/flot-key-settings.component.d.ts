@@ -1,13 +1,13 @@
 import { OnInit } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
-import { ChartType, TbFlotKeySettings } from '@home/components/widget/lib/flot-widget.models';
+import { PageComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { ChartType, TbFlotKeySettings } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/flot-widget.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { WidgetService } from '@core/http/widget.service';
+import { WidgetService } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
 import { CdkDragDrop } from '@angular/cdk/drag-drop';
-import { IAliasController } from 'src/app/core/api/widget-api.models';
+import { IAliasController } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import * as i0 from "@angular/core";
 export declare function flotDataKeyDefaultSettings(chartType: ChartType): TbFlotKeySettings;
 export declare class FlotKeySettingsComponent extends PageComponent implements OnInit, ControlValueAccessor, Validator {

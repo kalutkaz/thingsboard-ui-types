@@ -1,5 +1,5 @@
 import { AbstractControl, ValidationErrors } from '@angular/forms';
-import { EntityId } from '@shared/models/id/entity-id';
+import { EntityId } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 export declare enum SecurityType {
     tls = "tls",
     accessToken = "accessToken"

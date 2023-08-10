@@ -1,16 +1,19 @@
 import { AfterViewInit, ElementRef, InjectionToken, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { User, UserEmailInfo } from '@shared/models/user.model';
+import { User, UserEmailInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
 import { TranslateService } from '@ngx-translate/core';
-import { UserService } from '@core/http/user.service';
+import { UserService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/user.service';
 import { OverlayRef } from '@angular/cdk/overlay';
 import { MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
-import { UtilsService } from '@core/services/utils.service';
+import { UtilsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { AlarmAssigneeOption } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
 import * as i0 from "@angular/core";
 export declare const ALARM_ASSIGNEE_SELECT_PANEL_DATA: InjectionToken<any>;
 export interface AlarmAssigneeSelectPanelData {
     assigneeId?: string;
+    assigneeOption?: AlarmAssigneeOption;
+    userMode?: boolean;
 }
 export declare class AlarmAssigneeSelectPanelComponent implements OnInit, AfterViewInit, OnDestroy {
     data: AlarmAssigneeSelectPanelData;
@@ -19,15 +22,21 @@ export declare class AlarmAssigneeSelectPanelComponent implements OnInit, AfterV
     private userService;
     private fb;
     private utilsService;
+    assigneeOptions: typeof AlarmAssigneeOption;
     private dirty;
     assigneeId?: string;
+    assigneeOption?: AlarmAssigneeOption;
     assigneeNotSetText: string;
+    assignedToCurrentUserText: string;
     selectUserFormGroup: FormGroup;
     userInput: ElementRef;
     filteredUsers: Observable<Array<UserEmailInfo>>;
     searchText: string;
     userSelected: boolean;
     result?: UserEmailInfo;
+    optionResult?: AlarmAssigneeOption;
+    get displayAssigneeNotSet(): boolean;
+    get displayAssignedToCurrentUser(): boolean;
     private destroy$;
     constructor(data: AlarmAssigneeSelectPanelData, overlayRef: OverlayRef, translate: TranslateService, userService: UserService, fb: FormBuilder, utilsService: UtilsService);
     ngOnInit(): void;

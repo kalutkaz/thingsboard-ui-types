@@ -1,6 +1,6 @@
 import { Actions } from '@ngrx/effects';
-import { NotificationActions } from '@app/core/notification/notification.actions';
-import { ToastNotificationService } from '@core/services/toast-notification.service';
+import { NotificationActions } from '../../../../../thingsboard/ui-ngx/src/app/core/notification/notification.actions';
+import { ToastNotificationService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/toast-notification.service';
 import * as i0 from "@angular/core";
 export declare class NotificationEffects {
     private actions$;

@@ -1,10 +1,10 @@
 import { OnInit, QueryList } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
-import { WidgetMobileActionDescriptor, WidgetMobileActionType } from '@shared/models/widget.models';
-import { JsFuncComponent } from '@shared/components/js-func.component';
-import { WidgetService } from '@core/http/widget.service';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetMobileActionDescriptor, WidgetMobileActionType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { JsFuncComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/js-func.component';
+import { WidgetService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
 import * as i0 from "@angular/core";
 export declare class MobileActionEditorComponent implements ControlValueAccessor, OnInit {
     private store;

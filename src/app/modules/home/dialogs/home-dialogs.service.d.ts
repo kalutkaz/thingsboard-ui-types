@@ -1,5 +1,5 @@
 import { MatDialog } from '@angular/material/dialog';
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { Observable } from 'rxjs';
 import * as i0 from "@angular/core";
 export declare class HomeDialogsService {

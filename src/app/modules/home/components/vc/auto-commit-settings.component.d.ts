@@ -1,14 +1,14 @@
 import { OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { AbstractControl, UntypedFormBuilder, UntypedFormGroup, FormGroupDirective } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { AdminService } from '@core/http/admin.service';
-import { AutoCommitSettings } from '@shared/models/settings.models';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { AdminService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/admin.service';
+import { AutoCommitSettings } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models';
 import { TranslateService } from '@ngx-translate/core';
-import { DialogService } from '@core/services/dialog.service';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { Observable } from 'rxjs';
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import * as i0 from "@angular/core";
 export declare class AutoCommitSettingsComponent extends PageComponent implements OnInit {

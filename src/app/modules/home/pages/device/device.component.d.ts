@@ -1,14 +1,14 @@
 import { ChangeDetectorRef } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { EntityComponent } from '../../components/entity/entity.component';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { DeviceCredentials, DeviceInfo, DeviceProfileInfo } from '@shared/models/device.models';
-import { EntityType } from '@shared/models/entity-type.models';
+import { DeviceCredentials, DeviceInfo, DeviceProfileInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import { Subject } from 'rxjs';
-import { OtaUpdateType } from '@shared/models/ota-package.models';
+import { OtaUpdateType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/ota-package.models';
 import * as i0 from "@angular/core";
 export declare class DeviceComponent extends EntityComponent<DeviceInfo> {
     protected store: Store<AppState>;

@@ -1,12 +1,12 @@
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { AggregationType } from '../time/time.models';
 import { Observable } from 'rxjs';
-import { EntityId } from '@shared/models/id/entity-id';
+import { EntityId } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { NgZone } from '@angular/core';
-import { AlarmCountQuery, AlarmData, AlarmDataQuery, EntityCountQuery, EntityData, EntityDataQuery, EntityFilter, EntityKey, TsValue } from '@shared/models/query/query.models';
-import { PageData } from '@shared/models/page/page-data';
-import { CmdWrapper, WsSubscriber } from '@shared/models/websocket/websocket.models';
-import { TelemetryWebsocketService } from '@core/ws/telemetry-websocket.service';
+import { AlarmCountQuery, AlarmData, AlarmDataQuery, EntityCountQuery, EntityData, EntityDataQuery, EntityFilter, EntityKey, TsValue } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { PageData } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { CmdWrapper, WsSubscriber } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/websocket/websocket.models';
+import { TelemetryWebsocketService } from '../../../../../../thingsboard/ui-ngx/src/app/core/ws/telemetry-websocket.service';
 export declare enum DataKeyType {
     timeseries = "timeseries",
     attribute = "attribute",

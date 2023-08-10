@@ -1,8 +1,8 @@
 import { ElementRef, InjectionToken, OnDestroy, OnInit, TemplateRef, ViewContainerRef } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { AlarmFilterConfig } from '@shared/models/query/query.models';
+import { AlarmFilterConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { Overlay, OverlayRef } from '@angular/cdk/overlay';
-import { AlarmSearchStatus, AlarmSeverity } from '@shared/models/alarm.models';
+import { AlarmSearchStatus, AlarmSeverity } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
 import { MatChipInputEvent } from '@angular/material/chips';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
@@ -11,6 +11,7 @@ export interface AlarmFilterConfigData {
     panelMode: boolean;
     userMode: boolean;
     alarmFilterConfig: AlarmFilterConfig;
+    initialAlarmFilterConfig?: AlarmFilterConfig;
 }
 export declare class AlarmFilterConfigComponent implements OnInit, OnDestroy, ControlValueAccessor {
     private data;
@@ -25,6 +26,7 @@ export declare class AlarmFilterConfigComponent implements OnInit, OnDestroy, Co
     buttonMode: boolean;
     userMode: boolean;
     propagatedFilter: boolean;
+    initialAlarmFilterConfig: AlarmFilterConfig;
     panelMode: boolean;
     readonly separatorKeysCodes: number[];
     alarmSearchStatuses: AlarmSearchStatus[];
@@ -45,16 +47,17 @@ export declare class AlarmFilterConfigComponent implements OnInit, OnDestroy, Co
     registerOnTouched(fn: any): void;
     setDisabledState(isDisabled: boolean): void;
     writeValue(alarmFilterConfig?: AlarmFilterConfig): void;
-    private updateValidators;
     toggleAlarmFilterPanel($event: Event): void;
     cancel(): void;
     update(): void;
+    reset(): void;
     alarmTypeList(): string[];
     removeAlarmType(type: string): void;
     addAlarmType(event: MatChipInputEvent): void;
     private updateAlarmConfigForm;
     private alarmConfigUpdated;
+    private alarmFilterConfigFromFormValue;
     private updateButtonDisplayValue;
     static ɵfac: i0.ɵɵFactoryDeclaration<AlarmFilterConfigComponent, [{ optional: true; }, { optional: true; }, null, null, null, null, null]>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<AlarmFilterConfigComponent, "tb-alarm-filter-config", never, { "disabled": "disabled"; "buttonMode": "buttonMode"; "userMode": "userMode"; "propagatedFilter": "propagatedFilter"; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<AlarmFilterConfigComponent, "tb-alarm-filter-config", never, { "disabled": "disabled"; "buttonMode": "buttonMode"; "userMode": "userMode"; "propagatedFilter": "propagatedFilter"; "initialAlarmFilterConfig": "initialAlarmFilterConfig"; }, {}, never, never, false, never>;
 }

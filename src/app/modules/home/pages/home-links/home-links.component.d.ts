@@ -1,9 +1,9 @@
 import { ChangeDetectorRef, OnInit } from '@angular/core';
-import { MenuService } from '@core/services/menu.service';
+import { MenuService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.service';
 import { BreakpointObserver } from '@angular/cdk/layout';
-import { HomeSection } from '@core/services/menu.models';
+import { HomeSection } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.models';
 import { ActivatedRoute } from '@angular/router';
-import { HomeDashboard } from '@shared/models/dashboard.models';
+import { HomeDashboard } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 import * as i0 from "@angular/core";
 export declare class HomeLinksComponent implements OnInit {
     private menuService;

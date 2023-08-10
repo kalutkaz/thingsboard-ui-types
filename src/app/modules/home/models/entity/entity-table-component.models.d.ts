@@ -1,15 +1,15 @@
-import { BaseData, HasId } from '@shared/models/base-data';
-import { EntityTypeTranslation } from '@shared/models/entity-type.models';
+import { BaseData, HasId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { EntityTypeTranslation } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { SafeHtml } from '@angular/platform-browser';
-import { PageLink } from '@shared/models/page/page-link';
-import { Timewindow } from '@shared/models/time/time.models';
-import { EntitiesDataSource } from '@home/models/datasource/entity-datasource';
+import { PageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { Timewindow } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
+import { EntitiesDataSource } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/datasource/entity-datasource';
 import { ElementRef, EventEmitter } from '@angular/core';
-import { TbAnchorComponent } from '@shared/components/tb-anchor.component';
+import { TbAnchorComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/tb-anchor.component';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { EntityAction } from '@home/models/entity/entity-component.models';
-import { CellActionDescriptor, EntityActionTableColumn, EntityColumn, EntityTableColumn, EntityTableConfig, GroupActionDescriptor, HeaderActionDescriptor } from '@home/models/entity/entities-table-config.models';
+import { EntityAction } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entity-component.models';
+import { CellActionDescriptor, EntityActionTableColumn, EntityColumn, EntityTableColumn, EntityTableConfig, GroupActionDescriptor, HeaderActionDescriptor } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import { ActivatedRoute } from '@angular/router';
 export type EntitiesTableAction = 'add';
 export interface IEntitiesTableComponent {
@@ -56,6 +56,7 @@ export interface IEntitiesTableComponent {
     exitFilterMode(): void;
     resetSortAndFilter(update?: boolean, preserveTimewindow?: boolean): void;
     columnsUpdated(resetData?: boolean): void;
+    cellActionDescriptorsUpdated(): void;
     headerCellStyle(column: EntityColumn<BaseData<HasId>>): any;
     clearCellCache(col: number, row: number): void;
     cellContent(entity: BaseData<HasId>, column: EntityColumn<BaseData<HasId>>, row: number): any;

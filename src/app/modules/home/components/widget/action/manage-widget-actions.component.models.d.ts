@@ -1,10 +1,10 @@
-import { CustomActionDescriptor, WidgetActionDescriptor, WidgetActionSource } from '@app/shared/models/widget.models';
+import { CustomActionDescriptor, WidgetActionDescriptor, WidgetActionSource } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { CollectionViewer, DataSource } from '@angular/cdk/collections';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
+import { PageData } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
 import { TranslateService } from '@ngx-translate/core';
-import { PageLink } from '@shared/models/page/page-link';
-import { UtilsService } from '@core/services/utils.service';
+import { PageLink } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 export interface WidgetActionCallbacks {
     fetchDashboardStates: (query: string) => Array<string>;
 }

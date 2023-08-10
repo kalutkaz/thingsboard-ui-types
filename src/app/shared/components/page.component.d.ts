@@ -1,6 +1,6 @@
 import { OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Observable, Subscription } from 'rxjs';
 import { AbstractControl } from '@angular/forms';
 import * as i0 from "@angular/core";

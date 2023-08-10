@@ -2,8 +2,8 @@ import { ElementRef, EventEmitter, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { ObjectLwM2M } from './lwm2m-profile-config.models';
-import { DeviceProfileService } from '@core/http/device-profile.service';
-import { TruncatePipe } from '@shared/pipe/truncate.pipe';
+import { DeviceProfileService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/device-profile.service';
+import { TruncatePipe } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/truncate.pipe';
 import * as i0 from "@angular/core";
 export declare class Lwm2mObjectListComponent implements ControlValueAccessor, OnInit, Validator {
     truncate: TruncatePipe;

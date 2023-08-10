@@ -1,9 +1,9 @@
 import { AfterViewInit, ChangeDetectorRef, ElementRef, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
-import { WidgetContext } from '@home/models/widget-component.models';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { FormattedData } from '@shared/models/widget.models';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { FormattedData } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import * as i0 from "@angular/core";
 interface QrCodeWidgetSettings {
     qrCodeTextPattern: string;

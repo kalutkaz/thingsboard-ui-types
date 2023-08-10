@@ -1,13 +1,13 @@
-import { NotificationTarget, NotificationTargetConfigType, NotificationTargetType, SlackChanelType } from '@shared/models/notification.models';
+import { NotificationTarget, NotificationTargetConfigType, NotificationTargetType, SlackChanelType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
 import { OnDestroy } from '@angular/core';
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DialogComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Router } from '@angular/router';
 import { MatDialogRef } from '@angular/material/dialog';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { NotificationService } from '@core/http/notification.service';
-import { EntityType } from '@shared/models/entity-type.models';
+import { NotificationService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/notification.service';
+import { EntityType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import * as i0 from "@angular/core";
 export interface RecipientNotificationDialogData {
     target?: NotificationTarget;
@@ -28,7 +28,7 @@ export declare class RecipientNotificationDialogComponent extends DialogComponen
     notificationTargetTypeTranslationMap: Map<NotificationTargetType, string>;
     notificationTargetConfigType: typeof NotificationTargetConfigType;
     notificationTargetConfigTypes: NotificationTargetConfigType[];
-    notificationTargetConfigTypeInfoMap: Map<NotificationTargetConfigType, import("@shared/models/notification.models").NotificationTargetConfigTypeInfo>;
+    notificationTargetConfigTypeInfoMap: Map<NotificationTargetConfigType, import("../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models").NotificationTargetConfigTypeInfo>;
     slackChanelTypes: SlackChanelType[];
     slackChanelTypesTranslateMap: Map<SlackChanelType, string>;
     entityType: typeof EntityType;

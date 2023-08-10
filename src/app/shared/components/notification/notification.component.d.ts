@@ -1,6 +1,6 @@
 import { EventEmitter, OnInit } from '@angular/core';
-import { Notification, NotificationType } from '@shared/models/notification.models';
-import { UtilsService } from '@core/services/utils.service';
+import { Notification, NotificationType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
+import { UtilsService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { Router } from '@angular/router';
 import * as i0 from "@angular/core";
 export declare class NotificationComponent implements OnInit {
@@ -16,8 +16,10 @@ export declare class NotificationComponent implements OnInit {
     hideMarkAsReadButton: boolean;
     notificationType: typeof NotificationType;
     notificationTypeIcons: Map<NotificationType, string>;
-    alarmSeverityTranslations: Map<import("@shared/models/alarm.models").AlarmSeverity, string>;
+    alarmSeverityTranslations: Map<import("../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models").AlarmSeverity, string>;
     currentDate: number;
+    title: string;
+    message: string;
     constructor(utils: UtilsService, router: Router);
     ngOnInit(): void;
     markRead($event: Event): void;

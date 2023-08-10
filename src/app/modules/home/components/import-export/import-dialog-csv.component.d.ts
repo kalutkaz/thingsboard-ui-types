@@ -1,16 +1,16 @@
 import { AfterViewInit, ElementRef, OnDestroy, Renderer2 } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DialogComponent } from '@app/shared/components/dialog.component';
-import { EntityType } from '@shared/models/entity-type.models';
+import { DialogComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { TranslateService } from '@ngx-translate/core';
 import { MatStepper } from '@angular/material/stepper';
-import { BulkImportResult, CSVDelimiter } from '@home/components/import-export/import-export.models';
-import { ImportExportService } from '@home/components/import-export/import-export.service';
-import { TableColumnsAssignmentComponent } from '@home/components/import-export/table-columns-assignment.component';
+import { BulkImportResult, CSVDelimiter } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/import-export/import-export.models';
+import { ImportExportService } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/import-export/import-export.service';
+import { TableColumnsAssignmentComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/import-export/table-columns-assignment.component';
 import { Ace } from 'ace-builds';
 import * as i0 from "@angular/core";
 export interface ImportDialogCsvData {

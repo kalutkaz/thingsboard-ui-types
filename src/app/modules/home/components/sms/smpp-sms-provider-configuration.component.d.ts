@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { AwsSnsSmsProviderConfiguration, BindTypes, CodingSchemes, NumberingPlanIdentification, TypeOfNumber } from '@shared/models/settings.models';
+import { AwsSnsSmsProviderConfiguration, BindTypes, CodingSchemes, NumberingPlanIdentification, TypeOfNumber } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models';
 import * as i0 from "@angular/core";
 export declare class SmppSmsProviderConfigurationComponent implements ControlValueAccessor, OnInit {
     private fb;
@@ -16,11 +16,11 @@ export declare class SmppSmsProviderConfigurationComponent implements ControlVal
     bindTypes: string[];
     bindTypesTranslation: Map<BindTypes, string>;
     typeOfNumber: string[];
-    typeOfNumberMap: Map<TypeOfNumber, import("@shared/models/settings.models").TypeDescriptor>;
+    typeOfNumberMap: Map<TypeOfNumber, import("../../../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models").TypeDescriptor>;
     numberingPlanIdentification: string[];
-    numberingPlanIdentificationMap: Map<NumberingPlanIdentification, import("@shared/models/settings.models").TypeDescriptor>;
+    numberingPlanIdentificationMap: Map<NumberingPlanIdentification, import("../../../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models").TypeDescriptor>;
     codingSchemes: string[];
-    codingSchemesMap: Map<CodingSchemes, import("@shared/models/settings.models").TypeDescriptor>;
+    codingSchemesMap: Map<CodingSchemes, import("../../../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models").TypeDescriptor>;
     private propagateChange;
     ngOnInit(): void;
     registerOnChange(fn: any): void;

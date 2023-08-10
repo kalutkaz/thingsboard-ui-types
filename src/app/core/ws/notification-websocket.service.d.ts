@@ -1,9 +1,9 @@
 import { NgZone } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { AuthService } from '@core/auth/auth.service';
-import { NotificationPluginCmdWrapper, NotificationSubscriber, WebsocketNotificationMsg } from '@shared/models/websocket/notification-ws.models';
-import { WebsocketService } from '@core/ws/websocket.service';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { AuthService } from '../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
+import { NotificationPluginCmdWrapper, NotificationSubscriber, WebsocketNotificationMsg } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/websocket/notification-ws.models';
+import { WebsocketService } from '../../../../../thingsboard/ui-ngx/src/app/core/ws/websocket.service';
 import * as i0 from "@angular/core";
 export declare class NotificationWebsocketService extends WebsocketService<NotificationSubscriber> {
     protected store: Store<AppState>;

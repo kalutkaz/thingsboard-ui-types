@@ -1,8 +1,8 @@
 import { ComponentRef, OnChanges, OnDestroy, OnInit, SimpleChanges, ViewContainerRef } from '@angular/core';
-import { DashboardState } from '@shared/models/dashboard.models';
-import { IDashboardController } from '@home/components/dashboard-page/dashboard-page.models';
-import { StatesControllerService } from '@home/components/dashboard-page/states/states-controller.service';
-import { IStateControllerComponent } from '@home/components/dashboard-page/states/state-controller.models';
+import { DashboardState } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { IDashboardController } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/dashboard-page.models';
+import { StatesControllerService } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/states/states-controller.service';
+import { IStateControllerComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/states/state-controller.models';
 import * as i0 from "@angular/core";
 export declare class StatesComponentDirective implements OnInit, OnDestroy, OnChanges {
     private viewContainerRef;

@@ -1,10 +1,10 @@
 import { InjectionToken, OnInit, ViewContainerRef } from '@angular/core';
-import { AggregationType, HistoryWindowType, RealtimeWindowType, Timewindow, TimewindowType } from '@shared/models/time/time.models';
-import { PageComponent } from '@shared/components/page.component';
+import { AggregationType, HistoryWindowType, RealtimeWindowType, Timewindow, TimewindowType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
+import { PageComponent } from '../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { TimeService } from '@core/services/time.service';
+import { TimeService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/time.service';
 import { OverlayRef } from '@angular/cdk/overlay';
 import * as i0 from "@angular/core";
 export interface TimewindowPanelData {

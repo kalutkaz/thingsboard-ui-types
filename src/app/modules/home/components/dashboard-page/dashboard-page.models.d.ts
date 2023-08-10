@@ -1,9 +1,9 @@
-import { Dashboard, DashboardLayoutId, GridSettings, WidgetLayouts } from '@app/shared/models/dashboard.models';
-import { Widget, WidgetPosition } from '@app/shared/models/widget.models';
-import { Timewindow } from '@shared/models/time/time.models';
-import { IAliasController, IStateController } from '@core/api/widget-api.models';
+import { Dashboard, DashboardLayoutId, GridSettings, WidgetLayouts } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { Widget, WidgetPosition } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { Timewindow } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
+import { IAliasController, IStateController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import { ILayoutController } from './layout/layout.models';
-import { DashboardContextMenuItem, WidgetContextMenuItem } from '@home/models/dashboard-component.models';
+import { DashboardContextMenuItem, WidgetContextMenuItem } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/dashboard-component.models';
 import { Observable } from 'rxjs';
 export declare type DashboardPageScope = 'tenant' | 'customer';
 export interface DashboardPageInitData {

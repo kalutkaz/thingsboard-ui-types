@@ -1,17 +1,18 @@
 import { AfterViewInit, ElementRef, OnDestroy, OnInit } from '@angular/core';
-import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
+import { ControlValueAccessor, FormBuilder, FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { MatAutocomplete, MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
-import { MatChipInputEvent, MatChipGrid } from '@angular/material/chips';
-import { AssetService } from '@core/http/asset.service';
-import { DeviceService } from '@core/http/device.service';
-import { EdgeService } from '@core/http/edge.service';
-import { EntityViewService } from '@core/http/entity-view.service';
-import { BroadcastService } from '@core/services/broadcast.service';
+import { MatChipGrid, MatChipInputEvent } from '@angular/material/chips';
+import { AssetService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/asset.service';
+import { DeviceService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/device.service';
+import { EdgeService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/edge.service';
+import { EntityViewService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/entity-view.service';
+import { BroadcastService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/broadcast.service';
+import { FloatLabelType } from '@angular/material/form-field';
 import * as i0 from "@angular/core";
 export declare class EntitySubTypeListComponent implements ControlValueAccessor, OnInit, AfterViewInit, OnDestroy {
     private store;
@@ -22,13 +23,16 @@ export declare class EntitySubTypeListComponent implements ControlValueAccessor,
     private edgeService;
     private entityViewService;
     private fb;
-    entitySubtypeListFormGroup: UntypedFormGroup;
+    entitySubtypeListFormGroup: FormGroup;
     modelValue: Array<string> | null;
     private requiredValue;
     get required(): boolean;
     set required(value: boolean);
+    floatLabel: FloatLabelType;
+    label: string;
     disabled: boolean;
     entityType: EntityType;
+    set placeholder(value: string);
     entitySubtypeInput: ElementRef<HTMLInputElement>;
     entitySubtypeAutocomplete: MatAutocomplete;
     chipList: MatChipGrid;
@@ -36,7 +40,7 @@ export declare class EntitySubTypeListComponent implements ControlValueAccessor,
     filteredEntitySubtypeList: Observable<Array<string>>;
     entitySubtypes: Observable<Array<string>>;
     private broadcastSubscription;
-    placeholder: string;
+    firstPlaceholder: string;
     secondaryPlaceholder: string;
     noSubtypesMathingText: string;
     subtypeListEmptyText: string;
@@ -44,11 +48,12 @@ export declare class EntitySubTypeListComponent implements ControlValueAccessor,
     searchText: string;
     private dirty;
     private propagateChange;
-    constructor(store: Store<AppState>, broadcast: BroadcastService, translate: TranslateService, assetService: AssetService, deviceService: DeviceService, edgeService: EdgeService, entityViewService: EntityViewService, fb: UntypedFormBuilder);
+    constructor(store: Store<AppState>, broadcast: BroadcastService, translate: TranslateService, assetService: AssetService, deviceService: DeviceService, edgeService: EdgeService, entityViewService: EntityViewService, fb: FormBuilder);
     updateValidators(): void;
     registerOnChange(fn: any): void;
     registerOnTouched(fn: any): void;
     ngOnInit(): void;
+    private prepareEntityTranslatesAndBroadcast;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
     setDisabledState(isDisabled: boolean): void;
@@ -63,5 +68,5 @@ export declare class EntitySubTypeListComponent implements ControlValueAccessor,
     onFocus(): void;
     clear(value?: string): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<EntitySubTypeListComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<EntitySubTypeListComponent, "tb-entity-subtype-list", never, { "required": "required"; "disabled": "disabled"; "entityType": "entityType"; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<EntitySubTypeListComponent, "tb-entity-subtype-list", never, { "required": "required"; "floatLabel": "floatLabel"; "label": "label"; "disabled": "disabled"; "entityType": "entityType"; "placeholder": "placeholder"; }, {}, never, ["[additionalButtons]"], false, never>;
 }

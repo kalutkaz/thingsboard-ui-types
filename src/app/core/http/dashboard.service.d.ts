@@ -1,9 +1,9 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { PageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
-import { Dashboard, DashboardInfo, HomeDashboard, HomeDashboardInfo } from '@shared/models/dashboard.models';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { Dashboard, DashboardInfo, HomeDashboard, HomeDashboardInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 import { Router } from '@angular/router';
 import * as i0 from "@angular/core";
 export declare class DashboardService {

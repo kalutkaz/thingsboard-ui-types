@@ -1,15 +1,15 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { PageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
-import { WidgetsBundle } from '@shared/models/widgets-bundle.model';
-import { Widget, WidgetType, widgetType, WidgetTypeDetails, WidgetTypeInfo } from '@shared/models/widget.models';
-import { UtilsService } from '@core/services/utils.service';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { WidgetsBundle } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widgets-bundle.model';
+import { Widget, WidgetType, widgetType, WidgetTypeDetails, WidgetTypeInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { TranslateService } from '@ngx-translate/core';
 import { ResourcesService } from '../services/resources.service';
-import { WidgetInfo } from '@app/modules/home/models/widget-component.models';
-import { WidgetTypeId } from '@shared/models/id/widget-type-id';
+import { WidgetInfo } from '../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { WidgetTypeId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/widget-type-id';
 import { Router } from '@angular/router';
 import * as i0 from "@angular/core";
 export declare class WidgetService {
@@ -48,7 +48,7 @@ export declare class WidgetService {
     putWidgetInfoToCache(widgetInfo: WidgetInfo, bundleAlias: string, widgetTypeAlias: string, isSystem: boolean): void;
     private widgetTypeUpdated;
     private widgetsBundleDeleted;
-    private deleteWidgetInfoFromCache;
+    deleteWidgetInfoFromCache(bundleAlias: string, widgetTypeAlias: string, isSystem: boolean): void;
     private deleteWidgetsBundleFromCache;
     private loadWidgetsBundleCache;
     private invalidateWidgetsBundleCache;

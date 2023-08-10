@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
-import { PageLink } from '@shared/models/page/page-link';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
-import { DeviceProfile, DeviceProfileInfo, DeviceTransportType } from '@shared/models/device.models';
-import { ObjectLwM2M, ServerSecurityConfig, ServerSecurityConfigInfo } from '@home/components/profile/device/lwm2m/lwm2m-profile-config.models';
-import { SortOrder } from '@shared/models/page/sort-order';
-import { OtaPackageService } from '@core/http/ota-package.service';
-import { Lwm2mSecurityType } from '@shared/models/lwm2m-security-config.models';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { DeviceProfile, DeviceProfileInfo, DeviceTransportType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { ObjectLwM2M, ServerSecurityConfig, ServerSecurityConfigInfo } from '../../../../../thingsboard/ui-ngx/src/app/modules/home/components/profile/device/lwm2m/lwm2m-profile-config.models';
+import { SortOrder } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/sort-order';
+import { OtaPackageService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/ota-package.service';
+import { Lwm2mSecurityType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/lwm2m-security-config.models';
 import * as i0 from "@angular/core";
 export declare class DeviceProfileService {
     private http;

@@ -1,23 +1,23 @@
-import { AfterViewInit, ChangeDetectorRef, ElementRef, NgZone, OnInit, ViewContainerRef } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { AfterViewInit, ChangeDetectorRef, ElementRef, NgZone, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { WidgetContext } from '@home/models/widget-component.models';
-import { DataKey, WidgetActionDescriptor } from '@shared/models/widget.models';
-import { IWidgetSubscription } from '@core/api/widget-api.models';
-import { UtilsService } from '@core/services/utils.service';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { DataKey, WidgetActionDescriptor } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { IWidgetSubscription } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { TranslateService } from '@ngx-translate/core';
 import { CollectionViewer, DataSource } from '@angular/cdk/collections';
 import { Observable } from 'rxjs';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort, SortDirection } from '@angular/material/sort';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { EntityColumn, EntityData } from '@home/components/widget/lib/table-widget.models';
+import { EntityColumn, EntityData } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/table-widget.models';
 import { Overlay } from '@angular/cdk/overlay';
-import { EntityDataPageLink, KeyFilter } from '@shared/models/query/query.models';
+import { EntityDataPageLink, KeyFilter } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { DatePipe } from '@angular/common';
 import * as i0 from "@angular/core";
-export declare class EntitiesTableWidgetComponent extends PageComponent implements OnInit, AfterViewInit {
+export declare class EntitiesTableWidgetComponent extends PageComponent implements OnInit, AfterViewInit, OnDestroy {
     protected store: Store<AppState>;
     private elementRef;
     private ngZone;
@@ -35,6 +35,7 @@ export declare class EntitiesTableWidgetComponent extends PageComponent implemen
     displayPagination: boolean;
     enableStickyHeader: boolean;
     enableStickyAction: boolean;
+    showCellActionsMenu: boolean;
     pageSizeOptions: any;
     pageLink: EntityDataPageLink;
     sortOrderProperty: string;
@@ -44,6 +45,7 @@ export declare class EntitiesTableWidgetComponent extends PageComponent implemen
     displayedColumns: string[];
     entityDatasource: EntityDatasource;
     noDataDisplayMessageText: string;
+    hasRowAction: boolean;
     private setCellButtonAction;
     private cellContentCache;
     private cellStyleCache;

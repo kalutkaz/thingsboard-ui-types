@@ -1,5 +1,5 @@
-import { FontSettings } from '@home/components/widget/lib/settings.models';
-import { AnimationRule, AnimationTarget } from '@home/components/widget/lib/analogue-gauge.models';
+import { FontSettings } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/settings.models';
+import { AnimationRule, AnimationTarget } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/analogue-gauge.models';
 export interface AnalogueCompassSettings {
     majorTicks: string[];
     minorTicks: number;

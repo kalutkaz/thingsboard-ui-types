@@ -1,11 +1,11 @@
 /// <reference types="node" />
-import { CmdWrapper, WsService, WsSubscriber } from '@shared/models/websocket/websocket.models';
+import { CmdWrapper, WsService, WsSubscriber } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/websocket/websocket.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { AuthService } from '@core/auth/auth.service';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { AuthService } from '../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
 import { NgZone } from '@angular/core';
 import { WebSocketSubject } from 'rxjs/webSocket';
-import { CmdUpdateMsg } from '@shared/models/telemetry/telemetry.models';
+import { CmdUpdateMsg } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
 import Timeout = NodeJS.Timeout;
 export declare abstract class WebsocketService<T extends WsSubscriber> implements WsService<T> {
     protected store: Store<AppState>;

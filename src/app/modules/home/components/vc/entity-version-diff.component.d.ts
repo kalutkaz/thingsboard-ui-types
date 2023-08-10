@@ -1,12 +1,12 @@
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, OnInit, Renderer2, ViewContainerRef } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { EntitiesVersionControlService } from '@core/http/entities-version-control.service';
-import { EntityId } from '@shared/models/id/entity-id';
-import { TbPopoverComponent } from '@shared/components/popover.component';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { EntitiesVersionControlService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/entities-version-control.service';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { TbPopoverComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
 import { MatButton } from '@angular/material/button';
-import { TbPopoverService } from '@shared/components/popover.service';
+import { TbPopoverService } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.service';
 import * as i0 from "@angular/core";
 export declare class EntityVersionDiffComponent extends PageComponent implements OnInit, OnDestroy {
     protected store: Store<AppState>;

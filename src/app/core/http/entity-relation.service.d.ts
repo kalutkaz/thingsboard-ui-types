@@ -1,8 +1,8 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { EntityRelation, EntityRelationInfo, EntityRelationsQuery } from '@shared/models/relation.models';
-import { EntityId } from '@app/shared/models/id/entity-id';
+import { EntityRelation, EntityRelationInfo, EntityRelationsQuery } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import * as i0 from "@angular/core";
 export declare class EntityRelationService {
     private http;

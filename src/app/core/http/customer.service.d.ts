@@ -1,9 +1,9 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { PageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
-import { Customer } from '@shared/models/customer.model';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { Customer } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/customer.model';
 import * as i0 from "@angular/core";
 export declare class CustomerService {
     private http;

@@ -1,15 +1,17 @@
-import { EntityId } from '@shared/models/id/entity-id';
-import { DataKey, FormattedData, WidgetActionDescriptor, WidgetConfig } from '@shared/models/widget.models';
-import { AlarmDataInfo } from '@shared/models/alarm.models';
-import { EntityDataSortOrder, EntityKey } from '@shared/models/query/query.models';
-import { WidgetContext } from '@home/models/widget-component.models';
-import { UtilsService } from '@core/services/utils.service';
+import { EntityId } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { DataKey, FormattedData, WidgetActionDescriptor, WidgetConfig } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { AlarmDataInfo } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
+import { EntityDataSortOrder, EntityKey } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { TranslateService } from '@ngx-translate/core';
 type ColumnVisibilityOptions = 'visible' | 'hidden' | 'hidden-mobile';
 type ColumnSelectionOptions = 'enabled' | 'disabled';
 export interface TableWidgetSettings {
     enableSearch: boolean;
+    enableSelectColumnDisplay: boolean;
     enableStickyAction: boolean;
+    showCellActionsMenu: boolean;
     enableStickyHeader: boolean;
     displayPagination: boolean;
     defaultPageSize: number;

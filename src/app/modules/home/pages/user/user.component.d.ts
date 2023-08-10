@@ -1,11 +1,11 @@
 import { ChangeDetectorRef } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { EntityComponent } from '../../components/entity/entity.component';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { User } from '@shared/models/user.model';
-import { Authority } from '@shared/models/authority.enum';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
+import { User } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
+import { Authority } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/authority.enum';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export declare class UserComponent extends EntityComponent<User> {

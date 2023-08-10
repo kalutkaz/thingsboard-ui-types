@@ -1,10 +1,10 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { TimePageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
-import { EntityId } from '@shared/models/id/entity-id';
-import { DebugEventType, Event, EventType, FilterEventBody } from '@shared/models/event.models';
+import { TimePageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { DebugEventType, Event, EventType, FilterEventBody } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/event.models';
 import * as i0 from "@angular/core";
 export declare class EventService {
     private http;

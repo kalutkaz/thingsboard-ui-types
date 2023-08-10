@@ -2,8 +2,8 @@ import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { TranslateService } from '@ngx-translate/core';
-import { AlarmCondition } from '@shared/models/device.models';
-import { EntityId } from '@shared/models/id/entity-id';
+import { AlarmCondition } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { EntityId } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import * as i0 from "@angular/core";
 export declare class AlarmRuleConditionComponent implements ControlValueAccessor, OnInit, Validator {
     private dialog;

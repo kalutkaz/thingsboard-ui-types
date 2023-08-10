@@ -1,11 +1,11 @@
 import * as i0 from "@angular/core";
-import * as i1 from "@modules/home/pages/dashboard/dashboard-form.component";
-import * as i2 from "@home/pages/dashboard/dashboard-tabs.component";
-import * as i3 from "@modules/home/pages/dashboard/manage-dashboard-customers-dialog.component";
-import * as i4 from "@modules/home/pages/dashboard/make-dashboard-public-dialog.component";
+import * as i1 from "../../../../../../../thingsboard/ui-ngx/src/app/modules/home/pages/dashboard/dashboard-form.component";
+import * as i2 from "../../../../../../../thingsboard/ui-ngx/src/app/modules/home/pages/dashboard/dashboard-tabs.component";
+import * as i3 from "../../../../../../../thingsboard/ui-ngx/src/app/modules/home/pages/dashboard/manage-dashboard-customers-dialog.component";
+import * as i4 from "../../../../../../../thingsboard/ui-ngx/src/app/modules/home/pages/dashboard/make-dashboard-public-dialog.component";
 import * as i5 from "@angular/common";
-import * as i6 from "@shared/shared.module";
-import * as i7 from "@modules/home/components/home-components.module";
+import * as i6 from "../../../../../../../thingsboard/ui-ngx/src/app/shared/shared.module";
+import * as i7 from "../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/home-components.module";
 import * as i8 from "../../dialogs/home-dialogs.module";
 import * as i9 from "./dashboard-routing.module";
 export declare class DashboardModule {

@@ -1,10 +1,10 @@
 import { ElementRef, OnInit, ViewContainerRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { DashboardInfo } from '@app/shared/models/dashboard.models';
-import { DashboardService } from '@core/http/dashboard.service';
+import { DashboardInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { DashboardService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/dashboard.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TooltipPosition } from '@angular/material/tooltip';
 import { CdkOverlayOrigin, Overlay } from '@angular/cdk/overlay';
 import { BreakpointObserver } from '@angular/cdk/layout';

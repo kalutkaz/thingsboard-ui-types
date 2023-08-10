@@ -1,12 +1,12 @@
-import { IStateControllerComponent, StateControllerState } from '@home/components/dashboard-page/states/state-controller.models';
+import { IStateControllerComponent, StateControllerState } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/states/state-controller.models';
 import { IDashboardController } from '../dashboard-page.models';
-import { DashboardState } from '@app/shared/models/dashboard.models';
+import { DashboardState } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 import { Observable } from 'rxjs';
 import { NgZone, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { StatesControllerService } from '@home/components/dashboard-page/states/states-controller.service';
-import { EntityId } from '@app/shared/models/id/entity-id';
-import { StateObject, StateParams } from '@app/core/api/widget-api.models';
+import { StatesControllerService } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/states/states-controller.service';
+import { EntityId } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { StateObject, StateParams } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import * as i0 from "@angular/core";
 export declare abstract class StateControllerComponent implements IStateControllerComponent, OnInit, OnDestroy {
     protected router: Router;

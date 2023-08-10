@@ -1,26 +1,26 @@
-import { AfterViewInit, ChangeDetectorRef, ElementRef, NgZone, OnInit, ViewContainerRef } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { AfterViewInit, ChangeDetectorRef, ElementRef, NgZone, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { WidgetContext } from '@home/models/widget-component.models';
-import { DataKey, WidgetActionDescriptor } from '@shared/models/widget.models';
-import { IWidgetSubscription } from '@core/api/widget-api.models';
-import { UtilsService } from '@core/services/utils.service';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { DataKey, WidgetActionDescriptor } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { IWidgetSubscription } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { TranslateService } from '@ngx-translate/core';
 import { CollectionViewer, DataSource, SelectionModel } from '@angular/cdk/collections';
 import { Observable } from 'rxjs';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort, SortDirection } from '@angular/material/sort';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { EntityColumn, TableCellButtonActionDescriptor } from '@home/components/widget/lib/table-widget.models';
+import { EntityColumn, TableCellButtonActionDescriptor } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/table-widget.models';
 import { Overlay } from '@angular/cdk/overlay';
-import { AlarmDataInfo, AlarmInfo } from '@shared/models/alarm.models';
+import { AlarmDataInfo, AlarmInfo } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
 import { DatePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogService } from '@core/services/dialog.service';
-import { AlarmService } from '@core/http/alarm.service';
-import { AlarmData, AlarmDataPageLink, KeyFilter } from '@app/shared/models/query/query.models';
-import { EntityService } from '@core/http/entity.service';
+import { DialogService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { AlarmService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/alarm.service';
+import { AlarmData, AlarmDataPageLink, KeyFilter } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { EntityService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import * as i0 from "@angular/core";
 interface AlarmWidgetActionDescriptor extends TableCellButtonActionDescriptor {
     details?: boolean;
@@ -28,7 +28,7 @@ interface AlarmWidgetActionDescriptor extends TableCellButtonActionDescriptor {
     clear?: boolean;
     activity?: boolean;
 }
-export declare class AlarmsTableWidgetComponent extends PageComponent implements OnInit, AfterViewInit {
+export declare class AlarmsTableWidgetComponent extends PageComponent implements OnInit, OnDestroy, AfterViewInit {
     protected store: Store<AppState>;
     private elementRef;
     private ngZone;
@@ -51,6 +51,7 @@ export declare class AlarmsTableWidgetComponent extends PageComponent implements
     displayPagination: boolean;
     enableStickyHeader: boolean;
     enableStickyAction: boolean;
+    showCellActionsMenu: boolean;
     pageSizeOptions: any;
     pageLink: AlarmDataPageLink;
     sortOrderProperty: string;
@@ -60,6 +61,7 @@ export declare class AlarmsTableWidgetComponent extends PageComponent implements
     displayedColumns: string[];
     alarmsDatasource: AlarmsDatasource;
     noDataDisplayMessageText: string;
+    hasRowAction: boolean;
     private setCellButtonAction;
     private cellContentCache;
     private cellStyleCache;

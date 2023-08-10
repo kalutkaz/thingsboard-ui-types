@@ -1,7 +1,7 @@
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { EntityTabsComponent } from '../../components/entity/entity-tabs.component';
-import { WidgetsBundle } from '@shared/models/widgets-bundle.model';
+import { WidgetsBundle } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widgets-bundle.model';
 import * as i0 from "@angular/core";
 export declare class WidgetsBundleTabsComponent extends EntityTabsComponent<WidgetsBundle> {
     protected store: Store<AppState>;

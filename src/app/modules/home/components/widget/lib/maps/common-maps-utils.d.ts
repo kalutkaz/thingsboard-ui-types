@@ -1,5 +1,5 @@
 import { Observable } from 'rxjs';
-import { FormattedData } from '@shared/models/widget.models';
+import { FormattedData } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import L from 'leaflet';
 export declare function getRatio(firsMoment: number, secondMoment: number, intermediateMoment: number): number;
 export declare function interpolateOnLineSegment(pointA: FormattedData, pointB: FormattedData, latKeyName: string, lngKeyName: string, ratio: number): {

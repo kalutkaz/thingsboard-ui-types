@@ -1,5 +1,5 @@
-import { EntityId } from '@shared/models/id/entity-id';
-import { HasUUID } from '@shared/models/id/has-uuid';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { HasUUID } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/has-uuid';
 export declare type HasId = EntityId | HasUUID;
 export interface BaseData<T extends HasId> {
     createdTime?: number;

@@ -1,4 +1,4 @@
-import { IModulesMap } from '@modules/common/modules-map.models';
+import { IModulesMap } from '../../../../../thingsboard/ui-ngx/src/app/modules/common/modules-map.models';
 declare class ModulesMap implements IModulesMap {
     private initialized;
     private modulesMap;

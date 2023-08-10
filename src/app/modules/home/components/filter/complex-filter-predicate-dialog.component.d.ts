@@ -2,12 +2,12 @@ import { OnInit } from '@angular/core';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, FormGroupDirective, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DialogComponent } from '@app/shared/components/dialog.component';
-import { ComplexFilterPredicateInfo, ComplexOperation } from '@shared/models/query/query.models';
-import { ComplexFilterPredicateDialogData } from '@home/components/filter/filter-component.models';
+import { DialogComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
+import { ComplexFilterPredicateInfo, ComplexOperation } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { ComplexFilterPredicateDialogData } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/filter/filter-component.models';
 import * as i0 from "@angular/core";
 export declare class ComplexFilterPredicateDialogComponent extends DialogComponent<ComplexFilterPredicateDialogComponent, ComplexFilterPredicateInfo> implements OnInit, ErrorStateMatcher {
     protected store: Store<AppState>;

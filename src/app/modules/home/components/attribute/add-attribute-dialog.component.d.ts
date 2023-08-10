@@ -2,13 +2,13 @@ import { OnInit } from '@angular/core';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, FormGroupDirective, NgForm } from '@angular/forms';
-import { EntityId } from '@shared/models/id/entity-id';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { Router } from '@angular/router';
-import { DialogComponent } from '@app/shared/components/dialog.component';
-import { AttributeScope } from '@shared/models/telemetry/telemetry.models';
-import { AttributeService } from '@core/http/attribute.service';
+import { DialogComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
+import { AttributeScope } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
+import { AttributeService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/attribute.service';
 import * as i0 from "@angular/core";
 export interface AddAttributeDialogData {
     entityId: EntityId;

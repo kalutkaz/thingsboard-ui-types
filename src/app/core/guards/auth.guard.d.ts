@@ -5,10 +5,10 @@ import { Store } from '@ngrx/store';
 import { AppState } from '../core.state';
 import { AuthState } from '../auth/auth.models';
 import { Observable } from 'rxjs';
-import { DialogService } from '@core/services/dialog.service';
+import { DialogService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { TranslateService } from '@ngx-translate/core';
-import { UtilsService } from '@core/services/utils.service';
-import { MobileService } from '@core/services/mobile.service';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { MobileService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/mobile.service';
 import * as i0 from "@angular/core";
 export declare class AuthGuard implements CanActivate, CanActivateChild {
     private store;

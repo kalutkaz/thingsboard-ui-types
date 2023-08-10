@@ -1,6 +1,6 @@
 import { OnDestroy } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { DeviceCredentialMQTTBasic } from '@shared/models/device.models';
+import { DeviceCredentialMQTTBasic } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import * as i0 from "@angular/core";
 export declare class DeviceCredentialsMqttBasicComponent implements ControlValueAccessor, Validator, OnDestroy {
     fb: UntypedFormBuilder;

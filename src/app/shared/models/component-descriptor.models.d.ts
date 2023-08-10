@@ -1,4 +1,4 @@
-import { RuleNodeType } from '@shared/models/rule-node.models';
+import { RuleNodeType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
 export declare enum ComponentType {
     ENRICHMENT = "ENRICHMENT",
     FILTER = "FILTER",

@@ -2,13 +2,13 @@ import { OnInit } from '@angular/core';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, FormGroupDirective, NgForm } from '@angular/forms';
-import { DeviceService } from '@core/http/device.service';
-import { DeviceCredentials, DeviceTransportType } from '@shared/models/device.models';
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DeviceService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/device.service';
+import { DeviceCredentials, DeviceTransportType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { DialogComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Router } from '@angular/router';
-import { DeviceProfileService } from '@core/http/device-profile.service';
+import { DeviceProfileService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/device-profile.service';
 import * as i0 from "@angular/core";
 export interface DeviceCredentialsDialogData {
     isReadOnly: boolean;

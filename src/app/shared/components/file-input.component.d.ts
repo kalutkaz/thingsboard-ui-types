@@ -1,12 +1,12 @@
 import { AfterViewInit, ElementRef, EventEmitter, OnChanges, OnDestroy, SimpleChanges } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { ControlValueAccessor } from '@angular/forms';
 import { Subscription } from 'rxjs';
 import { FlowDirective } from '@flowjs/ngx-flow';
 import { TranslateService } from '@ngx-translate/core';
-import { UtilsService } from '@core/services/utils.service';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import * as i0 from "@angular/core";
 export declare class FileInputComponent extends PageComponent implements AfterViewInit, OnDestroy, ControlValueAccessor, OnChanges {
     protected store: Store<AppState>;

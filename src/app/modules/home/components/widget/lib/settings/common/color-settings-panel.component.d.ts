@@ -1,0 +1,34 @@
+import { EventEmitter, OnInit } from '@angular/core';
+import { PageComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { ColorSettings, ColorType } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/config/widget-settings.models';
+import { TbPopoverComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
+import { AbstractControl, FormGroup, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
+import { Store } from '@ngrx/store';
+import { AppState } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetService } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
+import * as i0 from "@angular/core";
+export declare class ColorSettingsPanelComponent extends PageComponent implements OnInit {
+    private fb;
+    private widgetService;
+    protected store: Store<AppState>;
+    colorSettings: ColorSettings;
+    popover: TbPopoverComponent<ColorSettingsPanelComponent>;
+    colorSettingsApplied: EventEmitter<ColorSettings>;
+    colorType: typeof ColorType;
+    colorTypes: ColorType[];
+    colorTypeTranslationsMap: Map<ColorType, string>;
+    colorSettingsFormGroup: UntypedFormGroup;
+    functionScopeVariables: string[];
+    constructor(fb: UntypedFormBuilder, widgetService: WidgetService, store: Store<AppState>);
+    ngOnInit(): void;
+    private colorRangeControl;
+    get rangeListFormArray(): UntypedFormArray;
+    get rangeListFormGroups(): FormGroup[];
+    trackByRange(index: number, rangeControl: AbstractControl): any;
+    removeRange(index: number): void;
+    addRange(): void;
+    cancel(): void;
+    applyColorSettings(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ColorSettingsPanelComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ColorSettingsPanelComponent, "tb-color-settings-panel", never, { "colorSettings": "colorSettings"; "popover": "popover"; }, { "colorSettingsApplied": "colorSettingsApplied"; }, never, never, false, never>;
+}

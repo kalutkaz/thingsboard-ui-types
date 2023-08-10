@@ -1,10 +1,10 @@
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { NgZone, OnInit } from '@angular/core';
-import { WidgetContext } from '@home/models/widget-component.models';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Router } from '@angular/router';
-import { UtilsService } from '@core/services/utils.service';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import * as i0 from "@angular/core";
 interface NavigationCardWidgetSettings {
     name: string;

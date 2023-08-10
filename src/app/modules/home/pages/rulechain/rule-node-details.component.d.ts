@@ -1,14 +1,14 @@
-import { OnChanges, OnInit, SimpleChanges } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { EventEmitter, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { FcRuleNode, RuleNodeType } from '@shared/models/rule-node.models';
-import { EntityType } from '@shared/models/entity-type.models';
-import { RuleChainService } from '@core/http/rule-chain.service';
+import { FcRuleNode, RuleNodeType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { RuleChainService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/rule-chain.service';
 import { RuleNodeConfigComponent } from './rule-node-config.component';
 import { Router } from '@angular/router';
-import { RuleChainType } from '@app/shared/models/rule-chain.models';
+import { RuleChainType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
 import * as i0 from "@angular/core";
 export declare class RuleNodeDetailsComponent extends PageComponent implements OnInit, OnChanges {
     protected store: Store<AppState>;
@@ -22,6 +22,8 @@ export declare class RuleNodeDetailsComponent extends PageComponent implements O
     isEdit: boolean;
     isReadOnly: boolean;
     isAdd: boolean;
+    initRuleNode: EventEmitter<void>;
+    changeScript: EventEmitter<void>;
     ruleNodeType: typeof RuleNodeType;
     entityType: typeof EntityType;
     ruleNodeFormGroup: UntypedFormGroup;
@@ -35,5 +37,5 @@ export declare class RuleNodeDetailsComponent extends PageComponent implements O
     openRuleChain($event: Event): void;
     isSingletonEditAllowed(): boolean;
     static ɵfac: i0.ɵɵFactoryDeclaration<RuleNodeDetailsComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<RuleNodeDetailsComponent, "tb-rule-node", never, { "ruleNode": "ruleNode"; "ruleChainId": "ruleChainId"; "ruleChainType": "ruleChainType"; "isEdit": "isEdit"; "isReadOnly": "isReadOnly"; "isAdd": "isAdd"; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<RuleNodeDetailsComponent, "tb-rule-node", never, { "ruleNode": "ruleNode"; "ruleChainId": "ruleChainId"; "ruleChainType": "ruleChainType"; "isEdit": "isEdit"; "isReadOnly": "isReadOnly"; "isAdd": "isAdd"; }, { "initRuleNode": "initRuleNode"; "changeScript": "changeScript"; }, never, never, false, never>;
 }

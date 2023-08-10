@@ -1,5 +1,5 @@
 import { PipeTransform } from '@angular/core';
-import { DisplayColumn } from '@home/components/widget/lib/table-widget.models';
+import { DisplayColumn } from '../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/table-widget.models';
 import * as i0 from "@angular/core";
 export declare class SelectableColumnsPipe implements PipeTransform {
     transform(allColumns: DisplayColumn[]): DisplayColumn[];

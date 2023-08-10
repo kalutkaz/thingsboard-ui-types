@@ -1,11 +1,11 @@
 import { ChangeDetectorRef } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { EntityComponent } from '../../components/entity/entity.component';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { RuleChain } from '@shared/models/rule-chain.models';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
+import { RuleChain } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import * as i0 from "@angular/core";
 export declare class RuleChainComponent extends EntityComponent<RuleChain> {
     protected store: Store<AppState>;

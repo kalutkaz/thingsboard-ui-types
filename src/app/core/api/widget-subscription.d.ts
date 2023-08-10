@@ -1,13 +1,13 @@
-import { IWidgetSubscription, SubscriptionEntityInfo, WidgetSubscriptionCallbacks, WidgetSubscriptionContext, WidgetSubscriptionOptions } from '@core/api/widget-api.models';
-import { DataSetHolder, Datasource, DatasourceData, LegendConfig, LegendData, widgetType } from '@app/shared/models/widget.models';
+import { IWidgetSubscription, SubscriptionEntityInfo, WidgetSubscriptionCallbacks, WidgetSubscriptionContext, WidgetSubscriptionOptions } from '../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { DataSetHolder, Datasource, DatasourceData, LegendConfig, LegendData, widgetType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { HttpErrorResponse } from '@angular/common/http';
-import { ComparisonDuration, SubscriptionTimewindow, Timewindow, WidgetTimewindow } from '@app/shared/models/time/time.models';
+import { ComparisonDuration, SubscriptionTimewindow, Timewindow, WidgetTimewindow } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import { Observable, Subject } from 'rxjs';
-import { CancelAnimationFrame } from '@core/services/raf.service';
-import { PageData } from '@shared/models/page/page-data';
-import { EntityDataListener } from '@core/api/entity-data.service';
-import { AlarmData, AlarmDataPageLink, EntityDataPageLink, KeyFilter } from '@shared/models/query/query.models';
-import { AlarmDataListener } from '@core/api/alarm-data.service';
+import { CancelAnimationFrame } from '../../../../../thingsboard/ui-ngx/src/app/core/services/raf.service';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { EntityDataListener } from '../../../../../thingsboard/ui-ngx/src/app/core/api/entity-data.service';
+import { AlarmData, AlarmDataPageLink, EntityDataPageLink, KeyFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { AlarmDataListener } from '../../../../../thingsboard/ui-ngx/src/app/core/api/alarm-data.service';
 import { EventEmitter } from '@angular/core';
 export declare class WidgetSubscription implements IWidgetSubscription {
     options: WidgetSubscriptionOptions;

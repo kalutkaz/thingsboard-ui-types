@@ -1,4 +1,4 @@
-import { HasUUID } from '@shared/models/id/has-uuid';
+import { HasUUID } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/has-uuid';
 export declare type MenuSectionType = 'link' | 'toggle';
 export interface MenuSection extends HasUUID {
     name: string;
@@ -6,7 +6,6 @@ export interface MenuSection extends HasUUID {
     type: MenuSectionType;
     path: string;
     icon: string;
-    isMdiIcon?: boolean;
     pages?: Array<MenuSection>;
     opened?: boolean;
     disabled?: boolean;
@@ -19,6 +18,5 @@ export interface HomeSection {
 export interface HomeSectionPlace {
     name: string;
     icon: string;
-    isMdiIcon?: boolean;
     path: string;
 }

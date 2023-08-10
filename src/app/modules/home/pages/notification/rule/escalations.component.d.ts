@@ -1,7 +1,7 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, FormArray, FormBuilder, FormGroup, ValidationErrors, Validator } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import * as i0 from "@angular/core";
 export declare class EscalationsComponent implements ControlValueAccessor, Validator, OnInit, OnDestroy {
     private store;

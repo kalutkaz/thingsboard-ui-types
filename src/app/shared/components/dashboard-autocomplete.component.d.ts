@@ -1,12 +1,12 @@
 import { AfterViewInit, ElementRef, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { PageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
-import { DashboardInfo } from '@app/shared/models/dashboard.models';
-import { DashboardService } from '@core/http/dashboard.service';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { DashboardInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { DashboardService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/dashboard.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
 import { FloatLabelType, MatFormFieldAppearance, SubscriptSizing } from '@angular/material/form-field';
 import * as i0 from "@angular/core";

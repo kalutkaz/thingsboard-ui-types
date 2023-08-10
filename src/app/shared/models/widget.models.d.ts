@@ -1,21 +1,22 @@
-import { BaseData } from '@shared/models/base-data';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { WidgetTypeId } from '@shared/models/id/widget-type-id';
-import { AggregationType, ComparisonDuration, Timewindow } from '@shared/models/time/time.models';
-import { EntityType } from '@shared/models/entity-type.models';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { WidgetTypeId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/widget-type-id';
+import { AggregationType, ComparisonDuration, Timewindow } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
+import { EntityType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { DataKeyType } from './telemetry/telemetry.models';
-import { EntityId } from '@shared/models/id/entity-id';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import * as moment_ from 'moment';
-import { AlarmFilter, AlarmFilterConfig, EntityDataPageLink, EntityFilter, KeyFilter } from '@shared/models/query/query.models';
-import { PopoverPlacement } from '@shared/components/popover.models';
-import { PageComponent } from '@shared/components/page.component';
+import { AlarmFilter, AlarmFilterConfig, EntityDataPageLink, EntityFilter, KeyFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { PopoverPlacement } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.models';
+import { PageComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { AfterViewInit, EventEmitter, OnInit, Type } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { Dashboard } from '@shared/models/dashboard.models';
-import { IAliasController } from '@core/api/widget-api.models';
+import { Dashboard } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { IAliasController } from '../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { WidgetConfigComponentData } from '../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import * as i0 from "@angular/core";
 export declare enum widgetType {
     timeseries = "timeseries",
@@ -31,7 +32,6 @@ export interface WidgetTypeTemplate {
 export interface WidgetTypeData {
     name: string;
     icon: string;
-    isMdiIcon?: boolean;
     configHelpLinkId: string;
     template: WidgetTypeTemplate;
 }
@@ -61,6 +61,8 @@ export interface WidgetTypeDescriptor {
     settingsDirective?: string;
     dataKeySettingsDirective?: string;
     latestDataKeySettingsDirective?: string;
+    hasBasicMode?: boolean;
+    basicModeDirective?: string;
     defaultConfig: string;
     sizeX: number;
     sizeY: number;
@@ -78,6 +80,9 @@ export interface WidgetTypeParameters {
     warnOnPageDataOverflow?: boolean;
     ignoreDataUpdateOnIntervalTick?: boolean;
     processNoDataByWidget?: boolean;
+    previewWidth?: string;
+    previewHeight?: string;
+    absoluteHeader?: boolean;
 }
 export interface WidgetControllerDescriptor {
     widgetTypeFunction?: any;
@@ -129,7 +134,7 @@ export interface LegendConfig {
     showTotal: boolean;
     showLatest: boolean;
 }
-export declare function defaultLegendConfig(wType: widgetType): LegendConfig;
+export declare const defaultLegendConfig: (wType: widgetType) => LegendConfig;
 export declare enum ComparisonResultType {
     PREVIOUS_VALUE = "PREVIOUS_VALUE",
     DELTA_ABSOLUTE = "DELTA_ABSOLUTE",
@@ -162,8 +167,13 @@ export interface DataKey extends KeyInfo {
     origDataKeyIndex?: number;
     _hash?: number;
 }
+export declare enum DataKeyConfigMode {
+    general = "general",
+    advanced = "advanced"
+}
 export declare enum DatasourceType {
     function = "function",
+    device = "device",
     entity = "entity",
     entityCount = "entityCount",
     alarmCount = "alarmCount"
@@ -178,6 +188,7 @@ export interface Datasource {
     entityType?: EntityType;
     entityId?: string;
     entityName?: string;
+    deviceId?: string;
     entityAliasId?: string;
     filterId?: string;
     unresolvedStateEntity?: boolean;
@@ -197,8 +208,8 @@ export interface Datasource {
     latestDataKeyStartIndex?: number;
     [key: string]: any;
 }
-export declare function datasourcesHasAggregation(datasources?: Array<Datasource>): boolean;
-export declare function datasourcesHasOnlyComparisonAggregation(datasources?: Array<Datasource>): boolean;
+export declare const datasourcesHasAggregation: (datasources?: Array<Datasource>) => boolean;
+export declare const datasourcesHasOnlyComparisonAggregation: (datasources?: Array<Datasource>) => boolean;
 export interface FormattedData {
     $datasource: Datasource;
     entityName: string;
@@ -352,7 +363,12 @@ export interface WidgetComparisonSettings {
 export interface WidgetSettings {
     [key: string]: any;
 }
+export declare enum WidgetConfigMode {
+    basic = "basic",
+    advanced = "advanced"
+}
 export interface WidgetConfig {
+    configMode?: WidgetConfigMode;
     title?: string;
     titleIcon?: string;
     showTitle?: boolean;
@@ -364,8 +380,6 @@ export interface WidgetConfig {
     enableFullscreen?: boolean;
     useDashboardTimewindow?: boolean;
     displayTimewindow?: boolean;
-    showLegend?: boolean;
-    legendConfig?: LegendConfig;
     timewindow?: Timewindow;
     desktopHide?: boolean;
     mobileHide?: boolean;
@@ -375,6 +389,7 @@ export interface WidgetConfig {
     backgroundColor?: string;
     padding?: string;
     margin?: string;
+    borderRadius?: string;
     widgetStyle?: {
         [klass: string]: any;
     };
@@ -443,6 +458,7 @@ export interface IWidgetSettingsComponent {
     aliasController: IAliasController;
     dashboard: Dashboard;
     widget: Widget;
+    widgetConfig: WidgetConfigComponentData;
     functionScopeVariables: string[];
     settings: WidgetSettings;
     settingsChanged: Observable<WidgetSettings>;
@@ -454,6 +470,9 @@ export declare abstract class WidgetSettingsComponent extends PageComponent impl
     aliasController: IAliasController;
     dashboard: Dashboard;
     widget: Widget;
+    widgetConfigValue: WidgetConfigComponentData;
+    set widgetConfig(value: WidgetConfigComponentData);
+    get widgetConfig(): WidgetConfigComponentData;
     functionScopeVariables: string[];
     settingsValue: WidgetSettings;
     private settingsSet;
@@ -478,6 +497,7 @@ export declare abstract class WidgetSettingsComponent extends PageComponent impl
     protected abstract settingsForm(): UntypedFormGroup;
     protected abstract onSettingsSet(settings: WidgetSettings): any;
     protected defaultSettings(): WidgetSettings;
+    protected onWidgetConfigSet(widgetConfig: WidgetConfigComponentData): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<WidgetSettingsComponent, never>;
     static ɵdir: i0.ɵɵDirectiveDeclaration<WidgetSettingsComponent, never, never, {}, {}, never, never, false, never>;
 }

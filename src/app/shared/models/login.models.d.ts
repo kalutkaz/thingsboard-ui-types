@@ -1,4 +1,4 @@
-import { Authority } from '@shared/models/authority.enum';
+import { Authority } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/authority.enum';
 export interface LoginRequest {
     username: string;
     password: string;

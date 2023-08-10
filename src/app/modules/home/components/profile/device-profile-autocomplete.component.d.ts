@@ -2,13 +2,13 @@ import { ElementRef, EventEmitter, NgZone, OnChanges, OnInit, SimpleChanges } fr
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { TruncatePipe } from '@shared//pipe/truncate.pipe';
+import { TruncatePipe } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/truncate.pipe';
 import { MatDialog } from '@angular/material/dialog';
-import { DeviceProfileId } from '@shared/models/id/device-profile-id';
-import { DeviceProfile, DeviceProfileInfo, DeviceTransportType } from '@shared/models/device.models';
-import { DeviceProfileService } from '@core/http/device-profile.service';
+import { DeviceProfileId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/device-profile-id';
+import { DeviceProfile, DeviceProfileInfo, DeviceTransportType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { DeviceProfileService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/device-profile.service';
 import { MatAutocomplete } from '@angular/material/autocomplete';
 import { SubscriptSizing } from '@angular/material/form-field';
 import * as i0 from "@angular/core";
@@ -28,11 +28,10 @@ export declare class DeviceProfileAutocompleteComponent implements ControlValueA
     displayAllOnEmpty: boolean;
     editProfileEnabled: boolean;
     addNewProfile: boolean;
+    showCreateNewButton: boolean;
     showDetailsPageLink: boolean;
     transportType: DeviceTransportType;
-    private requiredValue;
-    get required(): boolean;
-    set required(value: boolean);
+    required: boolean;
     disabled: boolean;
     hint: string;
     deviceProfileUpdated: EventEmitter<DeviceProfileId>;
@@ -67,5 +66,5 @@ export declare class DeviceProfileAutocompleteComponent implements ControlValueA
     editDeviceProfile($event: Event): void;
     openDeviceProfileDialog(deviceProfile: DeviceProfile, isAdd: boolean): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<DeviceProfileAutocompleteComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<DeviceProfileAutocompleteComponent, "tb-device-profile-autocomplete", never, { "subscriptSizing": "subscriptSizing"; "selectDefaultProfile": "selectDefaultProfile"; "selectFirstProfile": "selectFirstProfile"; "displayAllOnEmpty": "displayAllOnEmpty"; "editProfileEnabled": "editProfileEnabled"; "addNewProfile": "addNewProfile"; "showDetailsPageLink": "showDetailsPageLink"; "transportType": "transportType"; "required": "required"; "disabled": "disabled"; "hint": "hint"; }, { "deviceProfileUpdated": "deviceProfileUpdated"; "deviceProfileChanged": "deviceProfileChanged"; }, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<DeviceProfileAutocompleteComponent, "tb-device-profile-autocomplete", never, { "subscriptSizing": "subscriptSizing"; "selectDefaultProfile": "selectDefaultProfile"; "selectFirstProfile": "selectFirstProfile"; "displayAllOnEmpty": "displayAllOnEmpty"; "editProfileEnabled": "editProfileEnabled"; "addNewProfile": "addNewProfile"; "showCreateNewButton": "showCreateNewButton"; "showDetailsPageLink": "showDetailsPageLink"; "transportType": "transportType"; "required": "required"; "disabled": "disabled"; "hint": "hint"; }, { "deviceProfileUpdated": "deviceProfileUpdated"; "deviceProfileChanged": "deviceProfileChanged"; }, never, never, false, never>;
 }

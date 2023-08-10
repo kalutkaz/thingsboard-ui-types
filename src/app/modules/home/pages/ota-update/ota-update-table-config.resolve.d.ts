@@ -1,14 +1,14 @@
 import { Resolve, Router } from '@angular/router';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { OtaPackage, OtaPackageInfo } from '@shared/models/ota-package.models';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { OtaPackage, OtaPackageInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/ota-package.models';
 import { TranslateService } from '@ngx-translate/core';
 import { DatePipe } from '@angular/common';
-import { OtaPackageService } from '@core/http/ota-package.service';
-import { PageLink } from '@shared/models/page/page-link';
-import { EntityAction } from '@home/models/entity/entity-component.models';
-import { FileSizePipe } from '@shared/pipe/file-size.pipe';
+import { OtaPackageService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/ota-package.service';
+import { PageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { EntityAction } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entity-component.models';
+import { FileSizePipe } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/file-size.pipe';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import * as i0 from "@angular/core";
 export declare class OtaUpdateTableConfigResolve implements Resolve<EntityTableConfig<OtaPackage, PageLink, OtaPackageInfo>> {
     private translate;

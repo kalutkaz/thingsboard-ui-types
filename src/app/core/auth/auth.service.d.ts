@@ -1,20 +1,20 @@
 import { NgZone } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { LoginRequest, LoginResponse } from '@shared/models/login.models';
+import { LoginRequest, LoginResponse } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/login.models';
 import { ActivatedRoute, Router, UrlTree } from '@angular/router';
 import { RequestConfig } from '../http/http-utils';
 import { UserService } from '../http/user.service';
 import { Store } from '@ngrx/store';
 import { AppState } from '../core.state';
-import { AuthState } from '@core/auth/auth.models';
+import { AuthState } from '../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.models';
 import { TranslateService } from '@ngx-translate/core';
-import { TimeService } from '@core/services/time.service';
-import { UtilsService } from '@core/services/utils.service';
+import { TimeService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/time.service';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { MatDialog } from '@angular/material/dialog';
-import { OAuth2ClientInfo } from '@shared/models/oauth2.models';
-import { TwoFactorAuthProviderType, TwoFaProviderInfo } from '@shared/models/two-factor-auth.models';
-import { UserPasswordPolicy } from '@shared/models/settings.models';
+import { OAuth2ClientInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/oauth2.models';
+import { TwoFactorAuthProviderType, TwoFaProviderInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/two-factor-auth.models';
+import { UserPasswordPolicy } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models';
 import * as i0 from "@angular/core";
 export declare class AuthService {
     private store;

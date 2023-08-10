@@ -1,8 +1,8 @@
-import { WidgetSettings } from '@shared/models/widget.models';
+import { WidgetSettings } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { UntypedFormBuilder } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { AnalogueGaugeWidgetSettingsComponent } from '@home/components/widget/lib/settings/gauge/analogue-gauge-widget-settings.component';
+import { AppState } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { AnalogueGaugeWidgetSettingsComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/settings/gauge/analogue-gauge-widget-settings.component';
 import * as i0 from "@angular/core";
 export declare class AnalogueRadialGaugeWidgetSettingsComponent extends AnalogueGaugeWidgetSettingsComponent {
     protected store: Store<AppState>;

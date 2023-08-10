@@ -1,12 +1,12 @@
 import { ChangeDetectorRef, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { WidgetContext } from '@home/models/widget-component.models';
-import { UtilsService } from '@core/services/utils.service';
-import { LoadNodesCallback } from '@shared/components/nav-tree.component';
-import { EdgeService } from '@core/http/edge.service';
-import { EntityService } from '@core/http/entity.service';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetContext } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { UtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { LoadNodesCallback } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/nav-tree.component';
+import { EdgeService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/edge.service';
+import { EntityService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export declare class EdgesOverviewWidgetComponent extends PageComponent implements OnInit {

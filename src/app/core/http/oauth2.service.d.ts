@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
-import { RequestConfig } from '@core/http/http-utils';
+import { RequestConfig } from '../../../../../thingsboard/ui-ngx/src/app/core/http/http-utils';
 import { Observable } from 'rxjs';
-import { OAuth2ClientRegistrationTemplate, OAuth2Info } from '@shared/models/oauth2.models';
+import { OAuth2ClientRegistrationTemplate, OAuth2Info } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/oauth2.models';
 import * as i0 from "@angular/core";
 export declare class OAuth2Service {
     private http;
