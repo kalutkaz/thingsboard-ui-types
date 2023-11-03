@@ -1,11 +1,11 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { PolylineDecoratorSymbol, PolylineSettings } from '@home/components/widget/lib/maps/map-models';
-import { WidgetService } from '@core/http/widget.service';
+import { PolylineDecoratorSymbol, PolylineSettings } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/maps/map-models';
+import { WidgetService } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
 import * as i0 from "@angular/core";
 export declare class TripAnimationPathSettingsComponent extends PageComponent implements OnInit, ControlValueAccessor, Validator {
     protected store: Store<AppState>;

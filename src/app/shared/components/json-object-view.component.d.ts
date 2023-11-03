@@ -1,8 +1,8 @@
 import { ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { Ace } from 'ace-builds';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { RafService } from '@core/services/raf.service';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { RafService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/raf.service';
 import * as i0 from "@angular/core";
 export declare class JsonObjectViewComponent implements OnInit, OnDestroy {
     elementRef: ElementRef;

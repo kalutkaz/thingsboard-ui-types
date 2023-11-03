@@ -2,13 +2,13 @@ import { AfterViewInit, ElementRef, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, FormGroupDirective, NgForm } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityType } from '@shared/models/entity-type.models';
-import { EntityService } from '@core/http/entity.service';
-import { EntityAlias } from '@shared/models/alias.models';
-import { IAliasController } from '@core/api/widget-api.models';
-import { TruncatePipe } from '@shared/pipe/truncate.pipe';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { EntityService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
+import { EntityAlias } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alias.models';
+import { IAliasController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { TruncatePipe } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/truncate.pipe';
 import { MatAutocomplete, MatAutocompleteTrigger } from '@angular/material/autocomplete';
 import { EntityAliasSelectCallbacks } from './entity-alias-select.component.models';
 import { ErrorStateMatcher } from '@angular/material/core';
@@ -54,7 +54,7 @@ export declare class EntityAliasSelectComponent implements ControlValueAccessor,
     clear(value?: string): void;
     textIsNotEmpty(text: string): boolean;
     entityAliasEnter($event: KeyboardEvent): void;
-    createEntityAlias($event: Event, alias: string): void;
+    createEntityAlias($event: Event, alias: string, focusOnCancel?: boolean): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<EntityAliasSelectComponent, [null, { skipSelf: true; }, null, null, null, null]>;
     static ɵcmp: i0.ɵɵComponentDeclaration<EntityAliasSelectComponent, "tb-entity-alias-select", never, { "aliasController": "aliasController"; "allowedEntityTypes": "allowedEntityTypes"; "callbacks": "callbacks"; "showLabel": "showLabel"; "tbRequired": "tbRequired"; "disabled": "disabled"; }, {}, never, never, false, never>;
 }

@@ -1,7 +1,7 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
-import { KeyFilter } from '@shared/models/query/query.models';
+import { KeyFilter } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { TranslateService } from '@ngx-translate/core';
 import { DatePipe } from '@angular/common';
 import * as i0 from "@angular/core";

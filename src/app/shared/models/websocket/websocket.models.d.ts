@@ -1,5 +1,5 @@
 import { NgZone } from '@angular/core';
-import { WebsocketCmd } from '@shared/models/telemetry/telemetry.models';
+import { WebsocketCmd } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
 import { Subject } from 'rxjs';
 export interface WsService<T extends WsSubscriber> {
     subscribe(subscriber: T): any;

@@ -1,11 +1,11 @@
-import { AliasInfo, IAliasController, StateControllerHolder, StateEntityInfo } from '@core/api/widget-api.models';
+import { AliasInfo, IAliasController, StateControllerHolder, StateEntityInfo } from '../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import { Observable, Subject } from 'rxjs';
-import { Datasource } from '@app/shared/models/widget.models';
-import { EntityService } from '@core/http/entity.service';
-import { UtilsService } from '@core/services/utils.service';
-import { EntityAliases } from '@shared/models/alias.models';
-import { EntityInfo } from '@shared/models/entity.models';
-import { Filter, FilterInfo, Filters, KeyFilter } from '@shared/models/query/query.models';
+import { Datasource } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { EntityService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { EntityAliases } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/alias.models';
+import { EntityInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity.models';
+import { Filter, FilterInfo, Filters, KeyFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { TranslateService } from '@ngx-translate/core';
 export declare class AliasController implements IAliasController {
     private utils;

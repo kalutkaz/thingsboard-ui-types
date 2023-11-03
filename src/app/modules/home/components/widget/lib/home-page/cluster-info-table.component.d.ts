@@ -1,13 +1,13 @@
 import { AfterViewInit, NgZone, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { CollectionViewer, DataSource } from '@angular/cdk/collections';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
-import { PageLink } from '@shared/models/page/page-link';
+import { PageData } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { PageLink } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { MatSort } from '@angular/material/sort';
-import { TelemetryWebsocketService } from '@core/ws/telemetry-websocket.service';
+import { TelemetryWebsocketService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/ws/telemetry-websocket.service';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export interface SystemInfoData {

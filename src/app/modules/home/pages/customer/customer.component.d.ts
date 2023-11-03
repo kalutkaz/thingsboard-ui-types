@@ -1,12 +1,12 @@
 import { ChangeDetectorRef } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { Customer } from '@shared/models/customer.model';
+import { Customer } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/customer.model';
 import { TranslateService } from '@ngx-translate/core';
 import { ContactBasedComponent } from '../../components/entity/contact-based.component';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { AuthState } from '@core/auth/auth.models';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { AuthState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.models';
 import * as i0 from "@angular/core";
 export declare class CustomerComponent extends ContactBasedComponent<Customer> {
     protected store: Store<AppState>;

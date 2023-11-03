@@ -1,7 +1,7 @@
-import { EntityType } from '@shared/models/entity-type.models';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntitySearchDirection, RelationEntityTypeFilter } from '@shared/models/relation.models';
-import { EntityFilter } from '@shared/models/query/query.models';
+import { EntityType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntitySearchDirection, RelationEntityTypeFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
+import { EntityFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 export declare enum AliasFilterType {
     singleEntity = "singleEntity",
     entityList = "entityList",

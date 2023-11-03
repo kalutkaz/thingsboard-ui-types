@@ -3,12 +3,12 @@ import { MatFormFieldAppearance } from '@angular/material/form-field';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { AliasEntityType, EntityType } from '@shared/models/entity-type.models';
-import { BaseData } from '@shared/models/base-data';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntityService } from '@core/http/entity.service';
+import { AliasEntityType, EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { BaseData } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { EntityId } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntityService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import * as i0 from "@angular/core";
 export declare class EntityAutocompleteComponent implements ControlValueAccessor, OnInit, AfterViewInit {
     private store;
@@ -16,7 +16,7 @@ export declare class EntityAutocompleteComponent implements ControlValueAccessor
     private entityService;
     private fb;
     selectEntityFormGroup: UntypedFormGroup;
-    modelValue: string | null;
+    modelValue: string | EntityId | null;
     entityTypeValue: EntityType | AliasEntityType;
     entitySubtypeValue: string;
     entityText: string;
@@ -32,6 +32,7 @@ export declare class EntityAutocompleteComponent implements ControlValueAccessor
     excludeEntityIds: Array<string>;
     labelText: string;
     requiredText: string;
+    useFullEntityId: boolean;
     appearance: MatFormFieldAppearance;
     required: boolean;
     disabled: boolean;
@@ -56,5 +57,5 @@ export declare class EntityAutocompleteComponent implements ControlValueAccessor
     clear(): void;
     checkEntityType(entityType: EntityType | AliasEntityType): EntityType;
     static ɵfac: i0.ɵɵFactoryDeclaration<EntityAutocompleteComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<EntityAutocompleteComponent, "tb-entity-autocomplete", never, { "entityType": "entityType"; "entitySubtype": "entitySubtype"; "excludeEntityIds": "excludeEntityIds"; "labelText": "labelText"; "requiredText": "requiredText"; "appearance": "appearance"; "required": "required"; "disabled": "disabled"; }, { "entityChanged": "entityChanged"; }, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<EntityAutocompleteComponent, "tb-entity-autocomplete", never, { "entityType": "entityType"; "entitySubtype": "entitySubtype"; "excludeEntityIds": "excludeEntityIds"; "labelText": "labelText"; "requiredText": "requiredText"; "useFullEntityId": "useFullEntityId"; "appearance": "appearance"; "required": "required"; "disabled": "disabled"; }, { "entityChanged": "entityChanged"; }, never, never, false, never>;
 }

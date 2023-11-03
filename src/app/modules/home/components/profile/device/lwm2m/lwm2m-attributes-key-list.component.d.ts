@@ -2,8 +2,8 @@ import { OnDestroy } from '@angular/core';
 import { ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, Validator } from '@angular/forms';
 import { AttributeName, AttributesNameValueMap } from './lwm2m-profile-config.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { PageComponent } from '@shared/components/page.component';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { PageComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import * as i0 from "@angular/core";
 export declare class Lwm2mAttributesKeyListComponent extends PageComponent implements ControlValueAccessor, OnDestroy, OnDestroy, Validator {
     protected store: Store<AppState>;

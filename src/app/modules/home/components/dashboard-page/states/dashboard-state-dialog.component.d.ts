@@ -2,14 +2,14 @@ import { OnInit } from '@angular/core';
 import { ErrorStateMatcher } from '@angular/material/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, FormGroupDirective, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DialogComponent } from '@app/shared/components/dialog.component';
-import { DashboardState } from '@app/shared/models/dashboard.models';
-import { DashboardStateInfo } from '@home/components/dashboard-page/states/manage-dashboard-states-dialog.component.models';
+import { DialogComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
+import { DashboardState } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { DashboardStateInfo } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/states/manage-dashboard-states-dialog.component.models';
 import { TranslateService } from '@ngx-translate/core';
-import { DashboardUtilsService } from '@core/services/dashboard-utils.service';
+import { DashboardUtilsService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/services/dashboard-utils.service';
 import * as i0 from "@angular/core";
 export interface DashboardStateDialogData {
     states: {

@@ -1,7 +1,7 @@
 import { AfterViewInit, ChangeDetectorRef, ComponentFactoryResolver, ElementRef, NgZone, OnDestroy, ViewContainerRef } from '@angular/core';
 import { MatSnackBar, MatSnackBarRef } from '@angular/material/snack-bar';
-import { NotificationMessage } from '@app/core/notification/notification.models';
-import { ToastNotificationService } from '@core/services/toast-notification.service';
+import { NotificationMessage } from '../../../../../thingsboard/ui-ngx/src/app/core/notification/notification.models';
+import { ToastNotificationService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/toast-notification.service';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { MatButton } from '@angular/material/button';
 import { AnimationTriggerMetadata, AnimationEvent } from '@angular/animations';

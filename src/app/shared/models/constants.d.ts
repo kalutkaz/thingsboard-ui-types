@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { IModulesMap } from '@modules/common/modules-map.models';
+import { IModulesMap } from '../../../../../thingsboard/ui-ngx/src/app/modules/common/modules-map.models';
 export declare const Constants: {
     serverErrorCode: {
         general: number;
@@ -115,6 +115,7 @@ export declare const HelpLinks: {
         lwm2mResourceLibrary: string;
         dashboards: string;
         otaUpdates: string;
+        widgetTypes: string;
         widgetsBundles: string;
         widgetsConfig: string;
         widgetsConfigTimeseries: string;
@@ -132,6 +133,7 @@ export declare const HelpLinks: {
         templateNotifications: string;
         recipientNotifications: string;
         ruleNotifications: string;
+        jwtSecuritySettings: string;
     };
 };
 export interface ValueTypeData {

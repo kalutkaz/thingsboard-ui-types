@@ -1,9 +1,9 @@
 import { ChangeDetectorRef, ElementRef, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor, UntypedFormControl, Validator } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { ContentType } from '@shared/models/constants';
-import { RafService } from '@core/services/raf.service';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { ContentType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/constants';
+import { RafService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/raf.service';
 import * as i0 from "@angular/core";
 export declare class JsonContentComponent implements OnInit, ControlValueAccessor, Validator, OnChanges, OnDestroy {
     elementRef: ElementRef;

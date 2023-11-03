@@ -1,4 +1,4 @@
-/// <reference types="src/typings/rawloader.typings" />
+/// <reference types="../../../../../thingsboard/ui-ngx/src/typings/rawloader.typings" />
 import { NgZone } from '@angular/core';
 import { ExceptionData } from '@app/shared/models/error.models';
 import { TranslateService } from '@ngx-translate/core';
@@ -9,10 +9,12 @@ import { Observable } from 'rxjs';
 import { WidgetContext } from '@app/modules/home/models/widget-component.models';
 import { AttributeData, TelemetryType } from '@shared/models/telemetry/telemetry.models';
 import { EntityId } from '@shared/models/id/entity-id';
+import { DatePipe } from '@angular/common';
 import * as i0 from "@angular/core";
 export declare class UtilsService {
     private window;
     private zone;
+    private datePipe;
     private translate;
     iframeMode: boolean;
     widgetEditMode: boolean;
@@ -20,13 +22,15 @@ export declare class UtilsService {
     defaultDataKey: DataKey;
     defaultDatasource: Datasource;
     defaultAlarmDataKeys: Array<DataKey>;
-    materialIcons: Array<string>;
-    constructor(window: Window, zone: NgZone, translate: TranslateService);
+    constructor(window: Window, zone: NgZone, datePipe: DatePipe, translate: TranslateService);
     getPredefinedFunctionsList(): Array<string>;
     getPredefinedFunctionBody(func: string): string;
     getDefaultDatasource(dataKeySchema: any): Datasource;
     private initDefaultAlarmDataKeys;
     getDefaultAlarmDataKeys(): Array<DataKey>;
+    defaultAlarmFieldContent(key: DataKey | {
+        name: string;
+    }, value: any): string;
     generateObjectFromJsonSchema(schema: any): any;
     processWidgetException(exception: any): ExceptionData;
     parseException(exception: any, lineOffset?: number): ExceptionData;
@@ -34,8 +38,6 @@ export declare class UtilsService {
     private doTranslate;
     guid(): string;
     validateDatasources(datasources: Array<Datasource>): Array<Datasource>;
-    getMaterialIcons(): Observable<Array<string>>;
-    getCommonMaterialIcons(): Array<string>;
     getMaterialColor(index: number): string;
     createKey(keyInfo: KeyInfo, type: DataKeyType, index?: number): DataKey;
     createLabelFromDatasource(datasource: Datasource, pattern: string): string;

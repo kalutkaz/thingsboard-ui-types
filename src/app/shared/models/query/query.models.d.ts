@@ -1,10 +1,10 @@
-import { AliasFilterType, EntityFilters } from '@shared/models/alias.models';
-import { EntityId } from '@shared/models/id/entity-id';
+import { AliasFilterType, EntityFilters } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/alias.models';
+import { EntityId } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { SortDirection } from '@angular/material/sort';
-import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
-import { EntityInfo } from '@shared/models/entity.models';
-import { DataKey, Datasource } from '@shared/models/widget.models';
-import { PageData } from '@shared/models/page/page-data';
+import { DataKeyType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
+import { EntityInfo } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity.models';
+import { DataKey, Datasource } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { PageData } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
 import { TranslateService } from '@ngx-translate/core';
 import { AlarmInfo, AlarmSearchStatus, AlarmSeverity } from '../alarm.models';
 import { DatePipe } from '@angular/common';
@@ -211,11 +211,13 @@ export interface AlarmFilter {
 export interface AlarmFilterConfig extends AlarmFilter {
     assignedToCurrentUser?: boolean;
 }
+export declare const alarmFilterConfigEquals: (filter1?: AlarmFilterConfig, filter2?: AlarmFilterConfig) => boolean;
 export type AlarmCountQuery = EntityCountQuery & AlarmFilter;
 export type AlarmDataPageLink = EntityDataPageLink & AlarmFilter;
 export declare function entityDataPageLinkSortDirection(pageLink: EntityDataPageLink): SortDirection;
 export declare function createDefaultEntityDataPageLink(pageSize: number): EntityDataPageLink;
 export declare const singleEntityDataPageLink: EntityDataPageLink;
+export declare const singleEntityFilterFromDeviceId: (deviceId: string) => EntityFilter;
 export interface EntityCountQuery {
     entityFilter: EntityFilter;
     keyFilters?: Array<KeyFilter>;

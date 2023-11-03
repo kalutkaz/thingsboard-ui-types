@@ -1,9 +1,9 @@
 import { HttpClient } from '@angular/common/http';
-import { RequestConfig } from '@core/http/http-utils';
+import { RequestConfig } from '../../../../../thingsboard/ui-ngx/src/app/core/http/http-utils';
 import { Observable } from 'rxjs';
-import { QueueInfo, ServiceType } from '@shared/models/queue.models';
-import { PageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
+import { QueueInfo, ServiceType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/queue.models';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
 import * as i0 from "@angular/core";
 export declare class QueueService {
     private http;

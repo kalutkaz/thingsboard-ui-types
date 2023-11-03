@@ -1,10 +1,10 @@
 import { EventEmitter, OnInit } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
+import { DataKeyType } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
 import * as i0 from "@angular/core";
 export interface LabelDataKey {
     name: string;

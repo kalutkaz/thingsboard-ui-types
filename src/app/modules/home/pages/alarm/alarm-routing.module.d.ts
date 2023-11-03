@@ -1,6 +1,6 @@
 import { Resolve } from '@angular/router';
 import { Observable } from 'rxjs';
-import { OAuth2Service } from '@core/http/oauth2.service';
+import { OAuth2Service } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/oauth2.service';
 import * as i0 from "@angular/core";
 import * as i1 from "@angular/router";
 export declare class OAuth2LoginProcessingUrlResolver implements Resolve<string> {

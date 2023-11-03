@@ -1,13 +1,13 @@
 import { ElementRef, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
+import { DataKeyType } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
 import { Observable } from 'rxjs';
-import { IAliasController } from '@core/api/widget-api.models';
-import { EntityService } from '@core/http/entity.service';
+import { IAliasController } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { EntityService } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import * as i0 from "@angular/core";
 export declare class DeviceKeyAutocompleteComponent extends PageComponent implements OnInit, ControlValueAccessor, OnChanges {
     protected store: Store<AppState>;

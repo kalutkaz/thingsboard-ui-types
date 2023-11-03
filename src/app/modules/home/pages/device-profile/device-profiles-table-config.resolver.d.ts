@@ -1,14 +1,14 @@
 import { Resolve, Router } from '@angular/router';
-import { EntityTableConfig, HeaderActionDescriptor } from '@home/models/entity/entities-table-config.models';
+import { EntityTableConfig, HeaderActionDescriptor } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import { TranslateService } from '@ngx-translate/core';
 import { DatePipe } from '@angular/common';
-import { EntityAction } from '@home/models/entity/entity-component.models';
-import { DialogService } from '@core/services/dialog.service';
-import { DeviceProfile } from '@shared/models/device.models';
-import { DeviceProfileService } from '@core/http/device-profile.service';
+import { EntityAction } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entity-component.models';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { DeviceProfile } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { DeviceProfileService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/device-profile.service';
 import { MatDialog } from '@angular/material/dialog';
-import { ImportExportService } from '@home/components/import-export/import-export.service';
-import { HomeDialogsService } from '@home/dialogs/home-dialogs.service';
+import { ImportExportService } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/import-export/import-export.service';
+import { HomeDialogsService } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/dialogs/home-dialogs.service';
 import * as i0 from "@angular/core";
 export declare class DeviceProfilesTableConfigResolver implements Resolve<EntityTableConfig<DeviceProfile>> {
     private deviceProfileService;

@@ -1,10 +1,10 @@
 import * as i0 from "@angular/core";
 import * as i1 from "./asset.component";
-import * as i2 from "@home/pages/asset/asset-tabs.component";
+import * as i2 from "../../../../../../../thingsboard/ui-ngx/src/app/modules/home/pages/asset/asset-tabs.component";
 import * as i3 from "./asset-table-header.component";
 import * as i4 from "@angular/common";
-import * as i5 from "@shared/shared.module";
-import * as i6 from "@modules/home/components/home-components.module";
+import * as i5 from "../../../../../../../thingsboard/ui-ngx/src/app/shared/shared.module";
+import * as i6 from "../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/home-components.module";
 import * as i7 from "../../dialogs/home-dialogs.module";
 import * as i8 from "./asset-routing.module";
 export declare class AssetModule {

@@ -1,7 +1,7 @@
-import { MobileActionResult, WidgetMobileActionResult, WidgetMobileActionType } from '@shared/models/widget.models';
+import { MobileActionResult, WidgetMobileActionResult, WidgetMobileActionType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { Observable } from 'rxjs/internal/Observable';
 import { Params, Router } from '@angular/router';
-import { AuthService } from '@core/auth/auth.service';
+import { AuthService } from '../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
 import * as i0 from "@angular/core";
 export declare class MobileService {
     private window;

@@ -1,17 +1,17 @@
 import { OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { AlarmCommentService } from '@core/http/alarm-comment.service';
+import { AlarmCommentService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/alarm-comment.service';
 import { AbstractControl, FormBuilder, FormGroup } from '@angular/forms';
-import { DialogService } from '@core/services/dialog.service';
-import { AuthUser } from '@shared/models/user.model';
-import { SortOrder } from '@shared/models/page/sort-order';
-import { DateAgoPipe } from '@shared/pipe/date-ago.pipe';
-import { AlarmComment } from '@shared/models/alarm.models';
-import { UtilsService } from '@core/services/utils.service';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { AuthUser } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
+import { SortOrder } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/sort-order';
+import { DateAgoPipe } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/date-ago.pipe';
+import { AlarmComment } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
+import { UtilsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { DatePipe } from '@angular/common';
-import { ImportExportService } from '@home/components/import-export/import-export.service';
+import { ImportExportService } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/import-export/import-export.service';
 import * as i0 from "@angular/core";
 interface AlarmCommentsDisplayData {
     commentId?: string;

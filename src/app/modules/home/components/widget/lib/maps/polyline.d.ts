@@ -1,7 +1,7 @@
 import L, { PolylineDecorator, PolylineDecoratorOptions } from 'leaflet';
 import 'leaflet-polylinedecorator';
 import { WidgetPolylineSettings } from './map-models';
-import { FormattedData } from '@shared/models/widget.models';
+import { FormattedData } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 export declare class Polyline {
     private map;
     private data;

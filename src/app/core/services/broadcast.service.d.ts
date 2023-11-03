@@ -1,5 +1,5 @@
 import { Subscription } from 'rxjs';
-import { BroadcastListener } from '@core/services/broadcast.models';
+import { BroadcastListener } from '../../../../../thingsboard/ui-ngx/src/app/core/services/broadcast.models';
 import * as i0 from "@angular/core";
 export declare class BroadcastService {
     private broadcastSubject;

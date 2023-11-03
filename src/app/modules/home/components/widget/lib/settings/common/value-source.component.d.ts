@@ -1,12 +1,12 @@
 import { ElementRef, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { IAliasController } from '@core/api/widget-api.models';
+import { IAliasController } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import { Observable } from 'rxjs';
-import { EntityService } from '@core/http/entity.service';
+import { EntityService } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import * as i0 from "@angular/core";
 export declare type ValueSource = 'predefinedValue' | 'entityAttribute';
 export interface ValueSourceProperty {
@@ -20,7 +20,6 @@ export declare class ValueSourceComponent extends PageComponent implements OnIni
     private translate;
     private entityService;
     private fb;
-    display: string;
     entityAliasInput: ElementRef;
     keyInput: ElementRef;
     disabled: boolean;

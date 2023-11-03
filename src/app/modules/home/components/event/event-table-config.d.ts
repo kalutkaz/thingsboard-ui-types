@@ -1,17 +1,17 @@
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { DebugEventType, Event, EventType } from '@shared/models/event.models';
-import { TimePageLink } from '@shared/models/page/page-link';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { DebugEventType, Event, EventBody, EventType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/event.models';
+import { TimePageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { TranslateService } from '@ngx-translate/core';
 import { DatePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EventService } from '@app/core/http/event.service';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EventService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/event.service';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
-import { DialogService } from '@core/services/dialog.service';
-import { ContentType } from '@shared/models/constants';
+import { PageData } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { ContentType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/constants';
 import { Overlay } from '@angular/cdk/overlay';
-import { ChangeDetectorRef, ViewContainerRef } from '@angular/core';
+import { ChangeDetectorRef, EventEmitter, ViewContainerRef } from '@angular/core';
 export declare class EventTableConfig extends EntityTableConfig<Event, TimePageLink> {
     private eventService;
     private dialogService;
@@ -26,6 +26,8 @@ export declare class EventTableConfig extends EntityTableConfig<Event, TimePageL
     private overlay;
     private viewContainerRef;
     private cd;
+    testButtonLabel?: string;
+    private debugEventSelected?;
     eventTypeValue: EventType | DebugEventType;
     hideClearEventAction: boolean;
     private filterParams;
@@ -33,10 +35,11 @@ export declare class EventTableConfig extends EntityTableConfig<Event, TimePageL
     set eventType(eventType: EventType | DebugEventType);
     get eventType(): EventType | DebugEventType;
     eventTypes: Array<EventType | DebugEventType>;
-    constructor(eventService: EventService, dialogService: DialogService, translate: TranslateService, datePipe: DatePipe, dialog: MatDialog, entityId: EntityId, tenantId: string, defaultEventType: EventType | DebugEventType, disabledEventTypes: Array<EventType | DebugEventType>, debugEventTypes: Array<DebugEventType>, overlay: Overlay, viewContainerRef: ViewContainerRef, cd: ChangeDetectorRef);
+    constructor(eventService: EventService, dialogService: DialogService, translate: TranslateService, datePipe: DatePipe, dialog: MatDialog, entityId: EntityId, tenantId: string, defaultEventType: EventType | DebugEventType, disabledEventTypes: Array<EventType | DebugEventType>, debugEventTypes: Array<DebugEventType>, overlay: Overlay, viewContainerRef: ViewContainerRef, cd: ChangeDetectorRef, testButtonLabel?: string, debugEventSelected?: EventEmitter<EventBody>);
     clearEvents($event: any): void;
     fetchEvents(pageLink: TimePageLink): Observable<PageData<Event>>;
     updateColumns(updateTableColumns?: boolean): void;
+    updateCellAction(): void;
     showContent($event: MouseEvent, content: string, title: string, contentType?: ContentType, sortKeys?: boolean): void;
     private updateFilterColumns;
     private clearFiter;

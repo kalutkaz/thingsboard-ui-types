@@ -1,5 +1,5 @@
-import { IStateController, StateObject } from '@core/api/widget-api.models';
-import { DashboardState } from '@shared/models/dashboard.models';
+import { IStateController, StateObject } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { DashboardState } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 export declare type StateControllerState = StateObject[];
 export interface IStateControllerComponent extends IStateController {
     stateControllerInstanceId: string;

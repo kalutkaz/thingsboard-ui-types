@@ -1,18 +1,18 @@
-import { NotificationDeliveryMethod, NotificationRequest, NotificationRequestPreview, NotificationType } from '@shared/models/notification.models';
+import { NotificationDeliveryMethod, NotificationRequest, NotificationRequestPreview, NotificationType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
 import { OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Router } from '@angular/router';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { AbstractControl, FormBuilder, FormGroup } from '@angular/forms';
-import { NotificationService } from '@core/http/notification.service';
+import { NotificationService } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/http/notification.service';
 import { Observable } from 'rxjs';
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { MatStepper } from '@angular/material/stepper';
 import { StepperOrientation, StepperSelectionEvent } from '@angular/cdk/stepper';
 import { MatButton } from '@angular/material/button';
-import { TemplateConfiguration } from '@home/pages/notification/template/template-configuration';
+import { TemplateConfiguration } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/pages/notification/template/template-configuration';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export interface RequestNotificationDialogData {
@@ -31,7 +31,6 @@ export declare class SentNotificationDialogComponent extends TemplateConfigurati
     private translate;
     createNotification: MatStepper;
     stepperOrientation: Observable<StepperOrientation>;
-    stepperLabelPosition: Observable<'bottom' | 'end'>;
     isAdd: boolean;
     entityType: typeof EntityType;
     notificationType: typeof NotificationType;

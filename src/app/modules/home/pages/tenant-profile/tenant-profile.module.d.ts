@@ -1,8 +1,8 @@
 import * as i0 from "@angular/core";
 import * as i1 from "./tenant-profile-tabs.component";
 import * as i2 from "@angular/common";
-import * as i3 from "@shared/shared.module";
-import * as i4 from "@modules/home/components/home-components.module";
+import * as i3 from "../../../../../../../thingsboard/ui-ngx/src/app/shared/shared.module";
+import * as i4 from "../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/home-components.module";
 import * as i5 from "./tenant-profile-routing.module";
 export declare class TenantProfileModule {
     static ɵfac: i0.ɵɵFactoryDeclaration<TenantProfileModule, never>;

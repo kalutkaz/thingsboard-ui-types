@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
-import { UiSettingsService } from '@core/http/ui-settings.service';
+import { UiSettingsService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/ui-settings.service';
 import * as i0 from "@angular/core";
 export declare class HelpService {
     private translate;

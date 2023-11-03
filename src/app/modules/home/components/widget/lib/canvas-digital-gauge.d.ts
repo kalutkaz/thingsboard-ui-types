@@ -1,5 +1,5 @@
 import * as CanvasGauges from 'canvas-gauges';
-import { FontStyle, FontWeight } from '@home/components/widget/lib/settings.models';
+import { FontStyle, FontWeight } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/settings.models';
 import { ColorFormats } from 'tinycolor2';
 import GenericOptions = CanvasGauges.GenericOptions;
 import BaseGauge = CanvasGauges.BaseGauge;

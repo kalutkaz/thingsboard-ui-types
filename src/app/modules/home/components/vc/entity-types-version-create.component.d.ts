@@ -1,11 +1,11 @@
 import { OnInit } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
-import { EntityTypeVersionCreateConfig, SyncStrategy } from '@shared/models/vc.models';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { EntityTypeVersionCreateConfig, SyncStrategy } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/vc.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import * as i0 from "@angular/core";
 export declare class EntityTypesVersionCreateComponent extends PageComponent implements OnInit, ControlValueAccessor, Validator {
     protected store: Store<AppState>;
@@ -18,6 +18,7 @@ export declare class EntityTypesVersionCreateComponent extends PageComponent imp
     syncStrategies: SyncStrategy[];
     syncStrategyTranslations: Map<SyncStrategy, string>;
     entityTypes: typeof EntityType;
+    entityTypesWithoutRelatedData: Set<EntityType>;
     loading: boolean;
     constructor(store: Store<AppState>, translate: TranslateService, fb: UntypedFormBuilder);
     ngOnInit(): void;

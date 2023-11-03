@@ -1,10 +1,10 @@
-import { DataSetHolder, Datasource, widgetType } from '@shared/models/widget.models';
-import { SubscriptionTimewindow } from '@shared/models/time/time.models';
-import { EntityData, EntityDataPageLink, KeyFilter } from '@shared/models/query/query.models';
-import { PageData } from '@shared/models/page/page-data';
-import { TelemetryWebsocketService } from '@core/ws/telemetry-websocket.service';
-import { UtilsService } from '@core/services/utils.service';
-import { EntityDataSubscription, EntityDataSubscriptionOptions } from '@core/api/entity-data-subscription';
+import { DataSetHolder, Datasource, widgetType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { SubscriptionTimewindow } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
+import { EntityData, EntityDataPageLink, KeyFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { TelemetryWebsocketService } from '../../../../../thingsboard/ui-ngx/src/app/core/ws/telemetry-websocket.service';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { EntityDataSubscription, EntityDataSubscriptionOptions } from '../../../../../thingsboard/ui-ngx/src/app/core/api/entity-data-subscription';
 import { Observable } from 'rxjs';
 import * as i0 from "@angular/core";
 export interface EntityDataListener {

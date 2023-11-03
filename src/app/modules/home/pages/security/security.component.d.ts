@@ -1,19 +1,19 @@
 import { OnDestroy, OnInit } from '@angular/core';
-import { User } from '@shared/models/user.model';
-import { PageComponent } from '@shared/components/page.component';
+import { User } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormGroup, FormGroupDirective } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogService } from '@core/services/dialog.service';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { ActivatedRoute } from '@angular/router';
 import { DatePipe } from '@angular/common';
 import { ClipboardService } from 'ngx-clipboard';
-import { TwoFactorAuthenticationService } from '@core/http/two-factor-authentication.service';
-import { TwoFactorAuthProviderType } from '@shared/models/two-factor-auth.models';
-import { AuthService } from '@core/auth/auth.service';
-import { UserPasswordPolicy } from '@shared/models/settings.models';
+import { TwoFactorAuthenticationService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/two-factor-authentication.service';
+import { TwoFactorAuthProviderType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/two-factor-auth.models';
+import { AuthService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
+import { UserPasswordPolicy } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/settings.models';
 import { MatCheckboxChange } from '@angular/material/checkbox';
 import * as i0 from "@angular/core";
 export declare class SecurityComponent extends PageComponent implements OnInit, OnDestroy {
@@ -34,7 +34,7 @@ export declare class SecurityComponent extends PageComponent implements OnInit, 
     user: User;
     passwordPolicy: UserPasswordPolicy;
     allowTwoFactorProviders: TwoFactorAuthProviderType[];
-    providersData: Map<TwoFactorAuthProviderType, import("@shared/models/two-factor-auth.models").TwoFactorAuthProviderData>;
+    providersData: Map<TwoFactorAuthProviderType, import("../../../../../../../thingsboard/ui-ngx/src/app/shared/models/two-factor-auth.models").TwoFactorAuthProviderData>;
     twoFactorAuthProviderType: typeof TwoFactorAuthProviderType;
     useByDefault: TwoFactorAuthProviderType;
     activeSingleProvider: boolean;

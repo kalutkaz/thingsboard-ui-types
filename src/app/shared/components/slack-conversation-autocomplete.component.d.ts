@@ -2,12 +2,12 @@ import { ElementRef, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor, FormBuilder, FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityService } from '@core/http/entity.service';
-import { TruncatePipe } from '@shared/pipe/truncate.pipe';
-import { SlackChanelType, SlackConversation } from '@shared/models/notification.models';
-import { NotificationService } from '@core/http/notification.service';
+import { EntityService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
+import { TruncatePipe } from '../../../../../thingsboard/ui-ngx/src/app/shared/pipe/truncate.pipe';
+import { SlackChanelType, SlackConversation } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
+import { NotificationService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/notification.service';
 import * as i0 from "@angular/core";
 export declare class SlackConversationAutocompleteComponent implements ControlValueAccessor, OnInit, OnChanges {
     private store;
@@ -16,7 +16,7 @@ export declare class SlackConversationAutocompleteComponent implements ControlVa
     private entityService;
     private notificationService;
     private fb;
-    notificationDeliveryMethodTranslateMap: Map<import("@shared/models/notification.models").NotificationDeliveryMethod, string>;
+    notificationDeliveryMethodTranslateMap: Map<import("../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models").NotificationDeliveryMethod, string>;
     conversationSlackFormGroup: FormGroup;
     labelText: any;
     requiredText: any;

@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
-import { AlarmSchedule } from '@shared/models/device.models';
+import { AlarmSchedule } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import { MatDialog } from '@angular/material/dialog';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";

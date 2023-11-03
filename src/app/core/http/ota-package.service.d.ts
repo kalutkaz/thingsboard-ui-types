@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
-import { PageLink } from '@shared/models/page/page-link';
-import { RequestConfig } from '@core/http/http-utils';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { RequestConfig } from '../../../../../thingsboard/ui-ngx/src/app/core/http/http-utils';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
-import { ChecksumAlgorithm, OtaPackage, OtaPackageInfo, OtaPagesIds, OtaUpdateType } from '@shared/models/ota-package.models';
-import { BaseData } from '@shared/models/base-data';
-import { EntityId } from '@shared/models/id/entity-id';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { ChecksumAlgorithm, OtaPackage, OtaPackageInfo, OtaPagesIds, OtaUpdateType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/ota-package.models';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { TranslateService } from '@ngx-translate/core';
-import { DialogService } from '@core/services/dialog.service';
+import { DialogService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import * as i0 from "@angular/core";
 export declare class OtaPackageService {
     private http;

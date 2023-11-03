@@ -1,13 +1,13 @@
 import { OnInit } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { AbstractControl, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { DialogComponent } from '@shared/components/dialog.component';
+import { DialogComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/dialog.component';
 import { Router } from '@angular/router';
-import { DocumentationLink, DocumentationLinks, QuickLinks } from '@shared/models/user-settings.models';
+import { DocumentationLink, DocumentationLinks, QuickLinks } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user-settings.models';
 import { CdkDragDrop } from '@angular/cdk/drag-drop';
-import { UserSettingsService } from '@core/http/user-settings.service';
+import { UserSettingsService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/user-settings.service';
 import * as i0 from "@angular/core";
 export interface EditLinksDialogData {
     mode: 'docs' | 'quickLinks';

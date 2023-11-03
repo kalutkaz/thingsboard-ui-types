@@ -1,15 +1,15 @@
 import { ElementRef, EventEmitter, OnInit } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, FormGroupDirective, NgForm, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, ValidationErrors } from '@angular/forms';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { ErrorStateMatcher } from '@angular/material/core';
-import { MenuService } from '@core/services/menu.service';
+import { MenuService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.service';
 import { Observable } from 'rxjs';
-import { MenuSection } from '@core/services/menu.models';
+import { MenuSection } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.models';
 import { TranslateService } from '@ngx-translate/core';
-import { PageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
+import { PageLink } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
 import * as i0 from "@angular/core";
 export declare class QuickLinkComponent extends PageComponent implements OnInit, ControlValueAccessor, ErrorStateMatcher {
     protected store: Store<AppState>;

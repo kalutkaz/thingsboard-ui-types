@@ -1,11 +1,11 @@
-import { BaseData, ExportableEntity } from '@shared/models/base-data';
-import { DashboardId } from '@shared/models/id/dashboard-id';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { ShortCustomerInfo } from '@shared/models/customer.model';
+import { BaseData, ExportableEntity } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { DashboardId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/dashboard-id';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { ShortCustomerInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/customer.model';
 import { Widget } from './widget.models';
-import { Timewindow } from '@shared/models/time/time.models';
+import { Timewindow } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import { EntityAliases } from './alias.models';
-import { Filters } from '@shared/models/query/query.models';
+import { Filters } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { MatDialogRef } from '@angular/material/dialog';
 export interface DashboardInfo extends BaseData<DashboardId>, ExportableEntity<DashboardId> {
     tenantId?: TenantId;
@@ -110,6 +110,6 @@ export interface HomeDashboardInfo {
     dashboardId: DashboardId;
     hideDashboardToolbar: boolean;
 }
-export declare function isPublicDashboard(dashboard: DashboardInfo): boolean;
-export declare function getDashboardAssignedCustomersText(dashboard: DashboardInfo): string;
-export declare function isCurrentPublicDashboardCustomer(dashboard: DashboardInfo, customerId: string): boolean;
+export declare const isPublicDashboard: (dashboard: DashboardInfo) => boolean;
+export declare const getDashboardAssignedCustomersText: (dashboard: DashboardInfo) => string;
+export declare const isCurrentPublicDashboardCustomer: (dashboard: DashboardInfo, customerId: string) => boolean;

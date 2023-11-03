@@ -1,7 +1,7 @@
-import { EntityTableHeaderComponent } from '@home/components/entity/entity-table-header.component';
+import { EntityTableHeaderComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/entity/entity-table-header.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { NotificationTarget } from '@shared/models/notification.models';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { NotificationTarget } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/notification.models';
 import * as i0 from "@angular/core";
 export declare class RecipientTableHeaderComponent extends EntityTableHeaderComponent<NotificationTarget> {
     protected store: Store<AppState>;

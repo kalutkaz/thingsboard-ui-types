@@ -1,10 +1,10 @@
 import { EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup } from '@angular/forms';
-import { ServerSecurityConfig } from '@home/components/profile/device/lwm2m/lwm2m-profile-config.models';
+import { ServerSecurityConfig } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/profile/device/lwm2m/lwm2m-profile-config.models';
 import { TranslateService } from '@ngx-translate/core';
-import { DialogService } from '@core/services/dialog.service';
+import { DialogService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { MatDialog } from '@angular/material/dialog';
-import { DeviceProfileService } from '@core/http/device-profile.service';
+import { DeviceProfileService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/device-profile.service';
 import * as i0 from "@angular/core";
 export declare class Lwm2mBootstrapConfigServersComponent implements OnInit, ControlValueAccessor, OnDestroy {
     translate: TranslateService;

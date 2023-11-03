@@ -1,6 +1,6 @@
 import { OnDestroy } from '@angular/core';
 import { ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { ResourceLwM2M } from '@home/components/profile/device/lwm2m/lwm2m-profile-config.models';
+import { ResourceLwM2M } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/profile/device/lwm2m/lwm2m-profile-config.models';
 import * as i0 from "@angular/core";
 export declare class Lwm2mObserveAttrTelemetryResourcesComponent implements ControlValueAccessor, OnDestroy, Validator {
     private fb;

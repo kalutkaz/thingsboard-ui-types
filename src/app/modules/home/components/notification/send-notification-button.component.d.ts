@@ -1,7 +1,7 @@
 import { MatDialog } from '@angular/material/dialog';
-import { ActiveComponentService } from '@core/services/active-component.service';
+import { ActiveComponentService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/active-component.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import * as i0 from "@angular/core";
 export declare class SendNotificationButtonComponent {
     private dialog;

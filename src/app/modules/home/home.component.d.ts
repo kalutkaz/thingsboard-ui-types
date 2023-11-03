@@ -1,18 +1,20 @@
-import { AfterViewInit, ElementRef, OnInit } from '@angular/core';
+import { AfterViewInit, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { BreakpointObserver } from '@angular/cdk/layout';
-import { PageComponent } from '@shared/components/page.component';
-import { AppState } from '@core/core.state';
+import { PageComponent } from '../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { MatSidenav } from '@angular/material/sidenav';
-import { AuthState } from '@core/auth/auth.models';
-import { ISearchableComponent } from '@home/models/searchable-component.models';
-import { ActiveComponentService } from '@core/services/active-component.service';
+import { AuthState } from '../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.models';
+import { ISearchableComponent } from '../../../../../thingsboard/ui-ngx/src/app/modules/home/models/searchable-component.models';
+import { ActiveComponentService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/active-component.service';
+import { FormBuilder } from '@angular/forms';
 import * as i0 from "@angular/core";
-export declare class HomeComponent extends PageComponent implements AfterViewInit, OnInit {
+export declare class HomeComponent extends PageComponent implements AfterViewInit, OnInit, OnDestroy {
     protected store: Store<AppState>;
     private window;
     private activeComponentService;
     breakpointObserver: BreakpointObserver;
+    private fb;
     authState: AuthState;
     forceFullscreen: boolean;
     activeComponent: any;
@@ -25,10 +27,12 @@ export declare class HomeComponent extends PageComponent implements AfterViewIni
     fullscreenEnabled: boolean;
     searchEnabled: boolean;
     showSearch: boolean;
-    searchText: string;
+    textSearch: import("@angular/forms").FormControl<string>;
     hideLoadingBar: boolean;
-    constructor(store: Store<AppState>, window: Window, activeComponentService: ActiveComponentService, breakpointObserver: BreakpointObserver);
+    private destroy$;
+    constructor(store: Store<AppState>, window: Window, activeComponentService: ActiveComponentService, breakpointObserver: BreakpointObserver, fb: FormBuilder);
     ngOnInit(): void;
+    ngOnDestroy(): void;
     ngAfterViewInit(): void;
     sidenavClicked(): void;
     toggleFullscreen(): void;

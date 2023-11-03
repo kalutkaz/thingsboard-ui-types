@@ -1,16 +1,16 @@
-import { AfterViewInit, ChangeDetectorRef, OnInit, ViewContainerRef } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, EventEmitter, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { DatePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntitiesTableComponent } from '@home/components/entity/entities-table.component';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntitiesTableComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/entity/entities-table.component';
 import { EventTableConfig } from './event-table-config';
-import { EventService } from '@core/http/event.service';
-import { DialogService } from '@core/services/dialog.service';
-import { DebugEventType, EventType } from '@shared/models/event.models';
+import { EventService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/event.service';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { DebugEventType, EventBody, EventType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/event.models';
 import { Overlay } from '@angular/cdk/overlay';
 import * as i0 from "@angular/core";
-export declare class EventTableComponent implements OnInit, AfterViewInit {
+export declare class EventTableComponent implements OnInit, AfterViewInit, OnDestroy {
     private eventService;
     private dialogService;
     private translate;
@@ -26,8 +26,13 @@ export declare class EventTableComponent implements OnInit, AfterViewInit {
     activeValue: boolean;
     dirtyValue: boolean;
     entityIdValue: EntityId;
+    get active(): boolean;
     set active(active: boolean);
     set entityId(entityId: EntityId);
+    private functionTestButtonLabelValue;
+    get functionTestButtonLabel(): string;
+    set functionTestButtonLabel(value: string);
+    debugEventSelected: EventEmitter<EventBody>;
     entitiesTable: EntitiesTableComponent;
     eventTableConfig: EventTableConfig;
     private isEmptyData$;
@@ -36,5 +41,5 @@ export declare class EventTableComponent implements OnInit, AfterViewInit {
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<EventTableComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<EventTableComponent, "tb-event-table", never, { "tenantId": "tenantId"; "defaultEventType": "defaultEventType"; "disabledEventTypes": "disabledEventTypes"; "debugEventTypes": "debugEventTypes"; "active": "active"; "entityId": "entityId"; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<EventTableComponent, "tb-event-table", never, { "tenantId": "tenantId"; "defaultEventType": "defaultEventType"; "disabledEventTypes": "disabledEventTypes"; "debugEventTypes": "debugEventTypes"; "active": "active"; "entityId": "entityId"; "functionTestButtonLabel": "functionTestButtonLabel"; }, { "debugEventSelected": "debugEventSelected"; }, never, never, false, never>;
 }

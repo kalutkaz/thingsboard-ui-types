@@ -1,16 +1,16 @@
 import { ChangeDetectorRef } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import { EntityComponent } from '../entity/entity.component';
-import { DeviceProfile, DeviceProfileType, DeviceTransportType } from '@shared/models/device.models';
-import { EntityType } from '@shared/models/entity-type.models';
-import { ServiceType } from '@shared/models/queue.models';
-import { EntityId } from '@shared/models/id/entity-id';
-import { OtaUpdateType } from '@shared/models/ota-package.models';
-import { RuleChainType } from '@shared/models/rule-chain.models';
+import { DeviceProfile, DeviceProfileType, DeviceTransportType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { ServiceType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/queue.models';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { OtaUpdateType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/ota-package.models';
+import { RuleChainType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
 import * as i0 from "@angular/core";
 export declare class DeviceProfileComponent extends EntityComponent<DeviceProfile> {
     protected store: Store<AppState>;
@@ -24,7 +24,7 @@ export declare class DeviceProfileComponent extends EntityComponent<DeviceProfil
     deviceProfileTypes: DeviceProfileType[];
     deviceProfileTypeTranslations: Map<DeviceProfileType, string>;
     deviceTransportTypes: DeviceTransportType[];
-    deviceTransportTypeTranslations: Map<DeviceTransportType, string>;
+    deviceTransportTypeTranslations: Map<import("../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models").TransportType, string>;
     displayProfileConfiguration: boolean;
     displayTransportConfiguration: boolean;
     isTransportTypeChanged: boolean;

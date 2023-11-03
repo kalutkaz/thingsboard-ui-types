@@ -1,7 +1,7 @@
 import { ChangeDetectorRef, ElementRef, EventEmitter, NgZone, OnChanges, Renderer2, SimpleChanges, Type, ViewContainerRef } from '@angular/core';
-import { HelpService } from '@core/services/help.service';
+import { HelpService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/help.service';
 import { MarkdownService } from 'ngx-markdown';
-import { DynamicComponentFactoryService } from '@core/services/dynamic-component-factory.service';
+import { DynamicComponentFactoryService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/dynamic-component-factory.service';
 import * as i0 from "@angular/core";
 export declare class TbMarkdownComponent implements OnChanges {
     private help;
@@ -34,7 +34,7 @@ export declare class TbMarkdownComponent implements OnChanges {
     isMarkdownReady: boolean;
     error: any;
     private tbMarkdownInstanceComponentRef;
-    private tbMarkdownInstanceComponentFactory;
+    private tbMarkdownInstanceComponentType;
     constructor(help: HelpService, cd: ChangeDetectorRef, zone: NgZone, markdownService: MarkdownService, sharedModule: Type<any>, dynamicComponentFactoryService: DynamicComponentFactoryService, renderer: Renderer2);
     ngOnChanges(changes: SimpleChanges): void;
     private render;

@@ -1,19 +1,20 @@
-import { AfterViewInit, ChangeDetectorRef, ElementRef, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
-import { PageLink } from '@shared/models/page/page-link';
+import { AfterViewInit, ChangeDetectorRef, ElementRef, OnDestroy, OnInit } from '@angular/core';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { PageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogService } from '@core/services/dialog.service';
-import { EntityRelationService } from '@core/http/entity-relation.service';
-import { EntityRelation, EntityRelationInfo, EntitySearchDirection } from '@shared/models/relation.models';
-import { EntityId } from '@shared/models/id/entity-id';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { EntityRelationService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity-relation.service';
+import { EntityRelation, EntityRelationInfo, EntitySearchDirection } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { RelationsDatasource } from '../../models/datasource/relation-datasource';
+import { FormBuilder } from '@angular/forms';
 import * as i0 from "@angular/core";
-export declare class RelationTableComponent extends PageComponent implements AfterViewInit, OnInit {
+export declare class RelationTableComponent extends PageComponent implements AfterViewInit, OnInit, OnDestroy {
     protected store: Store<AppState>;
     private entityRelationService;
     translate: TranslateService;
@@ -21,6 +22,7 @@ export declare class RelationTableComponent extends PageComponent implements Aft
     private dialogService;
     private cd;
     private elementRef;
+    private fb;
     directions: typeof EntitySearchDirection;
     directionTypes: string[];
     directionTypeTranslations: Map<EntitySearchDirection, string>;
@@ -34,13 +36,15 @@ export declare class RelationTableComponent extends PageComponent implements Aft
     dirtyValue: boolean;
     entityIdValue: EntityId;
     viewsInited: boolean;
-    private widgetResize$;
     set active(active: boolean);
     set entityId(entityId: EntityId);
     searchInputField: ElementRef;
     paginator: MatPaginator;
     sort: MatSort;
-    constructor(store: Store<AppState>, entityRelationService: EntityRelationService, translate: TranslateService, dialog: MatDialog, dialogService: DialogService, cd: ChangeDetectorRef, elementRef: ElementRef);
+    textSearch: import("@angular/forms").FormControl<string>;
+    private widgetResize$;
+    private destroy$;
+    constructor(store: Store<AppState>, entityRelationService: EntityRelationService, translate: TranslateService, dialog: MatDialog, dialogService: DialogService, cd: ChangeDetectorRef, elementRef: ElementRef, fb: FormBuilder);
     ngOnInit(): void;
     ngOnDestroy(): void;
     updateColumns(): void;

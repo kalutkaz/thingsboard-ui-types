@@ -1,8 +1,8 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
-import { TenantProfileConfiguration, TenantProfileType } from '@shared/models/tenant.model';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { TenantProfileConfiguration, TenantProfileType } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/tenant.model';
 import * as i0 from "@angular/core";
 export declare class TenantProfileConfigurationComponent implements ControlValueAccessor, OnInit {
     private store;

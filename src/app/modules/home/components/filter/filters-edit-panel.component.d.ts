@@ -1,6 +1,6 @@
 import { InjectionToken } from '@angular/core';
-import { IAliasController } from '@core/api/widget-api.models';
-import { FilterInfo } from '@shared/models/query/query.models';
+import { IAliasController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { FilterInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { MatDialog } from '@angular/material/dialog';
 import * as i0 from "@angular/core";
 export declare const FILTER_EDIT_PANEL_DATA: InjectionToken<any>;

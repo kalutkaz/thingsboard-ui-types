@@ -1,15 +1,15 @@
 import { ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { VersionCreationResult } from '@shared/models/vc.models';
+import { VersionCreationResult } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/vc.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { EntitiesVersionControlService } from '@core/http/entities-version-control.service';
-import { EntityId } from '@shared/models/id/entity-id';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { EntitiesVersionControlService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/entities-version-control.service';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
-import { EntityType } from '@shared/models/entity-type.models';
-import { TbPopoverComponent } from '@shared/components/popover.component';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { TbPopoverComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
 import * as i0 from "@angular/core";
 export declare class EntityVersionCreateComponent extends PageComponent implements OnInit, OnDestroy {
     protected store: Store<AppState>;

@@ -1,0 +1,34 @@
+import { Resolve, Router } from '@angular/router';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { TranslateService } from '@ngx-translate/core';
+import { DatePipe } from '@angular/common';
+import { EntityAction } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entity-component.models';
+import { WidgetService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
+import { Store } from '@ngrx/store';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { Authority } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/authority.enum';
+import { ImportExportService } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/import-export/import-export.service';
+import { BaseWidgetType, WidgetTypeDetails, WidgetTypeInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { MatDialog } from '@angular/material/dialog';
+import * as i0 from "@angular/core";
+export declare class WidgetTypesTableConfigResolver implements Resolve<EntityTableConfig<WidgetTypeInfo | WidgetTypeDetails>> {
+    private store;
+    private dialog;
+    private widgetsService;
+    private translate;
+    private importExport;
+    private datePipe;
+    private router;
+    private readonly config;
+    constructor(store: Store<AppState>, dialog: MatDialog, widgetsService: WidgetService, translate: TranslateService, importExport: ImportExportService, datePipe: DatePipe, router: Router);
+    resolve(): EntityTableConfig<WidgetTypeInfo | WidgetTypeDetails>;
+    isWidgetTypeEditable(widgetType: BaseWidgetType, authority: Authority): boolean;
+    addWidgetType($event: Event): void;
+    importWidgetType($event: Event): void;
+    openWidgetEditor($event: Event, widgetType: BaseWidgetType): void;
+    exportWidgetType($event: Event, widgetType: BaseWidgetType): void;
+    exportWidgetTypes($event: Event, widgetTypes: BaseWidgetType[]): void;
+    onWidgetTypeAction(action: EntityAction<BaseWidgetType>): boolean;
+    static ɵfac: i0.ɵɵFactoryDeclaration<WidgetTypesTableConfigResolver, never>;
+    static ɵprov: i0.ɵɵInjectableDeclaration<WidgetTypesTableConfigResolver>;
+}

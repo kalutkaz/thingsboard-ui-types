@@ -1,7 +1,7 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { FcRuleEdge, LinkLabel } from '@shared/models/rule-node.models';
-import { TruncatePipe } from '@shared/pipe/truncate.pipe';
+import { FcRuleEdge, LinkLabel } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
+import { TruncatePipe } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/truncate.pipe';
 import { TranslateService } from '@ngx-translate/core';
 import * as i0 from "@angular/core";
 export declare class RuleNodeLinkComponent implements ControlValueAccessor, OnInit {

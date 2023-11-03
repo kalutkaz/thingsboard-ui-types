@@ -1,9 +1,9 @@
-import { BaseData } from '@shared/models/base-data';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { EntityId } from '@shared/models/id/entity-id';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { EventId } from './id/event-id';
-import { ContentType } from '@shared/models/constants';
-import { EntityType } from '@shared/models/entity-type.models';
+import { ContentType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/constants';
+import { EntityType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 export declare enum EventType {
     ERROR = "ERROR",
     LC_EVENT = "LC_EVENT",

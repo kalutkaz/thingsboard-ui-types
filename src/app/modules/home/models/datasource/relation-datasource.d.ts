@@ -1,10 +1,10 @@
 import { CollectionViewer, DataSource, SelectionModel } from '@angular/cdk/collections';
-import { EntityRelationInfo, EntitySearchDirection } from '@shared/models/relation.models';
+import { EntityRelationInfo, EntitySearchDirection } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/relation.models';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
-import { EntityRelationService } from '@core/http/entity-relation.service';
-import { PageLink } from '@shared/models/page/page-link';
-import { EntityId } from '@app/shared/models/id/entity-id';
+import { PageData } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { EntityRelationService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity-relation.service';
+import { PageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { TranslateService } from '@ngx-translate/core';
 export declare class RelationsDatasource implements DataSource<EntityRelationInfo> {
     private entityRelationService;

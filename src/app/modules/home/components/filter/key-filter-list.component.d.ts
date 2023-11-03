@@ -1,8 +1,8 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormArray, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
-import { EntityKeyType, KeyFilterInfo } from '@shared/models/query/query.models';
+import { EntityKeyType, KeyFilterInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { MatDialog } from '@angular/material/dialog';
-import { EntityId } from '@shared/models/id/entity-id';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import * as i0 from "@angular/core";
 export declare class KeyFilterListComponent implements ControlValueAccessor, Validator, OnInit, OnDestroy {
     private fb;

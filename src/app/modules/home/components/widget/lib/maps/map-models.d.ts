@@ -1,4 +1,4 @@
-import { Datasource, FormattedData } from '@app/shared/models/widget.models';
+import { Datasource, FormattedData } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import tinycolor from 'tinycolor2';
 import { BaseIconOptions, Icon } from 'leaflet';
 export declare const DEFAULT_MAP_PAGE_SIZE = 16384;

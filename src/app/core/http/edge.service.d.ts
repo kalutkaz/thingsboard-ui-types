@@ -1,12 +1,12 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { PageLink, TimePageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
-import { EntitySubtype } from '@app/shared/models/entity-type.models';
-import { Edge, EdgeEvent, EdgeInfo, EdgeInstallInstructions, EdgeSearchQuery } from '@shared/models/edge.models';
-import { EntityId } from '@shared/models/id/entity-id';
-import { BulkImportRequest, BulkImportResult } from '@home/components/import-export/import-export.models';
+import { PageLink, TimePageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { EntitySubtype } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
+import { Edge, EdgeEvent, EdgeInfo, EdgeInstallInstructions, EdgeSearchQuery } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/edge.models';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { BulkImportRequest, BulkImportResult } from '../../../../../thingsboard/ui-ngx/src/app/modules/home/components/import-export/import-export.models';
 import * as i0 from "@angular/core";
 export declare class EdgeService {
     private http;
@@ -28,7 +28,7 @@ export declare class EdgeService {
     findMissingToRelatedRuleChains(edgeId: string, config?: RequestConfig): Observable<string>;
     findByName(edgeName: string, config?: RequestConfig): Observable<Edge>;
     bulkImportEdges(entitiesData: BulkImportRequest, config?: RequestConfig): Observable<BulkImportResult>;
-    getEdgeDockerInstallInstructions(edgeId: string, config?: RequestConfig): Observable<EdgeInstallInstructions>;
+    getEdgeInstallInstructions(edgeId: string, method?: string, config?: RequestConfig): Observable<EdgeInstallInstructions>;
     static ɵfac: i0.ɵɵFactoryDeclaration<EdgeService, never>;
     static ɵprov: i0.ɵɵInjectableDeclaration<EdgeService>;
 }

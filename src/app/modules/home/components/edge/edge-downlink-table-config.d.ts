@@ -1,16 +1,16 @@
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
-import { EdgeEvent } from '@shared/models/edge.models';
-import { TimePageLink } from '@shared/models/page/page-link';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
+import { EdgeEvent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/edge.models';
+import { TimePageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { TranslateService } from '@ngx-translate/core';
 import { DatePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
-import { EntityId } from '@shared/models/id/entity-id';
-import { DialogService } from '@core/services/dialog.service';
-import { AttributeService } from '@core/http/attribute.service';
-import { EdgeService } from '@core/http/edge.service';
-import { EntityService } from '@core/http/entity.service';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
+import { AttributeService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/attribute.service';
+import { EdgeService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/edge.service';
+import { EntityService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 export declare class EdgeDownlinkTableConfig extends EntityTableConfig<EdgeEvent, TimePageLink> {
     private attributeService;
     private datePipe;

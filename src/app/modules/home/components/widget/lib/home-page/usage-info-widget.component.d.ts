@@ -1,11 +1,11 @@
 import { ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { WidgetContext } from '@home/models/widget-component.models';
-import { UsageInfo } from '@shared/models/usage.models';
-import { UsageInfoService } from '@core/http/usage-info.service';
-import { ShortNumberPipe } from '@shared/pipe/short-number.pipe';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetContext } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { UsageInfo } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/usage.models';
+import { UsageInfoService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/usage-info.service';
+import { ShortNumberPipe } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/pipe/short-number.pipe';
 import * as i0 from "@angular/core";
 export declare class UsageInfoWidgetComponent extends PageComponent implements OnInit, OnDestroy {
     protected store: Store<AppState>;

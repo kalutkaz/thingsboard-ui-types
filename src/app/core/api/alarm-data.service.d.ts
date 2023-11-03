@@ -1,9 +1,9 @@
-import { SubscriptionTimewindow } from '@shared/models/time/time.models';
-import { Datasource } from '@shared/models/widget.models';
-import { PageData } from '@shared/models/page/page-data';
-import { AlarmData, AlarmDataPageLink, KeyFilter } from '@shared/models/query/query.models';
-import { TelemetryWebsocketService } from '@core/ws/telemetry-websocket.service';
-import { AlarmDataSubscription, AlarmDataSubscriptionOptions } from '@core/api/alarm-data-subscription';
+import { SubscriptionTimewindow } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
+import { Datasource } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { AlarmData, AlarmDataPageLink, KeyFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { TelemetryWebsocketService } from '../../../../../thingsboard/ui-ngx/src/app/core/ws/telemetry-websocket.service';
+import { AlarmDataSubscription, AlarmDataSubscriptionOptions } from '../../../../../thingsboard/ui-ngx/src/app/core/api/alarm-data-subscription';
 import * as i0 from "@angular/core";
 export interface AlarmDataListener {
     subscriptionTimewindow?: SubscriptionTimewindow;

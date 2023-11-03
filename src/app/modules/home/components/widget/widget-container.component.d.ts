@@ -1,8 +1,8 @@
-import { ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, OnInit, Renderer2 } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
-import { DashboardWidget, DashboardWidgets } from '@home/models/dashboard-component.models';
+import { AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, OnInit, Renderer2 } from '@angular/core';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { DashboardWidget, DashboardWidgets } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/dashboard-component.models';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { SafeStyle } from '@angular/platform-browser';
 import { GridsterItemComponent } from 'angular-gridster2';
 import * as i0 from "@angular/core";
@@ -18,7 +18,7 @@ export declare class WidgetComponentAction {
     event: MouseEvent;
     actionType: WidgetComponentActionType;
 }
-export declare class WidgetContainerComponent extends PageComponent implements OnInit, OnDestroy {
+export declare class WidgetContainerComponent extends PageComponent implements OnInit, AfterViewInit, OnDestroy {
     protected store: Store<AppState>;
     private cd;
     private renderer;
@@ -43,6 +43,7 @@ export declare class WidgetContainerComponent extends PageComponent implements O
     private cssClass;
     constructor(store: Store<AppState>, cd: ChangeDetectorRef, renderer: Renderer2, document: Document);
     ngOnInit(): void;
+    ngAfterViewInit(): void;
     ngOnDestroy(): void;
     isHighlighted(widget: DashboardWidget): boolean;
     isNotHighlighted(widget: DashboardWidget): boolean;

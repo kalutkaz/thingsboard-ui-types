@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { JsonFormFieldProps, JsonFormFieldState } from '@shared/components/json-form/react/json-form.models';
+import { JsonFormFieldProps, JsonFormFieldState } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/json-form/react/json-form.models';
 declare const _default: (ThingsboardBaseComponent: any) => {
     new <P extends JsonFormFieldProps>(props: any): {
         componentDidMount(): void;

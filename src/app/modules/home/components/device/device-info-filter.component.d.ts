@@ -2,9 +2,9 @@ import { ChangeDetectorRef, ElementRef, InjectionToken, OnDestroy, OnInit, Templ
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { TranslateService } from '@ngx-translate/core';
-import { DeviceInfoFilter } from '@shared/models/device.models';
-import { EntityInfoData } from '@shared/models/entity.models';
-import { DeviceProfileService } from '@core/http/device-profile.service';
+import { DeviceInfoFilter } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
+import { EntityInfoData } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity.models';
+import { DeviceProfileService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/device-profile.service';
 import * as i0 from "@angular/core";
 export declare const DEVICE_FILTER_CONFIG_DATA: InjectionToken<any>;
 export interface DeviceFilterConfigData {

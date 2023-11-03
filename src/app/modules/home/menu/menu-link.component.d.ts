@@ -1,5 +1,5 @@
 import { OnInit } from '@angular/core';
-import { MenuSection } from '@core/services/menu.models';
+import { MenuSection } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/menu.models';
 import * as i0 from "@angular/core";
 export declare class MenuLinkComponent implements OnInit {
     section: MenuSection;

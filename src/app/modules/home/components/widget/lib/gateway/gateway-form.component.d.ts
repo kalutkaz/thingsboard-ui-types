@@ -1,16 +1,16 @@
 import { ElementRef, NgZone, OnDestroy, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { AbstractControl, UntypedFormArray, UntypedFormBuilder, UntypedFormGroup, NgForm } from '@angular/forms';
-import { WidgetContext } from '@home/models/widget-component.models';
-import { UtilsService } from '@core/services/utils.service';
+import { WidgetContext } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { UtilsService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import { SecurityType, StorageType } from './gateway-form.models';
 import { MatDialog } from '@angular/material/dialog';
 import { TranslateService } from '@ngx-translate/core';
-import { DeviceService } from '@core/http/device.service';
-import { AttributeService } from '@core/http/attribute.service';
-import { ImportExportService } from '@home/components/import-export/import-export.service';
+import { DeviceService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/device.service';
+import { AttributeService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/attribute.service';
+import { ImportExportService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/import-export/import-export.service';
 import * as i0 from "@angular/core";
 export declare class GatewayFormComponent extends PageComponent implements OnInit, OnDestroy {
     protected store: Store<AppState>;

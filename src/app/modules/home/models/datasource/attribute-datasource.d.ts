@@ -1,12 +1,12 @@
 import { CollectionViewer, DataSource, SelectionModel } from '@angular/cdk/collections';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
-import { PageLink } from '@shared/models/page/page-link';
-import { EntityId } from '@app/shared/models/id/entity-id';
+import { PageData } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { PageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { TranslateService } from '@ngx-translate/core';
-import { AttributeData, TelemetryType } from '@shared/models/telemetry/telemetry.models';
-import { AttributeService } from '@core/http/attribute.service';
-import { TelemetryWebsocketService } from '@core/ws/telemetry-websocket.service';
+import { AttributeData, TelemetryType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
+import { AttributeService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/attribute.service';
+import { TelemetryWebsocketService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/ws/telemetry-websocket.service';
 import { NgZone } from '@angular/core';
 export declare class AttributeDatasource implements DataSource<AttributeData> {
     private attributeService;

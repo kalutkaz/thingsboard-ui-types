@@ -1,13 +1,13 @@
 import { Type } from '@angular/core';
-import { DynamicComponentFactoryService } from '@core/services/dynamic-component-factory.service';
-import { WidgetService } from '@core/http/widget.service';
+import { DynamicComponentFactoryService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dynamic-component-factory.service';
+import { WidgetService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
 import { Observable } from 'rxjs';
-import { WidgetInfo } from '@home/models/widget-component.models';
-import { UtilsService } from '@core/services/utils.service';
-import { ResourcesService } from '@core/services/resources.service';
-import { Widget } from '@shared/models/widget.models';
+import { WidgetInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { UtilsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { ResourcesService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/resources.service';
+import { Widget } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { TranslateService } from '@ngx-translate/core';
-import { IModulesMap } from '@modules/common/modules-map.models';
+import { IModulesMap } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/common/modules-map.models';
 import * as i0 from "@angular/core";
 export declare class WidgetComponentService {
     private window;
@@ -27,7 +27,8 @@ export declare class WidgetComponentService {
     constructor(window: Window, modulesMap: IModulesMap, homeComponentsModule: Type<any>, dynamicComponentFactoryService: DynamicComponentFactoryService, widgetService: WidgetService, utils: UtilsService, resources: ResourcesService, translate: TranslateService);
     private init;
     getInstantWidgetInfo(widget: Widget): WidgetInfo;
-    getWidgetInfo(bundleAlias: string, widgetTypeAlias: string, isSystem: boolean): Observable<WidgetInfo>;
+    getWidgetInfo(fullFqn: string): Observable<WidgetInfo>;
+    clearWidgetInfo(widgetInfo: WidgetInfo): void;
     private getWidgetInfoInternal;
     private loadWidget;
     private loadWidgetResources;

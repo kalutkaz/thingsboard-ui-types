@@ -3,11 +3,11 @@ import { Store } from '@ngrx/store';
 import { Actions } from '@ngrx/effects';
 import { TranslateService } from '@ngx-translate/core';
 import { SettingsActions } from './settings.actions';
-import { AppState } from '@app/core/core.state';
-import { LocalStorageService } from '@app/core/local-storage/local-storage.service';
-import { TitleService } from '@app/core/services/title.service';
-import { AuthService } from '@core/auth/auth.service';
-import { UtilsService } from '@core/services/utils.service';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { LocalStorageService } from '../../../../../thingsboard/ui-ngx/src/app/core/local-storage/local-storage.service';
+import { TitleService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/title.service';
+import { AuthService } from '../../../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
 import * as i0 from "@angular/core";
 export declare const SETTINGS_KEY = "SETTINGS";
 export declare class SettingsEffects {

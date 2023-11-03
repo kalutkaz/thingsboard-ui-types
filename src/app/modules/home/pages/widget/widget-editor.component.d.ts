@@ -1,19 +1,18 @@
 /// <reference types="node" />
-import { PageComponent } from '@shared/components/page.component';
-import { ElementRef, OnDestroy, OnInit } from '@angular/core';
-import { WidgetsBundle } from '@shared/models/widgets-bundle.model';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { ElementRef, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { WidgetService } from '@core/http/widget.service';
-import { WidgetInfo } from '@home/models/widget-component.models';
-import { widgetType, WidgetTypeDetails } from '@shared/models/widget.models';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
+import { WidgetInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
+import { widgetType, WidgetTypeDetails } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { ActivatedRoute, Router } from '@angular/router';
-import { HasDirtyFlag } from '@core/guards/confirm-on-exit.guard';
-import { AuthUser } from '@shared/models/user.model';
+import { HasDirtyFlag } from '../../../../../../../thingsboard/ui-ngx/src/app/core/guards/confirm-on-exit.guard';
+import { AuthUser } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user.model';
 import { Hotkey } from 'angular2-hotkeys';
 import { TranslateService } from '@ngx-translate/core';
 import { Ace } from 'ace-builds';
-import { CancelAnimationFrame, RafService } from '@core/services/raf.service';
+import { CancelAnimationFrame, RafService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/raf.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ResizeObserver } from '@juggle/resize-observer';
 import Timeout = NodeJS.Timeout;
@@ -43,14 +42,16 @@ export declare class WidgetEditorComponent extends PageComponent implements OnIn
     iframe: JQuery<HTMLIFrameElement>;
     widgetTypes: typeof widgetType;
     allWidgetTypes: string[];
-    widgetTypesDataMap: Map<widgetType, import("@shared/models/widget.models").WidgetTypeData>;
+    widgetTypesDataMap: Map<widgetType, import("../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models").WidgetTypeData>;
     authUser: AuthUser;
     isReadOnly: boolean;
-    widgetsBundle: WidgetsBundle;
     widgetTypeDetails: WidgetTypeDetails;
     widget: WidgetInfo;
     origWidget: WidgetInfo;
-    isDirty: boolean;
+    private isEditModeWidget;
+    private _isDirty;
+    get isDirty(): boolean;
+    set isDirty(value: boolean);
     fullscreen: boolean;
     htmlFullscreen: boolean;
     cssFullscreen: boolean;
@@ -79,6 +80,7 @@ export declare class WidgetEditorComponent extends PageComponent implements OnIn
     errorAnnotationId: number;
     saveWidgetTimeout: Timeout;
     hotKeys: Hotkey[];
+    updateBreadcrumbs: EventEmitter<any>;
     private rxSubscriptions;
     constructor(store: Store<AppState>, window: Window, route: ActivatedRoute, router: Router, widgetService: WidgetService, translate: TranslateService, raf: RafService, dialog: MatDialog);
     private init;
@@ -93,6 +95,7 @@ export declare class WidgetEditorComponent extends PageComponent implements OnIn
     private onWindowMessage;
     private onWidgetEditModeInited;
     private onWidgetEditUpdated;
+    private onWidgetEditModeToggled;
     private onWidgetException;
     private cleanupJsErrors;
     private commitSaveWidget;
@@ -114,6 +117,7 @@ export declare class WidgetEditorComponent extends PageComponent implements OnIn
     removeResource(index: number): void;
     addResource(): void;
     widetTypeChanged(): void;
+    get confirmOnExitMessage(): string;
     static ɵfac: i0.ɵɵFactoryDeclaration<WidgetEditorComponent, never>;
     static ɵcmp: i0.ɵɵComponentDeclaration<WidgetEditorComponent, "tb-widget-editor", never, {}, {}, never, never, false, never>;
 }

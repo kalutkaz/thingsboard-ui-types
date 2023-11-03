@@ -1,10 +1,10 @@
 import { ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { DocumentationLinks } from '@shared/models/user-settings.models';
-import { UserSettingsService } from '@core/http/user-settings.service';
-import { WidgetContext } from '@home/models/widget-component.models';
+import { AppState } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { DocumentationLinks } from '../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/user-settings.models';
+import { UserSettingsService } from '../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/user-settings.service';
+import { WidgetContext } from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/widget-component.models';
 import { MatDialog } from '@angular/material/dialog';
 import { BreakpointObserver } from '@angular/cdk/layout';
 import * as i0 from "@angular/core";

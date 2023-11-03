@@ -1,9 +1,9 @@
-import { WidgetSettings, WidgetSettingsComponent } from '@shared/models/widget.models';
+import { WidgetSettings, WidgetSettingsComponent } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { WidgetService } from '@core/http/widget.service';
-import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
+import { AppState } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { WidgetService } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/core/http/widget.service';
+import { DataKeyType } from '../../../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
 import * as i0 from "@angular/core";
 export declare class LedIndicatorWidgetSettingsComponent extends WidgetSettingsComponent {
     protected store: Store<AppState>;

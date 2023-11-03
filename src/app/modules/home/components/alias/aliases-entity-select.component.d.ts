@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
 import { TooltipPosition } from '@angular/material/tooltip';
-import { AliasInfo, IAliasController } from '@core/api/widget-api.models';
+import { AliasInfo, IAliasController } from '../../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
 import { CdkOverlayOrigin, Overlay } from '@angular/cdk/overlay';
 import { TranslateService } from '@ngx-translate/core';
 import { BreakpointObserver } from '@angular/cdk/layout';
@@ -11,6 +11,7 @@ export declare class AliasesEntitySelectComponent implements OnInit, OnDestroy {
     private cd;
     private breakpointObserver;
     private viewContainerRef;
+    aliasesEntitySelectClass: string;
     aliasControllerValue: IAliasController;
     set aliasController(aliasController: IAliasController);
     get aliasController(): IAliasController;

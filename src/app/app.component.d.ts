@@ -2,11 +2,11 @@ import 'hammerjs';
 import { OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
-import { LocalStorageService } from '@core/local-storage/local-storage.service';
+import { AppState } from '../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { LocalStorageService } from '../../../thingsboard/ui-ngx/src/app/core/local-storage/local-storage.service';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material/icon';
-import { AuthService } from '@core/auth/auth.service';
+import { AuthService } from '../../../thingsboard/ui-ngx/src/app/core/auth/auth.service';
 import * as i0 from "@angular/core";
 export declare class AppComponent implements OnInit {
     private store;

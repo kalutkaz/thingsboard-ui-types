@@ -1,4 +1,4 @@
-import { HideNotification, NotificationMessage } from '@app/core/notification/notification.models';
+import { HideNotification, NotificationMessage } from '../../../../../thingsboard/ui-ngx/src/app/core/notification/notification.models';
 import { Observable } from 'rxjs';
 import * as i0 from "@angular/core";
 export declare class ToastNotificationService {

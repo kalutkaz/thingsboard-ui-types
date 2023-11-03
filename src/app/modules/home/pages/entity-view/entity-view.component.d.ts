@@ -1,15 +1,15 @@
 import { ChangeDetectorRef } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { EntityComponent } from '../../components/entity/entity.component';
 import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityViewInfo } from '@app/shared/models/entity-view.models';
+import { EntityViewInfo } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-view.models';
 import { Observable } from 'rxjs';
-import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
-import { EntityId } from '@app/shared/models/id/entity-id';
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
+import { DataKeyType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import * as i0 from "@angular/core";
 export declare class EntityViewComponent extends EntityComponent<EntityViewInfo> {
     protected store: Store<AppState>;

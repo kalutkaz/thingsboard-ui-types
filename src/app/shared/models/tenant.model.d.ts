@@ -1,8 +1,8 @@
-import { ContactBased } from '@shared/models/contact-based.model';
+import { ContactBased } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/contact-based.model';
 import { TenantId } from './id/tenant-id';
-import { TenantProfileId } from '@shared/models/id/tenant-profile-id';
-import { BaseData } from '@shared/models/base-data';
-import { QueueInfo } from '@shared/models/queue.models';
+import { TenantProfileId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-profile-id';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { QueueInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/queue.models';
 export declare enum TenantProfileType {
     DEFAULT = "DEFAULT"
 }
@@ -29,10 +29,12 @@ export interface DefaultTenantProfileConfiguration {
     maxTransportDataPoints: number;
     maxREExecutions: number;
     maxJSExecutions: number;
+    maxTbelExecutions: number;
     maxDPStorageDays: number;
     maxRuleNodeExecutionsPerMessage: number;
     maxEmails: number;
     maxSms: number;
+    smsEnabled: boolean;
     maxCreatedAlarms: number;
     tenantServerRestLimitsConfiguration: string;
     customerServerRestLimitsConfiguration: string;
@@ -50,6 +52,8 @@ export interface DefaultTenantProfileConfiguration {
     defaultStorageTtlDays: number;
     alarmsTtlDays: number;
     rpcTtlDays: number;
+    queueStatsTtlDays: number;
+    ruleEngineExceptionsTtlDays: number;
 }
 export type TenantProfileConfigurations = DefaultTenantProfileConfiguration;
 export interface TenantProfileConfiguration extends TenantProfileConfigurations {

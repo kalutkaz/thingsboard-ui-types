@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
-import { ComplexFilterPredicateInfo, EntityKeyValueType } from '@shared/models/query/query.models';
+import { ComplexFilterPredicateInfo, EntityKeyValueType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
 import { MatDialog } from '@angular/material/dialog';
 import { ComponentType } from '@angular/cdk/portal';
 import * as i0 from "@angular/core";

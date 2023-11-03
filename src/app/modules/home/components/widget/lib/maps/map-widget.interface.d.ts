@@ -1,4 +1,4 @@
-import LeafletMap from '@home/components/widget/lib/maps/leaflet-map';
+import LeafletMap from '../../../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/maps/leaflet-map';
 export interface MapWidgetInterface {
     map?: LeafletMap;
     resize(): any;

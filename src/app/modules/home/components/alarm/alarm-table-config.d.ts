@@ -1,21 +1,21 @@
-import { EntityTableConfig } from '@home/models/entity/entities-table-config.models';
+import { EntityTableConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entities-table-config.models';
 import { TranslateService } from '@ngx-translate/core';
 import { DatePipe } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
-import { TimePageLink } from '@shared/models/page/page-link';
+import { TimePageLink } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
 import { Observable } from 'rxjs';
-import { PageData } from '@shared/models/page/page-data';
-import { EntityId } from '@shared/models/id/entity-id';
-import { AlarmInfo, AlarmsMode } from '@app/shared/models/alarm.models';
-import { AlarmService } from '@app/core/http/alarm.service';
-import { DialogService } from '@core/services/dialog.service';
+import { PageData } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { EntityId } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { AlarmInfo, AlarmsMode } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
+import { AlarmService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/alarm.service';
+import { DialogService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { ChangeDetectorRef, ViewContainerRef } from '@angular/core';
 import { Overlay } from '@angular/cdk/overlay';
-import { UtilsService } from '@core/services/utils.service';
-import { AlarmFilterConfig } from '@shared/models/query/query.models';
-import { EntityService } from '@core/http/entity.service';
+import { UtilsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { AlarmFilterConfig } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { EntityService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 export declare class AlarmTableConfig extends EntityTableConfig<AlarmInfo, TimePageLink> {
     private alarmService;
     private entityService;
@@ -41,4 +41,7 @@ export declare class AlarmTableConfig extends EntityTableConfig<AlarmInfo, TimeP
     getUserInitials(entity: AlarmInfo): string;
     getAvatarBgColor(entity: AlarmInfo): string;
     openAlarmAssigneePanel($event: Event, entity: AlarmInfo): void;
+    ackAlarms($event: Event, alarms: Array<AlarmInfo>): void;
+    clearAlarms($event: Event, alarms: Array<AlarmInfo>): void;
+    deleteAlarms($event: Event, alarms: Array<AlarmInfo>): void;
 }

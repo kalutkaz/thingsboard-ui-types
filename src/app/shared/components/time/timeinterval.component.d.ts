@@ -1,6 +1,6 @@
 import { EventEmitter, OnInit } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
-import { TimeInterval, TimeService } from '@core/services/time.service';
+import { TimeInterval, TimeService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/time.service';
 import { SubscriptSizing } from '@angular/material/form-field';
 import * as i0 from "@angular/core";
 export declare class TimeintervalComponent implements OnInit, ControlValueAccessor {

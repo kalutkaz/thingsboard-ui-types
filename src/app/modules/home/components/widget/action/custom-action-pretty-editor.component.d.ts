@@ -1,4 +1,4 @@
-/// <reference types="src/typings/split.js.typings" />
+/// <reference types="../../../../../../../../thingsboard/ui-ngx/src/typings/split.js.typings" />
 import { AfterViewInit, ElementRef, OnDestroy, OnInit, QueryList } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { PageComponent } from '@shared/components/page.component';

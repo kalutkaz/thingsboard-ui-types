@@ -1,10 +1,10 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { TimePageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
-import { AuditLog } from '@shared/models/audit-log.models';
-import { EntityId } from '@shared/models/id/entity-id';
+import { TimePageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { AuditLog } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/audit-log.models';
+import { EntityId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import * as i0 from "@angular/core";
 export declare class AuditLogService {
     private http;

@@ -1,7 +1,7 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormControl, UntypedFormGroup, Validator } from '@angular/forms';
-import { UtilsService } from '@core/services/utils.service';
-import { QueueInfo, QueueProcessingStrategyTypes, QueueSubmitStrategyTypes } from '@shared/models/queue.models';
+import { UtilsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { QueueInfo, QueueProcessingStrategyTypes, QueueSubmitStrategyTypes } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/queue.models';
 import * as i0 from "@angular/core";
 export declare class QueueFormComponent implements ControlValueAccessor, OnInit, OnDestroy, Validator {
     private utils;
@@ -15,8 +15,8 @@ export declare class QueueFormComponent implements ControlValueAccessor, OnInit,
     queueProcessingStrategyTypes: typeof QueueProcessingStrategyTypes;
     submitStrategies: string[];
     processingStrategies: string[];
-    queueSubmitStrategyTypesMap: Map<QueueSubmitStrategyTypes, import("@shared/models/queue.models").QueueStrategyData>;
-    queueProcessingStrategyTypesMap: Map<QueueProcessingStrategyTypes, import("@shared/models/queue.models").QueueStrategyData>;
+    queueSubmitStrategyTypesMap: Map<QueueSubmitStrategyTypes, import("../../../../../../../thingsboard/ui-ngx/src/app/shared/models/queue.models").QueueStrategyData>;
+    queueProcessingStrategyTypesMap: Map<QueueProcessingStrategyTypes, import("../../../../../../../thingsboard/ui-ngx/src/app/shared/models/queue.models").QueueStrategyData>;
     private modelValue;
     private propagateChange;
     private propagateChangePending;

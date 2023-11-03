@@ -1,13 +1,14 @@
 import { GridsterComponent, GridsterConfig, GridsterItem, GridsterItemComponentInterface } from 'angular-gridster2';
-import { Widget, WidgetPosition } from '@app/shared/models/widget.models';
-import { WidgetLayout, WidgetLayouts } from '@app/shared/models/dashboard.models';
+import { Widget, WidgetPosition } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { WidgetLayout, WidgetLayouts } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
 import { IDashboardWidget, WidgetAction, WidgetContext, WidgetHeaderAction } from './widget-component.models';
-import { Timewindow } from '@shared/models/time/time.models';
+import { Timewindow } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
 import { Observable } from 'rxjs';
 import { IterableDiffer, KeyValueDiffer } from '@angular/core';
-import { IAliasController, IStateController } from '@app/core/api/widget-api.models';
-import { UtilsService } from '@core/services/utils.service';
-import { TbPopoverComponent } from '@shared/components/popover.component';
+import { IAliasController, IStateController } from '../../../../../../thingsboard/ui-ngx/src/app/core/api/widget-api.models';
+import { UtilsService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { TbPopoverComponent } from '../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.component';
+import { ComponentStyle } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget-settings.models';
 export interface WidgetsData {
     widgets: Array<Widget>;
     widgetLayouts?: WidgetLayouts;
@@ -97,27 +98,21 @@ export declare class DashboardWidget implements GridsterItem, IDashboardWidget {
     backgroundColor: string;
     padding: string;
     margin: string;
-    title: string;
-    customTranslatedTitle: string;
+    borderRadius: string;
+    title$: Observable<string>;
     titleTooltip: string;
     showTitle: boolean;
-    titleStyle: {
-        [klass: string]: any;
-    };
+    titleStyle: ComponentStyle;
     titleIcon: string;
     showTitleIcon: boolean;
-    titleIconStyle: {
-        [klass: string]: any;
-    };
+    titleIconStyle: ComponentStyle;
     dropShadow: boolean;
     enableFullscreen: boolean;
     hasTimewindow: boolean;
     hasAggregation: boolean;
     onlyQuickInterval: boolean;
     onlyHistoryTimewindow: boolean;
-    style: {
-        [klass: string]: any;
-    };
+    style: ComponentStyle;
     showWidgetTitlePanel: boolean;
     showWidgetActions: boolean;
     customHeaderActions: Array<WidgetHeaderAction>;
@@ -136,7 +131,8 @@ export declare class DashboardWidget implements GridsterItem, IDashboardWidget {
     constructor(dashboard: IDashboardComponent, widget: Widget, widgetLayout?: WidgetLayout, parentDashboard?: IDashboardComponent, popoverComponent?: TbPopoverComponent);
     gridsterItemComponent$(): Observable<GridsterItemComponentInterface>;
     updateWidgetParams(detectChanges?: boolean): void;
-    updateCustomHeaderActions(detectChanges?: boolean): void;
+    updateParamsFromData(detectChanges?: boolean): void;
+    private updateCustomHeaderActions;
     private filterCustomHeaderAction;
     get x(): number;
     set x(x: number);

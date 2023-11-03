@@ -1,8 +1,8 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup, ValidationErrors, Validator } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
-import { SnmpAuthenticationProtocol, SnmpDeviceProtocolVersion, SnmpDeviceTransportConfiguration, SnmpPrivacyProtocol } from '@shared/models/device.models';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { SnmpAuthenticationProtocol, SnmpDeviceProtocolVersion, SnmpDeviceTransportConfiguration, SnmpPrivacyProtocol } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/models/device.models';
 import * as i0 from "@angular/core";
 export declare class SnmpDeviceTransportConfigurationComponent implements ControlValueAccessor, OnInit, Validator {
     private store;

@@ -1,11 +1,11 @@
-import { ComparisonResultType, DatasourceType, widgetType } from '@shared/models/widget.models';
-import { AggregationType, ComparisonDuration, SubscriptionTimewindow } from '@shared/models/time/time.models';
-import { AlarmFilter, EntityDataPageLink, EntityFilter, KeyFilter } from '@shared/models/query/query.models';
-import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
-import { UtilsService } from '@core/services/utils.service';
-import { EntityDataListener, EntityDataLoadResult } from '@core/api/entity-data.service';
+import { ComparisonResultType, DatasourceType, widgetType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { AggregationType, ComparisonDuration, SubscriptionTimewindow } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/time/time.models';
+import { AlarmFilter, EntityDataPageLink, EntityFilter, KeyFilter } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { DataKeyType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
+import { UtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/utils.service';
+import { EntityDataListener, EntityDataLoadResult } from '../../../../../thingsboard/ui-ngx/src/app/core/api/entity-data.service';
 import { Observable } from 'rxjs';
-import { TelemetryWebsocketService } from '@core/ws/telemetry-websocket.service';
+import { TelemetryWebsocketService } from '../../../../../thingsboard/ui-ngx/src/app/core/ws/telemetry-websocket.service';
 declare type DataKeyFunction = (time: number, prevValue: any) => any;
 declare type DataKeyPostFunction = (time: number, value: any, prevValue: any, timePrev: number, prevOrigValue: any) => any;
 export interface SubscriptionDataKey {

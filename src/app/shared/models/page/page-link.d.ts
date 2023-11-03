@@ -1,7 +1,7 @@
-import { SortOrder } from '@shared/models/page/sort-order';
-import { PageData } from '@shared/models/page/page-data';
+import { SortOrder } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/sort-order';
+import { PageData } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
 import { SortDirection } from '@angular/material/sort';
-import { EntitiesTableAction } from '@home/models/entity/entity-table-component.models';
+import { EntitiesTableAction } from '../../../../../../thingsboard/ui-ngx/src/app/modules/home/models/entity/entity-table-component.models';
 export declare const MAX_SAFE_PAGE_SIZE = 2147483647;
 export type PageLinkSearchFunction<T> = (entity: T, textSearch: string, searchProperty?: string) => boolean;
 export interface PageQueryParam extends Partial<SortOrder> {

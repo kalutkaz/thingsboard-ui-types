@@ -1,8 +1,8 @@
 import { OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
-import { TenantProfileData } from '@shared/models/tenant.model';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
+import { TenantProfileData } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/tenant.model';
 import * as i0 from "@angular/core";
 export declare class TenantProfileDataComponent implements ControlValueAccessor, OnInit, OnDestroy {
     private store;

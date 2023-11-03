@@ -1,9 +1,9 @@
 import { MatDialogRef } from '@angular/material/dialog';
 import { InjectionToken } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { Router } from '@angular/router';
-import { PageComponent } from '@shared/components/page.component';
+import { PageComponent } from '../../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
 import { CustomDialogContainerComponent } from './custom-dialog-container.component';
 import { UntypedFormBuilder } from '@angular/forms';
 import * as i0 from "@angular/core";

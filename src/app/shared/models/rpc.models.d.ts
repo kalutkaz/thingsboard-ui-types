@@ -1,7 +1,7 @@
-import { TenantId } from '@shared/models/id/tenant-id';
-import { RpcId } from '@shared/models/id/rpc-id';
-import { DeviceId } from '@shared/models/id/device-id';
-import { TableCellButtonActionDescriptor } from '@home/components/widget/lib/table-widget.models';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { RpcId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/rpc-id';
+import { DeviceId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/device-id';
+import { TableCellButtonActionDescriptor } from '../../../../../thingsboard/ui-ngx/src/app/modules/home/components/widget/lib/table-widget.models';
 export declare enum RpcStatus {
     QUEUED = "QUEUED",
     DELIVERED = "DELIVERED",

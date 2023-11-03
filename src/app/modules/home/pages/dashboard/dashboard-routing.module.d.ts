@@ -1,13 +1,13 @@
 import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
-import { DashboardPageComponent } from '@home/components/dashboard-page/dashboard-page.component';
-import { BreadCrumbLabelFunction } from '@shared/components/breadcrumb';
+import { DashboardPageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/modules/home/components/dashboard-page/dashboard-page.component';
+import { BreadCrumbLabelFunction } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/breadcrumb';
 import { Observable } from 'rxjs';
-import { Dashboard } from '@app/shared/models/dashboard.models';
-import { DashboardService } from '@core/http/dashboard.service';
-import { DashboardUtilsService } from '@core/services/dashboard-utils.service';
-import { UserSettingsService } from '@core/http/user-settings.service';
+import { Dashboard } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { DashboardService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/dashboard.service';
+import { DashboardUtilsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/services/dashboard-utils.service';
+import { UserSettingsService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/user-settings.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import * as i0 from "@angular/core";
 import * as i1 from "@angular/router";
 export declare class DashboardResolver implements Resolve<Dashboard> {

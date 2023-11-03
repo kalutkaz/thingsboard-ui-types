@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs';
-import { DocumentationLinks, GettingStarted, QuickLinks, UserDashboardAction, UserDashboardsInfo, UserSettings } from '@shared/models/user-settings.models';
+import { DocumentationLinks, GettingStarted, QuickLinks, UserDashboardAction, UserDashboardsInfo, UserSettings } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/user-settings.models';
 import { HttpClient } from '@angular/common/http';
-import { RequestConfig } from '@core/http/http-utils';
+import { RequestConfig } from '../../../../../thingsboard/ui-ngx/src/app/core/http/http-utils';
 import * as i0 from "@angular/core";
 export declare class UserSettingsService {
     private http;

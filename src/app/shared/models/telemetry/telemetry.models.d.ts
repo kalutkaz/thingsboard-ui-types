@@ -1,12 +1,13 @@
-import { EntityType } from '@shared/models/entity-type.models';
+import { EntityType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/entity-type.models';
 import { AggregationType } from '../time/time.models';
 import { Observable } from 'rxjs';
-import { EntityId } from '@shared/models/id/entity-id';
+import { EntityId } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
 import { NgZone } from '@angular/core';
-import { AlarmCountQuery, AlarmData, AlarmDataQuery, EntityCountQuery, EntityData, EntityDataQuery, EntityFilter, EntityKey, TsValue } from '@shared/models/query/query.models';
-import { PageData } from '@shared/models/page/page-data';
-import { CmdWrapper, WsSubscriber } from '@shared/models/websocket/websocket.models';
-import { TelemetryWebsocketService } from '@core/ws/telemetry-websocket.service';
+import { AlarmCountQuery, AlarmData, AlarmDataQuery, EntityCountQuery, EntityData, EntityDataQuery, EntityFilter, EntityKey, TsValue } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/query/query.models';
+import { PageData } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { CmdWrapper, WsSubscriber } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/websocket/websocket.models';
+import { TelemetryWebsocketService } from '../../../../../../thingsboard/ui-ngx/src/app/core/ws/telemetry-websocket.service';
+export declare const NOT_SUPPORTED = "Not supported!";
 export declare enum DataKeyType {
     timeseries = "timeseries",
     attribute = "attribute",
@@ -27,10 +28,17 @@ export declare enum TelemetryFeature {
     ATTRIBUTES = "ATTRIBUTES",
     TIMESERIES = "TIMESERIES"
 }
+export declare enum TimeseriesDeleteStrategy {
+    DELETE_ALL_DATA = "DELETE_ALL_DATA",
+    DELETE_ALL_DATA_EXCEPT_LATEST_VALUE = "DELETE_ALL_DATA_EXCEPT_LATEST_VALUE",
+    DELETE_LATEST_VALUE = "DELETE_LATEST_VALUE",
+    DELETE_ALL_DATA_FOR_TIME_PERIOD = "DELETE_ALL_DATA_FOR_TIME_PERIOD"
+}
 export type TelemetryType = LatestTelemetry | AttributeScope;
 export declare const toTelemetryType: (val: string) => TelemetryType;
 export declare const telemetryTypeTranslations: Map<TelemetryType, string>;
 export declare const isClientSideTelemetryType: Map<TelemetryType, boolean>;
+export declare const timeseriesDeleteStrategyTranslations: Map<TimeseriesDeleteStrategy, string>;
 export interface AttributeData {
     lastUpdateTs?: number;
     key: string;

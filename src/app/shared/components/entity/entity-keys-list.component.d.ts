@@ -2,13 +2,13 @@ import { AfterViewInit, ElementRef, OnInit } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { EntityId } from '@shared/models/id/entity-id';
-import { EntityService } from '@core/http/entity.service';
+import { EntityId } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/id/entity-id';
+import { EntityService } from '../../../../../../thingsboard/ui-ngx/src/app/core/http/entity.service';
 import { MatAutocomplete, MatAutocompleteSelectedEvent } from '@angular/material/autocomplete';
 import { MatChipInputEvent, MatChipGrid } from '@angular/material/chips';
-import { DataKeyType } from '@shared/models/telemetry/telemetry.models';
+import { DataKeyType } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/telemetry/telemetry.models';
 import * as i0 from "@angular/core";
 export declare class EntityKeysListComponent implements ControlValueAccessor, OnInit, AfterViewInit {
     private store;

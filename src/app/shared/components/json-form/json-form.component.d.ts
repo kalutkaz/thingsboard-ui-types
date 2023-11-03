@@ -1,13 +1,13 @@
 import { ChangeDetectorRef, ElementRef, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, ViewContainerRef } from '@angular/core';
 import { ControlValueAccessor, UntypedFormControl, Validator } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
 import { JsonFormProps } from './react/json-form.models';
-import { DialogService } from '@app/core/services/dialog.service';
+import { DialogService } from '../../../../../../thingsboard/ui-ngx/src/app/core/services/dialog.service';
 import { JsonFormComponentData } from './json-form-component.models';
-import { GroupInfo } from '@shared/models/widget.models';
-import { TbPopoverService } from '@shared/components/popover.service';
+import { GroupInfo } from '../../../../../../thingsboard/ui-ngx/src/app/shared/models/widget.models';
+import { TbPopoverService } from '../../../../../../thingsboard/ui-ngx/src/app/shared/components/popover.service';
 import * as i0 from "@angular/core";
 export declare class JsonFormComponent implements OnInit, ControlValueAccessor, Validator, OnChanges, OnDestroy {
     elementRef: ElementRef;

@@ -1,11 +1,11 @@
 import { OnDestroy, OnInit, QueryList } from '@angular/core';
-import { PageComponent } from '@shared/components/page.component';
-import { HasConfirmForm } from '@core/guards/confirm-on-exit.guard';
+import { PageComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/page.component';
+import { HasConfirmForm } from '../../../../../../../thingsboard/ui-ngx/src/app/core/guards/confirm-on-exit.guard';
 import { Store } from '@ngrx/store';
-import { AppState } from '@core/core.state';
+import { AppState } from '../../../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { UntypedFormArray, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { TwoFactorAuthenticationService } from '@core/http/two-factor-authentication.service';
-import { TwoFactorAuthProviderType } from '@shared/models/two-factor-auth.models';
+import { TwoFactorAuthenticationService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/two-factor-authentication.service';
+import { TwoFactorAuthProviderType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/two-factor-auth.models';
 import { MatExpansionPanel } from '@angular/material/expansion';
 import * as i0 from "@angular/core";
 export declare class TwoFactorAuthSettingsComponent extends PageComponent implements OnInit, HasConfirmForm, OnDestroy {
@@ -16,7 +16,7 @@ export declare class TwoFactorAuthSettingsComponent extends PageComponent implem
     private readonly posIntValidation;
     twoFaFormGroup: UntypedFormGroup;
     twoFactorAuthProviderType: typeof TwoFactorAuthProviderType;
-    twoFactorAuthProvidersData: Map<TwoFactorAuthProviderType, import("@shared/models/two-factor-auth.models").TwoFactorAuthProviderData>;
+    twoFactorAuthProvidersData: Map<TwoFactorAuthProviderType, import("../../../../../../../thingsboard/ui-ngx/src/app/shared/models/two-factor-auth.models").TwoFactorAuthProviderData>;
     expansionPanel: QueryList<MatExpansionPanel>;
     constructor(store: Store<AppState>, twoFaService: TwoFactorAuthenticationService, fb: UntypedFormBuilder);
     ngOnInit(): void;

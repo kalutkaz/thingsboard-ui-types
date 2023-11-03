@@ -1,11 +1,11 @@
-import { AfterViewInit, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
+import { AfterViewInit, EventEmitter, OnDestroy, OnInit, ViewContainerRef } from '@angular/core';
 import { ControlValueAccessor, UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
-import { RuleNodeConfiguration, RuleNodeDefinition } from '@shared/models/rule-node.models';
+import { IRuleNodeConfigurationComponent, RuleNodeConfiguration, RuleNodeDefinition } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-node.models';
 import { Subscription } from 'rxjs';
-import { RuleChainService } from '@core/http/rule-chain.service';
+import { RuleChainService } from '../../../../../../../thingsboard/ui-ngx/src/app/core/http/rule-chain.service';
 import { TranslateService } from '@ngx-translate/core';
-import { JsonObjectEditComponent } from '@shared/components/json-object-edit.component';
-import { RuleChainType } from '@shared/models/rule-chain.models';
+import { JsonObjectEditComponent } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/components/json-object-edit.component';
+import { RuleChainType } from '../../../../../../../thingsboard/ui-ngx/src/app/shared/models/rule-chain.models';
 import * as i0 from "@angular/core";
 export declare class RuleNodeConfigComponent implements ControlValueAccessor, OnInit, OnDestroy, AfterViewInit {
     private translate;
@@ -20,14 +20,17 @@ export declare class RuleNodeConfigComponent implements ControlValueAccessor, On
     ruleNodeId: string;
     ruleChainId: string;
     ruleChainType: RuleChainType;
+    initRuleNode: EventEmitter<void>;
+    changeScript: EventEmitter<void>;
     nodeDefinitionValue: RuleNodeDefinition;
     set nodeDefinition(nodeDefinition: RuleNodeDefinition);
     get nodeDefinition(): RuleNodeDefinition;
     definedDirectiveError: string;
     ruleNodeConfigFormGroup: UntypedFormGroup;
     changeSubscription: Subscription;
+    changeScriptSubscription: Subscription;
+    definedConfigComponent: IRuleNodeConfigurationComponent;
     private definedConfigComponentRef;
-    private definedConfigComponent;
     private configuration;
     private propagateChange;
     constructor(translate: TranslateService, ruleChainService: RuleChainService, fb: UntypedFormBuilder);
@@ -43,5 +46,5 @@ export declare class RuleNodeConfigComponent implements ControlValueAccessor, On
     private validateDefinedDirective;
     validate(): void;
     static ɵfac: i0.ɵɵFactoryDeclaration<RuleNodeConfigComponent, never>;
-    static ɵcmp: i0.ɵɵComponentDeclaration<RuleNodeConfigComponent, "tb-rule-node-config", never, { "required": "required"; "disabled": "disabled"; "ruleNodeId": "ruleNodeId"; "ruleChainId": "ruleChainId"; "ruleChainType": "ruleChainType"; "nodeDefinition": "nodeDefinition"; }, {}, never, never, false, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<RuleNodeConfigComponent, "tb-rule-node-config", never, { "required": "required"; "disabled": "disabled"; "ruleNodeId": "ruleNodeId"; "ruleChainId": "ruleChainId"; "ruleChainType": "ruleChainType"; "nodeDefinition": "nodeDefinition"; }, { "initRuleNode": "initRuleNode"; "changeScript": "changeScript"; }, never, never, false, never>;
 }

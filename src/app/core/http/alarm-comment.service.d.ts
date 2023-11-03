@@ -1,9 +1,9 @@
 import { RequestConfig } from './http-utils';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { PageLink } from '@shared/models/page/page-link';
-import { PageData } from '@shared/models/page/page-data';
-import { AlarmComment, AlarmCommentInfo } from '@shared/models/alarm.models';
+import { PageLink } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-link';
+import { PageData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/page/page-data';
+import { AlarmComment, AlarmCommentInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/alarm.models';
 import * as i0 from "@angular/core";
 export declare class AlarmCommentService {
     private http;

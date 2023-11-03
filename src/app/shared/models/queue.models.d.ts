@@ -1,6 +1,6 @@
-import { BaseData } from '@shared/models/base-data';
-import { TenantId } from '@shared/models/id/tenant-id';
-import { QueueId } from '@shared/models/id/queue-id';
+import { BaseData } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/base-data';
+import { TenantId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/tenant-id';
+import { QueueId } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/id/queue-id';
 export declare enum ServiceType {
     TB_CORE = "TB_CORE",
     TB_RULE_ENGINE = "TB_RULE_ENGINE",
@@ -50,5 +50,6 @@ export interface QueueInfo extends BaseData<QueueId> {
     topic: string;
     additionalInfo: {
         description?: string;
+        customProperties?: string;
     };
 }

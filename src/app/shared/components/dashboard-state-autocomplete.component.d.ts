@@ -1,12 +1,12 @@
 import { ElementRef, OnInit } from '@angular/core';
 import { ControlValueAccessor, FormBuilder } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { DashboardInfo } from '@app/shared/models/dashboard.models';
-import { DashboardService } from '@core/http/dashboard.service';
+import { DashboardInfo } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/dashboard.models';
+import { DashboardService } from '../../../../../thingsboard/ui-ngx/src/app/core/http/dashboard.service';
 import { Store } from '@ngrx/store';
-import { AppState } from '@app/core/core.state';
+import { AppState } from '../../../../../thingsboard/ui-ngx/src/app/core/core.state';
 import { TranslateService } from '@ngx-translate/core';
-import { DashboardUtilsService } from '@core/services/dashboard-utils.service';
+import { DashboardUtilsService } from '../../../../../thingsboard/ui-ngx/src/app/core/services/dashboard-utils.service';
 import * as i0 from "@angular/core";
 export declare class DashboardStateAutocompleteComponent implements ControlValueAccessor, OnInit {
     private store;

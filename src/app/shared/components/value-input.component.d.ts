@@ -1,6 +1,6 @@
 import { OnInit } from '@angular/core';
 import { ControlValueAccessor, NgForm } from '@angular/forms';
-import { ValueType } from '@shared/models/constants';
+import { ValueType } from '../../../../../thingsboard/ui-ngx/src/app/shared/models/constants';
 import { MatDialog } from '@angular/material/dialog';
 import * as i0 from "@angular/core";
 export declare class ValueInputComponent implements OnInit, ControlValueAccessor {
@@ -12,7 +12,7 @@ export declare class ValueInputComponent implements OnInit, ControlValueAccessor
     valueType: ValueType;
     valueTypeEnum: typeof ValueType;
     valueTypeKeys: string[];
-    valueTypes: Map<ValueType, import("@shared/models/constants").ValueTypeData>;
+    valueTypes: Map<ValueType, import("../../../../../thingsboard/ui-ngx/src/app/shared/models/constants").ValueTypeData>;
     private propagateChange;
     constructor(dialog: MatDialog);
     ngOnInit(): void;
